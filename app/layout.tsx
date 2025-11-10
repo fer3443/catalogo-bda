@@ -1,15 +1,12 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { lora } from '@/config/fonts'
 import './globals.css'
-
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+import { Header } from '@/components/header'
 
 export const metadata: Metadata = {
   title: 'Burbujas de Altura - Catalogo',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  description: 'Catalogo completo bodega Burbujas de Altura',
   icons: {
     icon: [
       {
@@ -36,7 +33,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${lora.className} antialiased`}>
+        <Header/>
         {children}
         <Analytics />
       </body>

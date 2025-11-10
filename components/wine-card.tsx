@@ -1,11 +1,11 @@
 "use client"
 
 import Image from "next/image"
-import type { Wine } from "@/lib/types"
 import { Card } from "@/components/ui/card"
+import { NewWine } from "@/interfaces"
 
 interface WineCardProps {
-  wine: Wine
+  wine: NewWine
   onClick: () => void
 }
 
@@ -13,9 +13,9 @@ export function WineCard({ wine, onClick }: WineCardProps) {
   return (
     <Card
       onClick={onClick}
-      className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 border-border bg-card"
+      className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 border-border bg-card py-0"
     >
-      <div className="relative aspect-[3/4] overflow-hidden bg-secondary">
+      <div className="relative aspect-3/4 overflow-hidden bg-secondary">
         <Image
           src={wine.image || "/placeholder.svg"}
           alt={wine.name}

@@ -1,11 +1,12 @@
-import type { Wine } from "./types"
+import { Lines, Wine } from "@/interfaces";
+
 
 export const wineData: Wine[] = [
   // Línea Tinquiao
   {
     id: "tinquiao-1",
     name: "Tinquiao Reserva",
-    line: "Tinquiao",
+    line: Lines.tinquiao,
     variety: "Cabernet Sauvignon",
     description:
       "Un vino tinto de cuerpo completo con notas intensas de frutas negras, especias y un toque de vainilla. Ideal para los amantes de los vinos robustos y complejos.",
@@ -21,7 +22,7 @@ export const wineData: Wine[] = [
   {
     id: "tinquiao-2",
     name: "Tinquiao Gran Reserva",
-    line: "Tinquiao",
+    line: Lines.tinquiao,
     variety: "Malbec",
     description:
       "Elegante vino con aromas a ciruela madura, chocolate y notas especiadas. Su paladar sedoso y equilibrado lo hace perfecto para ocasiones especiales.",
@@ -37,7 +38,7 @@ export const wineData: Wine[] = [
   {
     id: "tinquiao-3",
     name: "Tinquiao Clásico",
-    line: "Tinquiao",
+    line: Lines.tinquiao,
     variety: "Carmenère",
     description:
       "Vino de carácter único con notas herbáceas, frutas rojas y un final persistente. Representa la esencia de la viticultura chilena.",
@@ -55,7 +56,7 @@ export const wineData: Wine[] = [
   {
     id: "espumante-1",
     name: "Espumante Brut Nature",
-    line: "Espumantes",
+    line: Lines.espumantes,
     variety: "Chardonnay - Pinot Noir",
     description:
       "Espumante refinado con burbujas finas y persistentes. Aromas cítricos y florales con un final seco y refrescante. Perfecto para celebraciones.",
@@ -71,7 +72,7 @@ export const wineData: Wine[] = [
   {
     id: "espumante-2",
     name: "Espumante Rosé",
-    line: "Espumantes",
+    line: Lines.espumantes,
     variety: "Pinot Noir",
     description:
       "Delicado espumante rosado con notas de fresas, frambuesas y pétalos de rosa. Su elegancia y frescura lo hacen ideal para momentos especiales.",
@@ -87,7 +88,7 @@ export const wineData: Wine[] = [
   {
     id: "espumante-3",
     name: "Espumante Extra Brut",
-    line: "Espumantes",
+    line: Lines.espumantes,
     variety: "Chardonnay",
     description:
       "Espumante de alta expresión con mínimo contenido de azúcar. Notas de manzana verde, almendras tostadas y una acidez vibrante.",
@@ -105,7 +106,7 @@ export const wineData: Wine[] = [
   {
     id: "vinland-1",
     name: "Vinland Sauvignon Blanc",
-    line: "Vinland",
+    line: Lines.vikinga,
     variety: "Sauvignon Blanc",
     description:
       "Vino blanco fresco y vibrante con aromas a frutas tropicales, cítricos y hierbas frescas. Su acidez equilibrada lo hace muy versátil.",
@@ -121,7 +122,7 @@ export const wineData: Wine[] = [
   {
     id: "vinland-2",
     name: "Vinland Chardonnay",
-    line: "Vinland",
+    line: Lines.vikinga,
     variety: "Chardonnay",
     description:
       "Chardonnay elegante con notas de frutas de carozo, mantequilla y vainilla. Su textura cremosa y final prolongado ofrecen una experiencia única.",
@@ -137,7 +138,7 @@ export const wineData: Wine[] = [
   {
     id: "vinland-3",
     name: "Vinland Riesling",
-    line: "Vinland",
+    line: Lines.vikinga,
     variety: "Riesling",
     description:
       "Riesling aromático con dulzor balanceado, notas florales, miel y frutas blancas. Un vino versátil que sorprende en cada copa.",

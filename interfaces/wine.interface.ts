@@ -1,7 +1,7 @@
 export interface Wine {
   id: string
   name: string
-  line: "Tinquiao" | "Espumantes" | "Vinland"
+  line: Lines
   variety: string
   description: string
   image: string
@@ -12,4 +12,10 @@ export interface Wine {
     aging: string
     pairing: string
   }
+}
+
+export enum Lines {
+  tinquiao = "Tinquiao",
+  espumantes = "Espumantes",
+  vikinga = "Vikinga",
 }
