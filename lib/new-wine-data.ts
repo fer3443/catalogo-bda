@@ -214,7 +214,7 @@ export const newWineData: NewWine[] = [
     elaboration: "Preselección de la uva en el viñedo. Cosecha manual en pequeñas cajas. Maceración de la uva con frío antes de su molienda. Fermentación en pequeños tanques, 23 - 28° C. Se usaron pizoneos manuales. Sombrero sumergido en pos-fermentación. Contacto con roble durante fermentación y luego en barricas usadas por 12 meses, ganando complejidad en la fruta. Puede contener sedimentos naturales precipitados.",
     alcohol: "14,5 %",
     conservation: "Potencial de guarda unos 8 años. Se recomienda decantar una hora antes de beberlo. Conservar en lugar fresco, oscuro, y sin vibraciones.",
-    harvestDate: "",
+    harvestDate: "año 2022.",
     pairing: "Ideal para acompañar carnes cocinadas a leña, estofados, paellas.",
     suggar: "",
     temperature: "Entre 14º y 16º C.",
