@@ -1,9 +1,9 @@
-import { WineCatalog } from "@/components/wine-catalog"
+import { WineCategory } from "@/components/wine-category"
 
 export default function Page() {
   return (
-    <main className="min-h-screen">
-      <WineCatalog />
+    <main className="h-full">
+      <WineCategory />
     </main>
   )
 }
