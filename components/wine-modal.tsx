@@ -57,9 +57,9 @@ export function WineModal({ wine, onClose }: WineModalProps) {
                     <span className="text-muted-foreground text-sm">Origen</span>
                     <span className="font-medium text-card-foreground text-sm text-end">{wine.origin}</span>
                   </div>
-                  <div className="flex justify-between py-2 border-b border-border/50">
+                  <div className="flex flex-col md:flex-row gap-y-2 justify-between py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">Altura de los viñedos</span>
-                    <span className="font-medium text-card-foreground text-sm text-end">{wine.vineyardHeight.toLowerCase()}</span>
+                    <span className="font-medium text-card-foreground text-sm md:text-end">{wine.vineyardHeight.toLowerCase()}</span>
                   </div>
                   <div className="flex justify-between py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">Edad de los viñedos</span>
@@ -85,14 +85,22 @@ export function WineModal({ wine, onClose }: WineModalProps) {
                       </div>
                     )
                   }
-                  <div className="flex justify-between py-2 border-b border-border/50">
+                  <div className="flex flex-col md:flex-row justify-between gap-y-2 py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">Conservar</span>
-                    <span className="font-medium text-card-foreground text-sm text-end">{wine.conservation}</span>
+                    <span className="font-medium text-card-foreground text-sm md:text-end">{wine.conservation}</span>
                   </div>
-                  <div className="flex justify-between py-2 border-b border-border/50">
+                  <div className="flex flex-col justify-between gap-y-2 py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">Fecha de cosecha</span>
-                    <span className="font-medium text-card-foreground text-sm text-end">{wine.harvestDate.toLowerCase()}</span>
+                    <span className="font-medium text-card-foreground text-sm">{wine.harvestDate.toLowerCase()}</span>
                   </div>
+                  {
+                    wine.storedInCellar && (
+                      <div className="flex flex-col justify-between gap-y-2 py-2 border-b border-border/50">
+                        <span className="text-muted-foreground text-sm">Guarda en bodega</span>
+                        <span className="font-medium text-card-foreground text-sm">{wine.storedInCellar.toLowerCase()}</span>
+                      </div>
+                    )
+                  }
                   <div className="flex flex-col justify-between gap-y-2 py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">Elaboración</span>
                     <span className="font-medium text-card-foreground text-sm">{wine.elaboration}</span>

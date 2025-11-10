@@ -9,13 +9,15 @@ export interface NewWine {
   origin: string;
   conservation:string;
   alcohol:string;
-  suggar:string;
+  suggar?:string;
   vineyardHeight: string; //altura del viñedo
   vineyardAge: string;
   harvestDate: string; //fecha de cosecha
   elaboration:string;
   temperature:string;
   timeOnLees?:string;
+  guardPotential?:string;
+  storedInCellar?:string;//guarda en bodega
   pairing: string;//maridaje sugerido
   line:Lines;
 }
