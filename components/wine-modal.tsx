@@ -69,10 +69,13 @@ export function WineModal({ wine, onClose }: WineModalProps) {
                     <span className="text-muted-foreground text-sm">Alcohol</span>
                     <span className="font-medium text-card-foreground text-sm text-end">{wine.alcohol}</span>
                   </div>
-                  <div className="flex justify-between py-2 border-b border-border/50">
-                    <span className="text-muted-foreground text-sm">Azúcar</span>
-                    <span className="font-medium text-card-foreground text-sm text-end">{wine.suggar}</span>
-                  </div>
+                  {wine.suggar && (
+                    <div className="flex justify-between py-2 border-b border-border/50">
+                      <span className="text-muted-foreground text-sm">Azúcar</span>
+                      <span className="font-medium text-card-foreground text-sm text-end">{wine.suggar}</span>
+                    </div>
+                  )
+                  }
                   <div className="flex justify-between py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">Temperatura de servicio</span>
                     <span className="font-medium text-card-foreground text-sm text-end">{wine.temperature}</span>
