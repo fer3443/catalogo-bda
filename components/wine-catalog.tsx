@@ -29,7 +29,7 @@ export function WineCatalog({ line }: Props) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {filteredWines.map((wine, idx) => (
+          {filteredWines.map((wine) => (
             <WineCard key={wine.id} wine={wine} onClick={() => setSelectedWine(wine)} />
           ))}
         </div>

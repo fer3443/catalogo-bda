@@ -2,12 +2,12 @@ import Image from 'next/image'
 import { Card } from './ui/card'
 import { titleFont } from '@/config/fonts'
 
-export const WineCardCategory = ({ text }: { text: string }) => {
+export const WineCardCategory = ({ text, image }: { text: string, image?: string }) => {
   return (
     <Card className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 border-border rounded-lg p-0">
       <div className="relative aspect-video overflow-hidden">
         <Image
-          src={"/placeholder.svg"}
+          src={image || "/placeholder.svg"}
           alt={text}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
