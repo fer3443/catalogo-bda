@@ -16,7 +16,6 @@ export interface NewWine {
   elaboration:string;
   temperature:string;
   timeOnLees?:string;
-  guardPotential?:string;
   storedInCellar?:string;//guarda en bodega
   pairing: string;//maridaje sugerido
   line:Lines;
