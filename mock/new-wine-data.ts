@@ -1,43 +1,7 @@
-import { Lines, NewWine } from "@/interfaces";
+import { LineDescription, Lines, NameWine, NewWine, Subline } from "@/interfaces";
 import { v4 as uuid } from 'uuid';
 
 export const newWineData: NewWine[] = [
-  {
-    id: uuid(),
-    name: "Pet Nat",
-    image: "/e-pet-nat-torrontes.webp",
-    description: "método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en  un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones. 'Se caracteriza por tener un  proceso de elaboración sin agregados, solo acompañando por la transformación de azúcar en alcohol de manera paulatina.Como termina su fermentación en la misma botella que luego se comercializa, no es  filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método'",
-    origin: "CAFAYATE - SALTA - ARGENTINA",
-    elaboration: "Pet Nat o Pétillant Naturel",
-    alcohol: "11 %",
-    conservation: "8 MESES EN BOTELLA",
-    harvestDate: "PRIMER QUINCENA DE FEBRERO. COSECHADO A MANO, EN CAJAS DE 15 KG. PRESELECCIÓN EN VIÑEDO",
-    pairing: "Ideal para acompañar las tardes veraniegas y calurosas, antes de alguna comida, como refresco",
-    suggar: "3 g/lt",
-    temperature: "Temperatura de servicio de este vino es entre 3º y 6º C",
-    variety: "Torrontés 100%",
-    vineyardAge: "30 AÑOS",
-    vineyardHeight: "1.800 METROS SOBRE EL NIVEL DEL MAR.",
-    line: Lines.espumantes
-  },
-   {
-    id: uuid(),
-    name: "Pet Nat Rosé",
-    image: "/e-pet-nat-rose.webp",
-    description: "Pet Nat o Pétillant Naturel, significa “naturalmente espumoso”: un método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones.",
-    origin: "CAFAYATE - SALTA - ARGENTINA",
-    elaboration: "“Se caracteriza por tener un proceso de elaboración sin agregados, sólo acompañando por la transformación de azúcar en alcohol de manera paulatina. Como termina su fermentación en la misma botella, la que luego se comercializa, no es filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método.",
-    alcohol: "12,6 %",
-    conservation: "8 meses en botella.",
-    harvestDate: "Primer quincena de febrero. Cosechado a mano, en cajas de 15 kg. Preselección en viñedo.",
-    pairing: "Ideal para acompañar las tardes veraniegas y calurosas, con un «fresco Rosé o informalmente con su pareja»",
-    suggar: "3,5 G/L",
-    temperature: "Entre 3º y 6º C.",
-    variety: "Malbec 100%.",
-    vineyardAge: "30 años.",
-    vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.espumantes
-  },
   {
     id: uuid(),
     name: "Torrontés Brut Nature",
@@ -51,11 +15,12 @@ export const newWineData: NewWine[] = [
     pairing: "Este Torrontés es perfecto con sabores frescos, especiados y picantes. Lo puedes probar con pescados cocinados, con platos con maíz (humita), pollo con mostaza y miel, postres con frutas frescas.",
     suggar: "11G/L.",
     temperature: "Entre 3º y 6º C.",
-    timeOnLees:"18 meses",
+    timeOnLees: "18 meses",
     variety: "Torrontés 100%.",
     vineyardAge: "",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.espumantes
+    line: Lines.espumantes,
+    subline: Subline.burbujas
   },
   {
     id: uuid(),
@@ -72,9 +37,10 @@ export const newWineData: NewWine[] = [
     temperature: "Entre 3° y 6°C.",
     variety: "Torrontés 100%",
     vineyardAge: "",
-    timeOnLees:"18 meses",
+    timeOnLees: "18 meses",
     vineyardHeight: "1.800 metros sobre el nivel del mar.",
-    line: Lines.espumantes
+    line: Lines.espumantes,
+    subline: Subline.burbujas
   },
   {
     id: uuid(),
@@ -89,11 +55,12 @@ export const newWineData: NewWine[] = [
     pairing: "Ideal para acompañar risotto de hongos, cabutia rellena, sushi, pastas rellenas",
     suggar: "5 g/l",
     temperature: "Entre 3º y 6º C.",
-    timeOnLees:"12 meses.",
+    timeOnLees: "12 meses.",
     variety: "Malbec 100 %.",
     vineyardAge: "27 años",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.espumantes
+    line: Lines.espumantes,
+    subline: Subline.burbujas
   },
   {
     id: uuid(),
@@ -109,11 +76,51 @@ export const newWineData: NewWine[] = [
     suggar: "3 G/L",
     temperature: "Entre 3° y 6° C.",
     variety: "Chardonnay 100%",
-    timeOnLees:"12 meses",
+    timeOnLees: "12 meses",
     vineyardAge: "",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.espumantes
+    line: Lines.espumantes,
+    subline: Subline.burbujas
   },
+  {
+    id: uuid(),
+    name: "Pet Nat",
+    image: "/e-pet-nat-torrontes.webp",
+    description: "método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en  un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones. 'Se caracteriza por tener un  proceso de elaboración sin agregados, solo acompañando por la transformación de azúcar en alcohol de manera paulatina.Como termina su fermentación en la misma botella que luego se comercializa, no es  filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método'",
+    origin: "CAFAYATE - SALTA - ARGENTINA",
+    elaboration: "Pet Nat o Pétillant Naturel",
+    alcohol: "11 %",
+    conservation: "8 MESES EN BOTELLA",
+    harvestDate: "PRIMER QUINCENA DE FEBRERO. COSECHADO A MANO, EN CAJAS DE 15 KG. PRESELECCIÓN EN VIÑEDO",
+    pairing: "Ideal para acompañar las tardes veraniegas y calurosas, antes de alguna comida, como refresco",
+    suggar: "3 g/lt",
+    temperature: "Temperatura de servicio de este vino es entre 3º y 6º C",
+    variety: "Torrontés 100%",
+    vineyardAge: "30 AÑOS",
+    vineyardHeight: "1.800 METROS SOBRE EL NIVEL DEL MAR.",
+    line: Lines.espumantes,
+    subline: Subline.pet
+  },
+  {
+    id: uuid(),
+    name: "Pet Nat Rosé",
+    image: "/e-pet-nat-rose.webp",
+    description: "Pet Nat o Pétillant Naturel, significa “naturalmente espumoso”: un método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones.",
+    origin: "CAFAYATE - SALTA - ARGENTINA",
+    elaboration: "“Se caracteriza por tener un proceso de elaboración sin agregados, sólo acompañando por la transformación de azúcar en alcohol de manera paulatina. Como termina su fermentación en la misma botella, la que luego se comercializa, no es filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método.",
+    alcohol: "12,6 %",
+    conservation: "8 meses en botella.",
+    harvestDate: "Primer quincena de febrero. Cosechado a mano, en cajas de 15 kg. Preselección en viñedo.",
+    pairing: "Ideal para acompañar las tardes veraniegas y calurosas, con un «fresco Rosé o informalmente con su pareja»",
+    suggar: "3,5 G/L",
+    temperature: "Entre 3º y 6º C.",
+    variety: "Malbec 100%.",
+    vineyardAge: "30 años.",
+    vineyardHeight: "1.800 mts. sobre el nivel del mar.",
+    line: Lines.espumantes,
+    subline: Subline.pet
+  },
+
   {
     id: uuid(),
     name: "Torrontés",
@@ -130,7 +137,8 @@ export const newWineData: NewWine[] = [
     variety: "Torrontés 100%.",
     vineyardAge: "25 años.",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.tinquiao
+    line: Lines.tinquiao,
+    subline: Subline.tinquiao
   },
   {
     id: uuid(),
@@ -148,7 +156,8 @@ export const newWineData: NewWine[] = [
     variety: "Torrontés 100%.",
     vineyardAge: "25 años.",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.tinquiao
+    line: Lines.tinquiao,
+    subline: Subline.tinquiao
   },
   {
     id: uuid(),
@@ -166,7 +175,8 @@ export const newWineData: NewWine[] = [
     variety: "Malbec 100%.",
     vineyardAge: "30 años.",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.tinquiao
+    line: Lines.tinquiao,
+    subline: Subline.tinquiao
   },
   {
     id: uuid(),
@@ -185,7 +195,8 @@ export const newWineData: NewWine[] = [
     variety: "Cabernet Sauvignon 100%.",
     vineyardAge: "24 años.",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.tinquiao
+    line: Lines.tinquiao,
+    subline: Subline.tinquiao
   },
   {
     id: uuid(),
@@ -203,7 +214,8 @@ export const newWineData: NewWine[] = [
     variety: "Malbec 100%",
     vineyardAge: "25 años",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.tinquiao
+    line: Lines.tinquiao,
+    subline: Subline.tinquiao
   },
   {
     id: uuid(),
@@ -221,7 +233,8 @@ export const newWineData: NewWine[] = [
     variety: "Malbec 60% - Cabernet Sauvignon 30% - Cabernet Franc 10%",
     vineyardAge: "",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.tinquiao
+    line: Lines.tinquiao,
+    subline: Subline.tinquiao
   },
   {
     id: uuid(),
@@ -232,7 +245,7 @@ export const newWineData: NewWine[] = [
     elaboration: "Maceración prefermentativa de la uva con frio, buscando inicio de fermentación carbónica, lenta y controlada.",
     alcohol: "14.6 %",
     conservation: "Su potencial de guarda es de 10 años.",
-    storedInCellar:"En barrica de roble nuevo durante 15 meses, luego en botella 8 meses.",
+    storedInCellar: "En barrica de roble nuevo durante 15 meses, luego en botella 8 meses.",
     harvestDate: "A mano. Preselección en viñedo, en cajas de 15 Kg.",
     pairing: "Ideal para acompañar costillar al fuego, estofado de carne con champiñones y panceta, verduras  ahumadas y quesos como gruyère, gouda, lasagna con base de tomates y verduras asadas",
     suggar: "",
@@ -240,7 +253,8 @@ export const newWineData: NewWine[] = [
     variety: "60% Cabernet Franc - 40% Malbec",
     vineyardAge: "",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.vikinga
+    line: Lines.vikinga,
+    subline: Subline.vinland
   },
   {
     id: uuid(),
@@ -255,13 +269,14 @@ export const newWineData: NewWine[] = [
     pairing: "Ideal para acompañar carnes cocinadas a leña, embutidos y pescados.",
     suggar: "",
     temperature: "Entre 16° y 18° C.",
-    storedInCellar:"12 meses en tanque, más 6 meses en botella.",
+    storedInCellar: "12 meses en tanque, más 6 meses en botella.",
     variety: "Cabernet Franc 100%.",
     vineyardAge: "10 años.",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.tinquiao
+    line: Lines.tinquiao,
+    subline: Subline.tinquiao
   },
- 
+
   // {
   //   id: uuid(),
   //   name: "",
@@ -281,3 +296,85 @@ export const newWineData: NewWine[] = [
   //   line: Lines.vikinga
   // },
 ]
+
+export const INFO_LINES: Record<Lines, LineDescription[]> = {
+  Espumantes: [
+    {
+      title: NameWine.burbujas,
+      content: `Primer Espumante creado 1800 mts sobre el nivel del mar en Argentina, en Método Champenoise. Se realizan 2 fermentaciones, la primera es en tanque de acero inoxidable, la cual se genera  alcohol con la levadura y azúcar propia de la uva, una vez finalizado ese proceso, se le agrega la levadura y el azúcar para genera una segunda fermentación pero en botella, se colocan en pupitres y giro de botellas de 180°, 2 veces al día, para generar las burbujas de manera natural. Cuando consideramos que el tiempo con las lías ya formó unas burbujas delicadas, finas y consistentes, se realiza el degüelle, haciendo un filtrado natural, agregando luego el licor de Expedición o Tiraje. Finalmente colocamos el corcho de Alcornoque y dejamos en estiba para que se equilibre el vino.
+    Son Espumantes de alta calidad proporcionando complejidad y elegancia.
+    `
+    },
+    {
+      title: NameWine.pet,
+      content: `(Abreviatura de Pétillant Naturel, "Naturalmente Espumoso). Está elaborado en Método Ancestral, donde el vino se embotella antes de que la fermentacíon principal termine, dentro de esta botella las levaduras siguen trabajando hasta generar las burbujas. No se filtra y en el fondo quedan los residuos de las levaduras. Es de textura fina, de aromas y colores intensos con espuma delicada y cremosa por lo que se percibe la uva con mayor intensidad.`
+    },
+  ],
+  Tinquiao: [
+    {
+      title: NameWine.tinquiao,
+      content: `Tinquiao, en Cafayate - Salta, en la lengua antigua (Quechua) significa estar alegre, entonado, pero no borracho, el paso previo.
+    Son vinos frescos, faciles de tomar y con mucho aroma a la uva.
+    Su etiqueta es una foto de la Quebrada de las conchas, y sus diversos colores entre sí, son una sugerencia de que horario debería tomarse el vino.
+    `
+    }],
+  Vikinga: [
+    {
+      title: NameWine.vinland,
+      content: `Vinland, es un Vino de Altura con gran presencia, no solo es un bi-varietal (Cabernet Franc 60% - Malbec 40%), sino que combinamos Roble Americano con Roble Francés, de primer uso, dejando complejidad en aromas y sabores.
+      Este vino tiene fuerza Vikinga ya que tenemos descendencia Nórdica y nuestra bodega hace una combinación de culturas entre Noruega y Cafayate, donde nacimos los hijos. Nos inspiramos en su nombre y diseño de etiqueta en un Vikingo muy famoso (Leifr Eiríksson) quien fue a América del Norte, Canadá. a la isla de Terranova, buscando madera, encontró vides y uvas, realizando vino, que luego comercializó como novedad ya que ellos tomaban mucha cerveza e hidromiel.`
+    }
+  ]
+}
+
+interface Notes {
+  main_note: {
+    bottles_per_box: string;
+    box_per_pallet:string;
+    pallet_measurements: string;
+    total_weight: string;
+  }
+  internal_note: {
+    name:string;
+    measures:string;
+  }
+}
+
+export const TECHNICAL_INFO:Record<string, Notes> = {
+  "espumantes": {
+    main_note: {
+      bottles_per_box: "6 unidades.",
+      box_per_pallet: "100 unidades.",
+      pallet_measurements: "180 x 100 x 120 cm.",
+      total_weight: "1130 kg."
+    },
+    internal_note: {
+      name: "Burbujas de Altura",
+      measures: "(20 cajas por piso x 5 pisos = 100 cajas. 10kg/caja x 100 = 1000kg + peso de tarima (14,5kg) - h (33cm/caja) + 14,5cm. tarima)"
+    }
+  },
+  "tinquiao": {
+    main_note: {
+      bottles_per_box: "6 unidades.",
+      box_per_pallet: "140 unidades.",
+      pallet_measurements:" 182 x 100 x 120 cm.",
+      total_weight: "1130 kg."
+    },
+    internal_note: {
+      name:"Tinquiao",
+      measures:"(28 cajas por piso x 5 pisos = 140 cajas. 8kg/caja x 140 = 1120kg + peso de tarima (14,5kg) - h (33,5cm/caja) + 14,5cm tarima)"
+    }
+  },
+  "vikinga": {
+    main_note:{
+      bottles_per_box:"6 unidades.",
+      box_per_pallet:"140 unidades.",
+      pallet_measurements:"175 x 100 x 120 cm.",
+      total_weight:"1200 kg."
+    },
+    internal_note: {
+      name:"Vinland",
+      measures:"(28 cajas por piso x 5 pisos = 140 cajas. 8,5kg/caja x 100 = 1190kg + peso de tarima (14,5kg) - h (32cm/caja) + 14,5cm tarima)"
+    }
+  }
+}

@@ -2,6 +2,7 @@ export interface Wine {
   id: string
   name: string
   line: Lines
+  subline: Subline | undefined
   variety: string
   description: string
   image: string
@@ -18,4 +19,11 @@ export enum Lines {
   tinquiao = "Tinquiao",
   espumantes = "Espumantes",
   vikinga = "Vikinga",
+}
+
+export enum Subline {
+  pet = "pet",
+  burbujas = "burbujas",
+  tinquiao = "tinquiao",
+  vinland = "vinland"
 }
