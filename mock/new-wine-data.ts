@@ -5,7 +5,7 @@ export const newWineData: NewWine[] = [
   {
     id: uuid(),
     name: "Torrontés Brut Nature",
-    image: "/e-extra-brut.webp",
+    image: "/e-brut.webp",
     description: "Espléndido espumante único en el Valle, presenta excelente calidad y persistencia en sus Burbujas. Sus aromas recuerdan rosas, durazno blanco y manzana verde, característicos del Torrontés, con notas de pan fresco y levadura producidos por la fermentación en botella. En boca resulta de gran estructura y agradable sensación fresca, que invita a seguir tomándolo.",
     origin: "CAFAYATE - SALTA - ARGENTINA",
     elaboration: "Maceración de la fruta y fermentaciones a bajas temperaturas para lograr aromas únicos, burbujas finas y persistentes. Segunda fermentación dentro de cada botella. Toma de espuma y degüelle realizados en forma artesanal buscando delicadeza en el producto. Agregado de licor de Expedición elaborado por nosotros para darle un matiz dulzón, propio de los Extra Brut.",
@@ -124,7 +124,7 @@ export const newWineData: NewWine[] = [
   {
     id: uuid(),
     name: "Torrontés",
-    image: "/t-torrontes-new.webp",
+    image: "/t-torrontes.webp",
     description: "Varietal Emblemático de Cafayate - Norte Argentino . Color límpido como el agua, genera sensación de frescura y fineza. Aroma cítricos y flores blancas envuelven el ambiente. Sutil cremosidad y mineralizada en boca, procovando un equilibrio único en el paladar.",
     origin: "CAFAYATE - SALTA - ARGENTINA",
     elaboration: "Maceración de la uva con frío antes de su prensado. Fermentación a bajas temperaturas para preservar frescura.",
@@ -219,6 +219,26 @@ export const newWineData: NewWine[] = [
   },
   {
     id: uuid(),
+    name: "Cabernet Franc",
+    image: "/t-cabernet-franc.webp",
+    description: "Color rubí y violáceo con detalles negruzcos. Aromas que recuerdan a frutos negros, especies mentoladas, pimiento verde. En boca y nariz se pueden encontrar los mismos aromas, dejando la sensación de continuar bebiéndolo. De acidez punzante y taninos suaves, que le otorga buen cuerpo y un final elegante y persistente.",
+    origin: "CAFAYATE - SALTA - ARGENTINA",
+    elaboration: "Maceración de la uva con frío. Fermentación 15 días, 23°-28° C. Se usaron pizoneos manuales, mojando el sombrero suavemente. Contacto con roble durante fermentación buscando la mayor expresión del varietal. Fermentación maloláctica en otoño.",
+    alcohol: "14,5 %",
+    conservation: "Potencial de guarda unos 8 años. Se recomienda decantar una hora antes de beberlo. Conservar en lugar fresco, oscuro, y sin vibraciones.",
+    harvestDate: "Principio de Marzo, cosechado a mano en cajas de 15 Kg. Preselección en viñedo.",
+    pairing: "Ideal para acompañar carnes cocinadas a leña, embutidos y pescados.",
+    suggar: "",
+    temperature: "Entre 16° y 18° C.",
+    storedInCellar: "12 meses en tanque, más 6 meses en botella.",
+    variety: "Cabernet Franc 100%.",
+    vineyardAge: "10 años.",
+    vineyardHeight: "1.800 mts. sobre el nivel del mar.",
+    line: Lines.tinquiao,
+    subline: Subline.tinquiao
+  },
+  {
+    id: uuid(),
     name: "Blend",
     image: "/t-blend.webp",
     description: "Tri-varietal de color rojo oscuro con matices violáceos. Aromas que me transportan a frutos rojos maduros y especies de campo. En boca, los aromas expresados por cada varietal se entremezclan formando un bouquet fino y elegante.",
@@ -256,27 +276,25 @@ export const newWineData: NewWine[] = [
     line: Lines.vikinga,
     subline: Subline.vinland
   },
+
   {
     id: uuid(),
-    name: "Cabernet Franc",
-    image: "/t-cabernet-franc.webp",
-    description: "Color rubí y violáceo con detalles negruzcos. Aromas que recuerdan a frutos negros, especies mentoladas, pimiento verde. En boca y nariz se pueden encontrar los mismos aromas, dejando la sensación de continuar bebiéndolo. De acidez punzante y taninos suaves, que le otorga buen cuerpo y un final elegante y persistente.",
+    name: "Tinquiao Torrontes Liviano",
+    image: "/t-tinquiao-liviano.webp",
+    description: "",
     origin: "CAFAYATE - SALTA - ARGENTINA",
-    elaboration: "Maceración de la uva con frío. Fermentación 15 días, 23°-28° C. Se usaron pizoneos manuales, mojando el sombrero suavemente. Contacto con roble durante fermentación buscando la mayor expresión del varietal. Fermentación maloláctica en otoño.",
-    alcohol: "14,5 %",
-    conservation: "Potencial de guarda unos 8 años. Se recomienda decantar una hora antes de beberlo. Conservar en lugar fresco, oscuro, y sin vibraciones.",
-    harvestDate: "Principio de Marzo, cosechado a mano en cajas de 15 Kg. Preselección en viñedo.",
-    pairing: "Ideal para acompañar carnes cocinadas a leña, embutidos y pescados.",
+    elaboration: "",
+    alcohol: "",
+    conservation: "",
+    harvestDate: "",
+    pairing: "",
     suggar: "",
-    temperature: "Entre 16° y 18° C.",
-    storedInCellar: "12 meses en tanque, más 6 meses en botella.",
-    variety: "Cabernet Franc 100%.",
-    vineyardAge: "10 años.",
+    temperature: "",
+    variety: "",
+    vineyardAge: "",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.tinquiao,
-    subline: Subline.tinquiao
+    line: Lines.vikinga
   },
-
   // {
   //   id: uuid(),
   //   name: "",
@@ -330,17 +348,17 @@ export const INFO_LINES: Record<Lines, LineDescription[]> = {
 interface Notes {
   main_note: {
     bottles_per_box: string;
-    box_per_pallet:string;
+    box_per_pallet: string;
     pallet_measurements: string;
     total_weight: string;
   }
   internal_note: {
-    name:string;
-    measures:string;
+    name: string;
+    measures: string;
   }
 }
 
-export const TECHNICAL_INFO:Record<string, Notes> = {
+export const TECHNICAL_INFO: Record<string, Notes> = {
   "espumantes": {
     main_note: {
       bottles_per_box: "6 unidades.",
@@ -357,24 +375,24 @@ export const TECHNICAL_INFO:Record<string, Notes> = {
     main_note: {
       bottles_per_box: "6 unidades.",
       box_per_pallet: "140 unidades.",
-      pallet_measurements:" 182 x 100 x 120 cm.",
+      pallet_measurements: " 182 x 100 x 120 cm.",
       total_weight: "1130 kg."
     },
     internal_note: {
-      name:"Tinquiao",
-      measures:"(28 cajas por piso x 5 pisos = 140 cajas. 8kg/caja x 140 = 1120kg + peso de tarima (14,5kg) - h (33,5cm/caja) + 14,5cm tarima)"
+      name: "Tinquiao",
+      measures: "(28 cajas por piso x 5 pisos = 140 cajas. 8kg/caja x 140 = 1120kg + peso de tarima (14,5kg) - h (33,5cm/caja) + 14,5cm tarima)"
     }
   },
   "vikinga": {
-    main_note:{
-      bottles_per_box:"6 unidades.",
-      box_per_pallet:"140 unidades.",
-      pallet_measurements:"175 x 100 x 120 cm.",
-      total_weight:"1200 kg."
+    main_note: {
+      bottles_per_box: "6 unidades.",
+      box_per_pallet: "140 unidades.",
+      pallet_measurements: "175 x 100 x 120 cm.",
+      total_weight: "1200 kg."
     },
     internal_note: {
-      name:"Vinland",
-      measures:"(28 cajas por piso x 5 pisos = 140 cajas. 8,5kg/caja x 100 = 1190kg + peso de tarima (14,5kg) - h (32cm/caja) + 14,5cm tarima)"
+      name: "Vinland",
+      measures: "(28 cajas por piso x 5 pisos = 140 cajas. 8,5kg/caja x 100 = 1190kg + peso de tarima (14,5kg) - h (32cm/caja) + 14,5cm tarima)"
     }
   }
 }
