@@ -293,7 +293,8 @@ export const newWineData: NewWine[] = [
     variety: "",
     vineyardAge: "",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-    line: Lines.vikinga
+    line: Lines.tinquiao,
+    subline:Subline.tinquiao
   },
   // {
   //   id: uuid(),
