@@ -17,7 +17,7 @@ const labelLine: Record<string, string> = {
   vikinga: "Vikingos"
 }
 export function WineCatalog({ line, subline }: Props) {
-  const [selectedWine, setSelectedWine] = useState<NewWine | null>(null)
+  const [selectedWine, setSelectedWine] = useState<NewWine | null>(null);
   const filteredWines = !line ? newWineData : newWineData.filter((wine) => wine.line.toLowerCase() === line);
 
   const handleFilterWines = (line: Lines | undefined, subline: Subline[] | undefined, index: number = 0): NewWine[] => {
