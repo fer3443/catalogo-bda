@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { Analytics } from '@vercel/analytics/next'
+import { routing } from '@/i18n/routing';
 import { lora } from '@/config/fonts'
-import './globals.css'
 import { Header } from '@/components/header'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Burbujas de Altura - Catalogo',
@@ -26,16 +29,24 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+   if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${lora.className} antialiased`}>
-        <Header/>
-        {children}
+        <NextIntlClientProvider>
+          <Header/>
+          {children}
+        </NextIntlClientProvider>
         <Analytics />
       </body>
     </html>

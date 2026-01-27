@@ -1,4 +1,4 @@
-import { Cormorant_Garamond, Great_Vibes, Lora, Playfair_Display } from "next/font/google";
+import { Cormorant_Garamond, Great_Vibes, Lora } from "next/font/google";
 
 export const lora = Lora({ subsets: ['latin'] })
 
