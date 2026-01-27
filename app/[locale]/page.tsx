@@ -1,4 +1,4 @@
-import { WineCategory } from "@/components/wine-category"
+import { WineCategory } from "@/components/wine-category";
 
 export default function Page() {
   return (

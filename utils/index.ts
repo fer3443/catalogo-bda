@@ -1,0 +1,1 @@
+export { handleLabelByLanguage} from './handleLabelByLanguage'

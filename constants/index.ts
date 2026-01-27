@@ -1,0 +1,1 @@
+export { LANGUAGES, LABELS_BY_LANGUAGE } from './language';
