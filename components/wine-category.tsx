@@ -25,11 +25,6 @@ export const WineCategory = () => {
         <h2 className={`${alternativeTitleFont.className} text-4xl pt-4 text-center md:text-start`}>
           {t("titleDescription")}
         </h2>
-        {/* <p className="text-sm md:text-base text-[#747474] max-w-6xl">
-          Bodega Familiar Boutique, enamorada del Valle Calchaquí.
-          Creadora del Vino Espumante <span className="font-semibold">Burbujas de Altura</span>, acompañando a este proyecto sus diferentes líneas de vinos <span className="font-semibold">Tinquiao, Vinland, Freya, Drakkar, Blends de Crianza</span>.
-          Descubra los secretos de nuestras viñas, cómo elaboramos Burbujas y deguste nuestros vinos con <span className="font-semibold">enoturismo</span> personalizado, familiar y con mucha pasíon, que nos caracteriza.
-        </p> */}
         <p className="text-sm md:text-base text-[#747474] max-w-6xl">
           {t("homeDescription")}
         </p>
