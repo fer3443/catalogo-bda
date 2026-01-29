@@ -9,7 +9,7 @@ export default async function LinePage({ params }: Props) {
   //podria crear un objeto para con clave valor que reciba la linea y devuelva sublineas
   const subline: Record<string, Subline[]> = {
     espumantes: [Subline.burbujas, Subline.pet],
-    tinquiao: [Subline.tinquiao],
+    tinquiao: [Subline.tinquiao, Subline.blend],
     vikinga: [Subline.vinland]
   }
 

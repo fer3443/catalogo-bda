@@ -25,5 +25,6 @@ export enum Subline {
   pet = "pet",
   burbujas = "burbujas",
   tinquiao = "tinquiao",
-  vinland = "vinland"
+  vinland = "vinland",
+  blend = "blend"
 }

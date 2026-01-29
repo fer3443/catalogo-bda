@@ -8,6 +8,16 @@
   "wineCard": {
     "technicalSheet": "Ver ficha técnica →"
   },
+  "fobTable": {
+    "title":"Tabla de Precios FOB",
+    "subline": "Sublinea",
+    "units": "Unidades (cajas)",
+    "pricePerCase": "USD/Caja",
+    "discount": "Descuento",
+    "unitPallet": "Unidad Pallet",
+    "fourPallets": "4 Pallets",
+    "ninePallets": "9+ Pallets"
+  },
   "wineModal": {
     "line": "Línea",
     "description": "Descripción",
@@ -29,92 +39,209 @@
     "torrontes-brut-nature": {
       "name": "Torrontés Brut Nature",
       "description": "Espléndido espumante único en el Valle, presenta excelente calidad y persistencia en sus Burbujas. Sus aromas recuerdan rosas, durazno blanco y manzana verde, característicos del Torrontés, con notas de pan fresco y levadura producidos por la fermentación en botella. En boca resulta de gran estructura y agradable sensación fresca, que invita a seguir tomándolo.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Maceración de la fruta y fermentaciones a bajas temperaturas para lograr aromas únicos, burbujas finas y persistentes. Segunda fermentación dentro de cada botella. Toma de espuma y degüelle realizados en forma artesanal buscando delicadeza en el producto. Agregado de licor de Expedición elaborado por nosotros para darle un matiz dulzón, propio de los Extra Brut.",
       "pairing": "Este Torrontés es perfecto con sabores frescos, especiados y picantes. Lo puedes probar con pescados cocinados, con platos con maíz (humita), pollo con mostaza y miel, postres con frutas frescas."
     },
     "torrontes-extra-brut": {
       "name": "Torrontés Extra Brut",
       "description": "Este espumante Torrontés emblemático de Cafayate, destaca por su frescura y facilidad para tomar, tiene notas a pan fresco, maracuyá y durazno. Burbujas delicadas y pequeñas producidas por la segunda fermentación en botella. Gran estructura en boca, envolvente y persistente",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Maceración de la fruta y fermentaciones a bajas temperaturas para lograr aromas únicos, burbujas finas y persistentes. Segunda fermentación dentro de cada botella. Toma de espuma y degüelle realizados en forma artesanal buscando delicadeza en el producto. Agregado de licor de Expedición elaborado por nosotros para darle un matiz dulzón propio de los Extra Brut.",
       "pairing": "Ideal para acompañar ensaladas frescas, pastas con crema, empanadas"
     },
     "rose-malbec": {
       "name": "Rosé Malbec",
       "description": "Espumante que destaca la uva emblemática de Argentina, con un color seductor y aromas a frutos rojos que se convierten luego en mermeladas, y frutos secos, producto de su re-fermentación en botella. Agradable matices frescos y maduros, con excelente calidad y persistencia en sus Burbujas, que lo hace aun mas fácil de tomar.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Trabajando a bajas temperaturas desde el ingreso de la uva a bodega para obtener un color atractivo en la prensada y, junto a fermentaciones controladas, logramos aromas únicos, burbujas finas y persistentes. Toma de espuma realizada en forma artesanal y dedicada a la delicadeza del producto. Segunda fermentación dentro de cada botella. Degüelle producido a mano y posterior tapado final sin ningún agregado, se ofrece como sale de nuestra cava luego de la fermentación.",
       "pairing": "Ideal para acompañar risotto de hongos, cabutia rellena, sushi, pastas rellenas"
     },
     "chardonnay-nature": {
       "name": "Chardonnay Nature",
       "description": "Varietal reina de los espumantes, sus aromas hacen recordar elegantes notas a perfumes frutales, miel y pan tostado. En boca resulta sabores poderosos y cercano a ananá (o piña). Con un cuerpo ligero, con acidez pronunciada y buen equilibrio, que invita a seguir bebiéndolo",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Tradicional o Champenoise. Maceración de la fruta y fermentación con bajas temperaturas para obtener una finesa única y aromas persistentes. Todo elaborado en un modo artesanal. Segunda fermentación dentro de cada botella. Degüelle producido en forma manual y encorchado final sin ninguna adición. Se encuentra disponible cuando sale de la cava, después de girar la botella en el pupitre.",
       "pairing": "Completa a la perfección platos que lleven como base mantequilla, pollo asado con una salsa cítrica con crema, quesos curados estilo alpino, parmesano, verduras al wok con hongos, langosta o vieiras."
     },
     "pet-nat-torrontes": {
       "name": "Pet Nat",
       "description": "método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones. 'Se caracteriza por tener un proceso de elaboración sin agregados, solo acompañando por la transformación de azúcar en alcohol de manera paulatina.Como termina su fermentación en la misma botella que luego se comercializa, no es filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método'",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Pet Nat o Pétillant Naturel",
       "pairing": "Ideal para acompañar las tardes veraniegas y calurosas, antes de alguna comida, como refresco"
     },
     "pet-nat-rose": {
       "name": "Pet Nat Rosé",
       "description": "Pet Nat o Pétillant Naturel, significa \"naturalmente espumoso\": un método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "\"Se caracteriza por tener un proceso de elaboración sin agregados, sólo acompañando por la transformación de azúcar en alcohol de manera paulatina. Como termina su fermentación en la misma botella, la que luego se comercializa, no es filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método.",
       "pairing": "Ideal para acompañar las tardes veraniegas y calurosas, con un «fresco Rosé o informalmente con su pareja»"
     },
     "torrontes-tinquiao": {
       "name": "Torrontés",
       "description": "Varietal Emblemático de Cafayate - Norte Argentino . Color límpido como el agua, genera sensación de frescura y fineza. Aroma cítricos y flores blancas envuelven el ambiente. Sutil cremosidad y mineralizada en boca, procovando un equilibrio único en el paladar.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Maceración de la uva con frío antes de su prensado. Fermentación a bajas temperaturas para preservar frescura.",
       "pairing": "Ideal para acompañar quesos fuertes, mariscos, sushi y también empanadas salteñas. Se recomienda con comidas en verano y como aperitivo en invierno."
     },
     "torrontes-dulce-natural": {
       "name": "Torrontés Dulce Natural",
       "description": "De color amarillo verdoso atractivo y brillante, invita a la boca sus aromas cítricos preponderantes mezclados con una sensación tropical. Tiene una entrada dulce equilibrada con delicadas notas a limón, pomelo, durazno blanco. El dulce Natural de la uva genera una untuosidad interesante que al sentirlo recuerda a miel en panal, con un final presente por un largo tiempo.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Maceración y fermentación con levaduras seleccionadas naturalmente de la uva. Fermentación lenta y con frío, hasta obtener el azúcar y alcohol deseados.",
       "pairing": "Ideal para beber como aperitivo acompañando tabla de quesos y/o frutos secos. Tartas dulces con crema. También para preparar cocteles."
     },
     "rose-malbec-tinquiao": {
       "name": "Rosé Malbec",
       "description": "Predomina un rosado atractivo y brillante. En boca tiene una entrada agradable y de buen volumen, con una acidez vibrante y fresca que le da carácter. Entrelazan aromas de cereza, guinda, frutilla; final envolvente en boca que recuerda a mermelada recién realizada de frutos rojos.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Prensado directo suave de la uva Malbec, obteniendo un color leve, pero con un volumen interesante, que luego persiste en el vino. Fermentación 30 días del mosto sin el orujo, a bajas temperaturas. Removido de lías por 4 meses en tanque.",
       "pairing": "Ideal para acompañar aperitivos con mariscos, verduras a la parrilla, ensaladas con quinoa, carnes blancas con salsas cítricas, postres cremosos que tengan frutos rojos."
     },
     "cabernet-sauvignon": {
       "name": "Cabernet Sauvignon",
       "description": "Color rubí y violáceo con detalles negruzcos. Aromas que recuerdan a frutos negros, especies mentoladas, pimiento verde. En boca y nariz se pueden encontrar los mismos aromas, dejando la sensación de continuar bebiéndolo. De acidez punzante y taninos suaves, que le otorga buen cuerpo y un final elegante y persistente.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Maceración de la uva con frío. Fermentación 10 días, 23°-28° C. Se usaron pizoneos manuales. Contacto con roble durante fermentación, buscando la mayor expresión del varietal.",
       "pairing": "Ideal para acompañar comidas con salsas fuertes, cazuelas, empanadas."
     },
     "malbec": {
       "name": "Malbec",
       "description": "Color púrpura con matices rojizos, oscuro en el centro. Aromas que recuerdan a frutos rojos, destacándose la ciruela y cereza sobre-madura. Es inicialmente suave, luego se torna complejo y estructurado, con un acabado persistente. Es un vino con mucha personalidad, debido a la altitud y las grandes amplitudes térmicas de los viñedos Cafayateños.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Maceración de la uva con frío. Fermentación 20 días, 23°-28° C. Se usaron pizoneos manuales, mojando el sombrero suavemente. Contacto con roble durante fermentación, buscando explosión de fruta. Fermentación maloláctica en otoño. Maceración larga (3 semanas). Envasado después de un año en tanque. En bodega, 6 meses en botella.",
       "pairing": "Ideal para acompañar carnes rojas o pastas con una buena salsa."
     },
     "cabernet-franc": {
       "name": "Cabernet Franc",
       "description": "Color rubí y violáceo con detalles negruzcos. Aromas que recuerdan a frutos negros, especies mentoladas, pimiento verde. En boca y nariz se pueden encontrar los mismos aromas, dejando la sensación de continuar bebiéndolo. De acidez punzante y taninos suaves, que le otorga buen cuerpo y un final elegante y persistente.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Maceración de la uva con frío. Fermentación 15 días, 23°-28° C. Se usaron pizoneos manuales, mojando el sombrero suavemente. Contacto con roble durante fermentación buscando la mayor expresión del varietal. Fermentación maloláctica en otoño.",
       "pairing": "Ideal para acompañar carnes cocinadas a leña, embutidos y pescados."
     },
     "blend": {
       "name": "Blend",
       "description": "Tri-varietal de color rojo oscuro con matices violáceos. Aromas que me transportan a frutos rojos maduros y especies de campo. En boca, los aromas expresados por cada varietal se entremezclan formando un bouquet fino y elegante.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Preselección de la uva en el viñedo. Cosecha manual en pequeñas cajas. Maceración de la uva con frío antes de su molienda. Fermentación en pequeños tanques, 23 - 28° C. Se usaron pizoneos manuales. Sombrero sumergido en pos-fermentación. Contacto con roble durante fermentación y luego en barricas usadas por 12 meses, ganando complejidad en la fruta. Puede contener sedimentos naturales precipitados.",
       "pairing": "Ideal para acompañar carnes cocinadas a leña, estofados, paellas."
     },
     "blend-de-blends": {
       "name": "Blend de Blends",
       "description": "Es una simbiosis entre nuestro origen noruego con la adaptación al nuevo mundo americano, a lo que se refiere este nombre. Este Blend de Varietales (Cabernet Franc, Malbec) , y Blend de Barricas (Roble Americano y Roble Francés) muestran su complejidad y cuerpo en este vino. En su color predomina el rubí con matices violáceos oscuros en el medio.",
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
       "elaboration": "Maceración prefermentativa de la uva con frio, buscando inicio de fermentación carbónica, lenta y controlada.",
       "pairing": "Ideal para acompañar costillar al fuego, estofado de carne con champiñones y panceta, verduras ahumadas y quesos como gruyère, gouda, lasagna con base de tomates y verduras asadas"
     },
     "tinquiao-torrontes-liviano": {
       "name": "Tinquiao Torrontes Liviano",
       "description": "",
-      "elaboration": "Maceración y fermentación con levaduras autóctonas seleccionadas de la uva. Fermentación lenta y a baja temperatura hasta obtener el nivel deseado de azúcar y alcohol.",
-      "pairing": "Es un vino fresco, ideal como aperitivo antes de las comidas, y para acompañar pastas, pescados a la parrilla, humita (preparación a base de maíz y queso) y pastel de choclo."
+      "conservation":"",
+      "vineyardHeight":"1.800 msnm.",
+      "elaboration": "Maceración de la uva con frío antes de su prensado. Fermentación a baja temperaturas para preservar frescura.",
+      "pairing": "Es un vino fresco para aperitivo solo, o para comerlo con pastas con salsa de crema nueces y hongos, ideal para pescado a la plancha, humita o pastel de choclo; con un suave dejo en boca que envuelve el paladar haciendo una combinación perfecta."
+    }
+  },
+  "fobPrices": {
+    "burbujas": {
+      "unitPallet": {
+        "label": "(80 cajas) hasta 3 pallets (240 cajas)",
+        "price": "94,23",
+        "discountPrice": "Precio neto"
+      },
+      "fourPallets": {
+        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
+        "price": "84,81",
+        "discountPrice": "10%"
+      },
+      "ninePallets": {
+        "label": "(720 cajas) en adelante",
+        "price": "80,09",
+        "discountPrice": "15%"
+      }
+    },
+    "pet": {
+      "unitPallet": {
+        "label": "(80 cajas) hasta 3 pallets (240 cajas)",
+        "price": "65,96",
+        "discountPrice": "Precio neto"
+      },
+      "fourPallets": {
+        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
+        "price": "59,36",
+        "discountPrice": "10%"
+      },
+      "ninePallets": {
+        "label": "(720 cajas) en adelante",
+        "price": "68,08",
+        "discountPrice": "15%"
+      }
+    },
+    "tinquiao": {
+      "unitPallet": {
+        "label": "(112 cajas) a 3 pallets (336 cajas)",
+        "price": "43,66",
+        "discountPrice": "Precio neto"
+      },
+      "fourPallets": {
+        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
+        "price": "39,29",
+        "discountPrice": "10%"
+      },
+      "ninePallets": {
+        "label": "(720 cajas) en adelante",
+        "price": "37,11",
+        "discountPrice": "15%"
+      }
+    },
+    "vinland": {
+      "unitPallet": {
+        "label": "(112 cajas) a 3 pallets (336 cajas)",
+        "price": "118,38",
+        "discountPrice": "Precio neto"
+      },
+      "fourPallets": {
+        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
+        "price": "106,52",
+        "discountPrice": "10%"
+      },
+      "ninePallets": {
+        "label": "(720 cajas) en adelante",
+        "price": "100,62",
+        "discountPrice": "15%"
+      }
+    },
+    "blend":{
+      "unitPallet": {
+        "label": "(112 cajas) a 3 pallets (336 cajas)",
+        "price": "61,56",
+        "discountPrice": "Precio neto"
+      },
+      "fourPallets": {
+        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
+        "price": "55,40",
+        "discountPrice": "10%"
+      },
+      "ninePallets": {
+        "label": "(1,008 cajas) y más",
+        "price": "52,33",
+        "discountPrice": "15%"
+      }
     }
   }
 }
