@@ -3,6 +3,8 @@
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { NewWine } from "@/interfaces"
+import { useTranslations } from "next-intl"
+import { useTranslateWine } from "@/hooks"
 
 interface WineCardProps {
   wine: NewWine
@@ -10,6 +12,8 @@ interface WineCardProps {
 }
 
 export function WineCard({ wine, onClick }: WineCardProps) {
+  const t = useTranslations("wineCard");
+  const translatedWine = useTranslateWine(wine)
   return (
     <Card
       onClick={onClick}
@@ -33,9 +37,9 @@ export function WineCard({ wine, onClick }: WineCardProps) {
           {wine.name}
         </h3>
         <p className="text-sm text-muted-foreground mb-3">{wine.variety}</p>
-        <p className="text-sm text-card-foreground/80 leading-relaxed line-clamp-3">{wine.description}</p>
+        <p className="text-sm text-card-foreground/80 leading-relaxed line-clamp-3">{translatedWine.description}</p>
         <div className="mt-4 pt-4 border-t border-border">
-          <span className="text-xs text-accent font-medium uppercase tracking-wider">Ver ficha técnica →</span>
+          <span className="text-xs text-accent font-medium uppercase tracking-wider">{t("technicalSheet")}</span>
         </div>
       </div>
     </Card>

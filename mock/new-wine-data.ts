@@ -1,9 +1,8 @@
 import { LineDescription, Lines, NameWine, NewWine, Subline } from "@/interfaces";
-import { v4 as uuid } from 'uuid';
 
 export const newWineData: NewWine[] = [
   {
-    id: uuid(),
+    id: "torrontes-brut-nature",
     name: "Torrontés Brut Nature",
     image: "/e-brut.webp",
     description: "Espléndido espumante único en el Valle, presenta excelente calidad y persistencia en sus Burbujas. Sus aromas recuerdan rosas, durazno blanco y manzana verde, característicos del Torrontés, con notas de pan fresco y levadura producidos por la fermentación en botella. En boca resulta de gran estructura y agradable sensación fresca, que invita a seguir tomándolo.",
@@ -23,7 +22,7 @@ export const newWineData: NewWine[] = [
     subline: Subline.burbujas
   },
   {
-    id: uuid(),
+    id: "torrontes-extra-brut",
     name: "Torrontés Extra Brut",
     image: "/e-extra-brut.webp",
     description: "Este espumante Torrontés emblemático de Cafayate, destaca por su frescura y facilidad para tomar, tiene notas a pan fresco, maracuyá y durazno. Burbujas delicadas y pequeñas producidas por la segunda fermentación en botella. Gran estructura en boca, envolvente y persistente",
@@ -43,7 +42,7 @@ export const newWineData: NewWine[] = [
     subline: Subline.burbujas
   },
   {
-    id: uuid(),
+    id: "rose-malbec",
     name: "Rosé Malbec",
     image: "/e-rose.webp",
     description: "Espumante que destaca la uva emblemática de Argentina, con un color seductor y aromas a frutos rojos que se convierten luego en mermeladas, y frutos secos, producto de su re-fermentación en botella. Agradable matices frescos y maduros, con excelente calidad y persistencia en sus Burbujas, que lo hace aun mas fácil de tomar.",
@@ -63,7 +62,7 @@ export const newWineData: NewWine[] = [
     subline: Subline.burbujas
   },
   {
-    id: uuid(),
+    id: "chardonnay-nature",
     name: "Chardonnay Nature",
     image: "/e-Chardonnay.webp",
     description: "Varietal reina de los espumantes, sus aromas hacen recordar elegantes notas a perfumes frutales, miel y pan tostado. En boca resulta sabores poderosos y cercano a ananá (o piña). Con un cuerpo ligero, con acidez pronunciada y buen equilibrio, que invita a seguir bebiéndolo",
@@ -83,10 +82,10 @@ export const newWineData: NewWine[] = [
     subline: Subline.burbujas
   },
   {
-    id: uuid(),
+    id: "pet-nat-torrontes",
     name: "Pet Nat",
     image: "/e-pet-nat-torrontes.webp",
-    description: "método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en  un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones. 'Se caracteriza por tener un  proceso de elaboración sin agregados, solo acompañando por la transformación de azúcar en alcohol de manera paulatina.Como termina su fermentación en la misma botella que luego se comercializa, no es  filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método'",
+    description: "método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones. 'Se caracteriza por tener un proceso de elaboración sin agregados, solo acompañando por la transformación de azúcar en alcohol de manera paulatina.Como termina su fermentación en la misma botella que luego se comercializa, no es filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método'",
     origin: "CAFAYATE - SALTA - ARGENTINA",
     elaboration: "Pet Nat o Pétillant Naturel",
     alcohol: "11 %",
@@ -102,12 +101,12 @@ export const newWineData: NewWine[] = [
     subline: Subline.pet
   },
   {
-    id: uuid(),
+    id: "pet-nat-rose",
     name: "Pet Nat Rosé",
     image: "/e-pet-nat-rose.webp",
-    description: "Pet Nat o Pétillant Naturel, significa “naturalmente espumoso”: un método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones.",
+    description: "Pet Nat o Pétillant Naturel, significa \"naturalmente espumoso\": un método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones.",
     origin: "CAFAYATE - SALTA - ARGENTINA",
-    elaboration: "“Se caracteriza por tener un proceso de elaboración sin agregados, sólo acompañando por la transformación de azúcar en alcohol de manera paulatina. Como termina su fermentación en la misma botella, la que luego se comercializa, no es filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método.",
+    elaboration: "\"Se caracteriza por tener un proceso de elaboración sin agregados, sólo acompañando por la transformación de azúcar en alcohol de manera paulatina. Como termina su fermentación en la misma botella, la que luego se comercializa, no es filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método.",
     alcohol: "12,6 %",
     conservation: "8 meses en botella.",
     harvestDate: "Primer quincena de febrero. Cosechado a mano, en cajas de 15 kg. Preselección en viñedo.",
@@ -120,9 +119,8 @@ export const newWineData: NewWine[] = [
     line: Lines.espumantes,
     subline: Subline.pet
   },
-
   {
-    id: uuid(),
+    id: "torrontes-tinquiao",
     name: "Torrontés",
     image: "/t-torrontes.webp",
     description: "Varietal Emblemático de Cafayate - Norte Argentino . Color límpido como el agua, genera sensación de frescura y fineza. Aroma cítricos y flores blancas envuelven el ambiente. Sutil cremosidad y mineralizada en boca, procovando un equilibrio único en el paladar.",
@@ -141,7 +139,7 @@ export const newWineData: NewWine[] = [
     subline: Subline.tinquiao
   },
   {
-    id: uuid(),
+    id: "torrontes-dulce-natural",
     name: "Torrontés Dulce Natural",
     image: "/t-torrontes-dulce.webp",
     description: "De color amarillo verdoso atractivo y brillante, invita a la boca sus aromas cítricos preponderantes mezclados con una sensación tropical. Tiene una entrada dulce equilibrada con delicadas notas a limón, pomelo, durazno blanco. El dulce Natural de la uva genera una untuosidad interesante que al sentirlo recuerda a miel en panal, con un final presente por un largo tiempo.",
@@ -160,7 +158,7 @@ export const newWineData: NewWine[] = [
     subline: Subline.tinquiao
   },
   {
-    id: uuid(),
+    id: "rose-malbec-tinquiao",
     name: "Rosé Malbec",
     image: "/t-tinquiao-rose.webp",
     description: "Predomina un rosado atractivo y brillante. En boca tiene una entrada agradable y de buen volumen, con una acidez vibrante y fresca que le da carácter. Entrelazan aromas de cereza, guinda, frutilla; final envolvente en boca que recuerda a mermelada recién realizada de frutos rojos.",
@@ -179,7 +177,7 @@ export const newWineData: NewWine[] = [
     subline: Subline.tinquiao
   },
   {
-    id: uuid(),
+    id: "cabernet-sauvignon",
     name: "Cabernet Sauvignon",
     image: "/t-cabernet-sauvignon.webp",
     description: "Color rubí y violáceo con detalles negruzcos. Aromas que recuerdan a frutos negros, especies mentoladas, pimiento verde. En boca y nariz se pueden encontrar los mismos aromas, dejando la sensación de continuar bebiéndolo. De acidez punzante y taninos suaves, que le otorga buen cuerpo y un final elegante y persistente.",
@@ -199,7 +197,7 @@ export const newWineData: NewWine[] = [
     subline: Subline.tinquiao
   },
   {
-    id: uuid(),
+    id: "malbec",
     name: "Malbec",
     image: "/t-malbec.webp",
     description: "Color púrpura con matices rojizos, oscuro en el centro. Aromas que recuerdan a frutos rojos, destacándose la ciruela y cereza sobre-madura. Es inicialmente suave, luego se torna complejo y estructurado, con un acabado persistente. Es un vino con mucha personalidad, debido a la altitud y las grandes amplitudes térmicas de los viñedos Cafayateños.",
@@ -218,7 +216,7 @@ export const newWineData: NewWine[] = [
     subline: Subline.tinquiao
   },
   {
-    id: uuid(),
+    id: "cabernet-franc",
     name: "Cabernet Franc",
     image: "/t-cabernet-franc.webp",
     description: "Color rubí y violáceo con detalles negruzcos. Aromas que recuerdan a frutos negros, especies mentoladas, pimiento verde. En boca y nariz se pueden encontrar los mismos aromas, dejando la sensación de continuar bebiéndolo. De acidez punzante y taninos suaves, que le otorga buen cuerpo y un final elegante y persistente.",
@@ -238,7 +236,7 @@ export const newWineData: NewWine[] = [
     subline: Subline.tinquiao
   },
   {
-    id: uuid(),
+    id: "blend",
     name: "Blend",
     image: "/t-blend.webp",
     description: "Tri-varietal de color rojo oscuro con matices violáceos. Aromas que me transportan a frutos rojos maduros y especies de campo. En boca, los aromas expresados por cada varietal se entremezclan formando un bouquet fino y elegante.",
@@ -257,7 +255,7 @@ export const newWineData: NewWine[] = [
     subline: Subline.tinquiao
   },
   {
-    id: uuid(),
+    id: "blend-de-blends",
     name: "Blend de Blends",
     image: "/v-vinland.webp",
     description: "Es una simbiosis entre nuestro origen noruego con la adaptación al nuevo mundo americano, a lo que se refiere este nombre. Este Blend de Varietales (Cabernet Franc, Malbec) , y Blend de Barricas (Roble Americano y Roble Francés) muestran su complejidad y cuerpo en este vino. En su color predomina el rubí con matices violáceos oscuros en el medio.",
@@ -267,7 +265,7 @@ export const newWineData: NewWine[] = [
     conservation: "Su potencial de guarda es de 10 años.",
     storedInCellar: "En barrica de roble nuevo durante 15 meses, luego en botella 8 meses.",
     harvestDate: "A mano. Preselección en viñedo, en cajas de 15 Kg.",
-    pairing: "Ideal para acompañar costillar al fuego, estofado de carne con champiñones y panceta, verduras  ahumadas y quesos como gruyère, gouda, lasagna con base de tomates y verduras asadas",
+    pairing: "Ideal para acompañar costillar al fuego, estofado de carne con champiñones y panceta, verduras ahumadas y quesos como gruyère, gouda, lasagna con base de tomates y verduras asadas",
     suggar: "",
     temperature: "Entre 14º y 16º C.",
     variety: "60% Cabernet Franc - 40% Malbec",
@@ -276,44 +274,25 @@ export const newWineData: NewWine[] = [
     line: Lines.vikinga,
     subline: Subline.vinland
   },
-
   {
-    id: uuid(),
+    id: "tinquiao-torrontes-liviano",
     name: "Tinquiao Torrontes Liviano",
     image: "/t-tinquiao-liviano.webp",
-    description: "",
+    description: " - ",
     origin: "CAFAYATE - SALTA - ARGENTINA",
-    elaboration: "",
-    alcohol: "",
-    conservation: "",
-    harvestDate: "",
-    pairing: "",
-    suggar: "",
-    temperature: "",
-    variety: "",
-    vineyardAge: "",
+    elaboration: " - ",
+    alcohol: " - ",
+    conservation: "Conservar en lugar fresco, oscuro, y sin vibraciones.",
+    harvestDate: "Muy temprana, a principios de marzo, realizada de forma manual en cajas de 15 kg (33 lb). Preselección en viñedos.",
+    pairing: "Es un vino fresco, ideal como aperitivo antes de las comidas, y para acompañar pastas, pescados a la parrilla, humita (preparación a base de maíz y queso) y pastel de choclo.",
+    suggar: " - ",
+    temperature: "Entre 3º y 7º C.",
+    variety: "Torrontes 100%",
+    vineyardAge: "25 años.",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.tinquiao,
-    subline:Subline.tinquiao
+    subline: Subline.tinquiao
   },
-  // {
-  //   id: uuid(),
-  //   name: "",
-  //   image: "",
-  //   description: "",
-  //   origin: "CAFAYATE - SALTA - ARGENTINA",
-  //   elaboration: "",
-  //   alcohol: "",
-  //   conservation: "",
-  //   harvestDate: "",
-  //   pairing: "",
-  //   suggar: "",
-  //   temperature: "",
-  //   variety: "",
-  //   vineyardAge: "",
-  //   vineyardHeight: "1.800 mts. sobre el nivel del mar.",
-  //   line: Lines.vikinga
-  // },
 ]
 
 export const INFO_LINES: Record<Lines, LineDescription[]> = {
