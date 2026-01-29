@@ -1,11 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import { INFO_LINES, newWineData } from "@/mock";
-import { WineCard } from "./wine-card"
+import { newWineData } from "@/mock";
 import { WineModal } from "./wine-modal"
 import { Lines, NewWine, Subline } from "@/interfaces";
 import { TECHNICAL_INFO } from '../mock/new-wine-data';
+import { SublineSection } from "./molecules";
 
 interface Props {
   line: Lines | undefined;
@@ -18,24 +18,6 @@ const labelLine: Record<string, string> = {
 }
 export function WineCatalog({ line, subline }: Props) {
   const [selectedWine, setSelectedWine] = useState<NewWine | null>(null);
-  const filteredWines = !line ? newWineData : newWineData.filter((wine) => wine.line.toLowerCase() === line);
-
-  const handleFilterWines = (line: Lines | undefined, subline: Subline[] | undefined, index: number = 0): NewWine[] => {
-    if (!line) return newWineData;
-    if (!subline || subline.length === 0) return newWineData.filter((wine) => wine.line.toLowerCase() === line);
-    return newWineData.filter((wine) => wine.line.toLowerCase() === line && wine.subline === subline[index])
-  }
-
-  const handleSublineDescription = (line: Lines | undefined, index: number = 0) => {
-    if (!line) return null;
-    const wineLine = filteredWines[0].line
-    if (line === wineLine.toLowerCase()) {
-      return INFO_LINES[wineLine][index] || null
-    }
-  }
-
-
-
   return (
     <div>
       <div className="container mx-auto px-4 py-8 md:py-12">
@@ -43,39 +25,12 @@ export function WineCatalog({ line, subline }: Props) {
           <div className="hidden md:block absolute top-1/2 w-full border-t border-tercery"></div>
           <span className="bg-primary-foreground md:px-10 font-medium uppercase z-10 text-3xl">{line ? `Vinos ${labelLine[line]}` : "Linea completa"}</span>
         </div>
-        {
-          line && (
-            <div className="space-y-2 text-center my-8">
-              <h2 className=" text-[#4e4e4e] text-base md:text-xl">
-                {handleSublineDescription(line, 0)?.title}
-              </h2>
-              <p className="text-xs md:text-sm text-[#747474]">{handleSublineDescription(line, 0)?.content}</p>
-            </div>
-          )
-        }
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {handleFilterWines(line, subline, 0).map((wine) => (
-            <WineCard key={wine.id} wine={wine} onClick={() => setSelectedWine(wine)} />
-          ))}
-        </div>
-        {
-          line && subline && subline.length > 1 && (
-            <>
-              <div className="space-y-2 text-center my-8">
-                <h2 className=" text-[#4e4e4e] text-base md:text-xl">
-                  {handleSublineDescription(line, 1)?.title}
-                </h2>
-                <p className="text-xs md:text-sm text-[#747474]">{handleSublineDescription(line, 1)?.content}</p>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                {handleFilterWines(line, subline, 1).map((wine) => (
-                  <WineCard key={wine.id} wine={wine} onClick={() => setSelectedWine(wine)} />
-                ))}
-              </div>
-            </>
-          )
-        }
+        <SublineSection
+          line={line}
+          subline={subline}
+          wineData={newWineData}
+          onWineSelect={(value) => setSelectedWine(value)}
+        />
         {
           line && (
             <>
