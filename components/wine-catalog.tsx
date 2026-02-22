@@ -35,17 +35,17 @@ export function WineCatalog({ line, subline }: Props) {
           wineData={newWineData}
           onWineSelect={(value) => setSelectedWine(value)}
         />
-        <h2 className="mt-8 text-center text-xl lg:text-2xl">{t('title')}</h2>
         {subline && subline.length > 0 && (
           <div className="w-full mx-auto flex flex-col gap-4">
-            <h3 className="capitalize text-center text-lg">{subline[0]}</h3>
+            <h2 className="mt-8 text-center text-xl lg:text-2xl">{t('title')}</h2>
+            <h3 className="capitalize text-center text-lg lg:text-xl">{subline[0]}</h3>
             <TablePricesFob subline={subline[0]} />
           </div>
         )}
         {
           subline && subline.length > 1 && (
             <div className="w-full mx-auto flex flex-col gap-4">
-              <h3 className="capitalize text-center text-lg">{subline[1]}</h3>
+              <h3 className="capitalize text-center text-lg lg:text-xl">{subline[1]}</h3>
               <TablePricesFob subline={subline[1]} />
             </div>
           )
