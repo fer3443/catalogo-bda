@@ -252,7 +252,7 @@ export const newWineData: NewWine[] = [
     vineyardAge: "",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.tinquiao,
-    subline: Subline.tinquiao
+    subline: Subline.blend
   },
   {
     id: "blend-de-blends",
