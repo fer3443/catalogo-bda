@@ -4,7 +4,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { Analytics } from '@vercel/analytics/next'
 import { routing } from '@/i18n/routing';
 import { lora } from '@/config/fonts'
-import { Header } from '@/components/header'
+import { Header } from '@/components/molecules/header'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -37,14 +37,14 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
-   if (!hasLocale(routing.locales, locale)) {
+  if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
   return (
     <html lang={locale}>
       <body className={`${lora.className} antialiased`}>
         <NextIntlClientProvider>
-          <Header/>
+          <Header />
           {children}
         </NextIntlClientProvider>
         <Analytics />
