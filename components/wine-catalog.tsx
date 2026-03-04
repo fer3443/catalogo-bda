@@ -22,7 +22,8 @@ const labelLine: Record<string, string> = {
 }
 export function WineCatalog({ line, subline }: Props) {
   const [selectedWine, setSelectedWine] = useState<NewWine | null>(null);
-  const t = useTranslations('fobTable')
+  const t = useTranslations('fobTable');
+  const l = useTranslations("catalog")
 
   return (
     <div>
@@ -34,7 +35,7 @@ export function WineCatalog({ line, subline }: Props) {
         )}
         <div className="relative w-full my-8 flex items-center justify-center">
           <div className="hidden md:block absolute top-1/2 w-full border-t border-tercery"></div>
-          <span className="bg-primary-foreground md:px-10 font-medium uppercase z-10 text-3xl">{line ? `Vinos ${labelLine[line]}` : "Linea completa"}</span>
+          <span className="bg-primary-foreground md:px-10 font-medium uppercase z-10 text-3xl">{line ? `${l("wine")} ${labelLine[line]}` : l("allLines")}</span>
         </div>
         <SublineSection
           line={line}
