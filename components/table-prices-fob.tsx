@@ -19,18 +19,16 @@ export function TablePricesFob({ subline }: TablePricesFobProps) {
   const t = useTranslations('fobTable');
 
   const fobPrice = PRECIOS_FOB.find(price => price.sublineId === subline);
-
   if (!fobPrice) {
     return <div className="text-center text-gray-500">{t('subline')} no encontrada</div>;
-  }
-
+  };
   const translatedPrice = useTranslateFobPrices(fobPrice);
 
   return (
-    <div className="w-full rounded-lg border border-gray-200 overflow-hidden">
+    <div className="w-full rounded-lg border border-gray-200 overflow-hidden mb-4">
       <Table>
         <TableHeader>
-          <TableRow>
+          <TableRow className='bg-slate-200'>
             <TableHead></TableHead>
             <TableHead>{t('units')}</TableHead>
             <TableHead>{t('pricePerCase')}</TableHead>

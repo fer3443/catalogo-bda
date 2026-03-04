@@ -6,7 +6,6 @@ interface Props {
 }
 export default async function LinePage({ params }: Props) {
   const { line } = await params;
-  //podria crear un objeto para con clave valor que reciba la linea y devuelva sublineas
   const subline: Record<string, Subline[]> = {
     espumantes: [Subline.burbujas, Subline.pet],
     tinquiao: [Subline.tinquiao, Subline.blend],

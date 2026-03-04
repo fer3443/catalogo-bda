@@ -5,6 +5,10 @@
     "homeDescription": "A family-run boutique winery, deeply in love with the Calchaquí Valley. Creator of the sparkling wine Burbujas de Altura, complemented by its diverse wine lines: Tinquiao, Vinland, Freya, Drakkar, and aged blends. Discover the secrets of our vineyards, how we craft our sparkling wines, and savor our wines with the personalized, family-friendly, and passionate wine tourism experience that defines us.",
     "titleDivider": "Our Lines"
   },
+  "catalog": {
+    "allLines": "Complet Line",
+    "wine": "Wines"
+  },
   "wineCard": {
     "technicalSheet": "See technical sheet →"
   },
@@ -41,105 +45,135 @@
       "description": "A splendid sparkling wine unique in the Valley, featuring excellent quality and persistence in its bubbles. Its aromas evoke roses, white peaches, and green apples, characteristic of Torrontés, with notes of fresh bread and yeast produced by bottle fermentation. In the mouth, it has great structure and a pleasant fresh sensation that invites you to continue drinking.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Maceration of the fruit and fermentations at low temperatures to achieve unique aromas, fine and persistent bubbles. Second fermentation in the bottle. Foam capture and disgorging performed artisanally seeking delicacy in the product. Addition of Expedition liqueur made by us to give it a sweet nuance, typical of Extra Brut.",
-      "pairing": "This Torrontés is perfect with fresh spiced flavors. You can combine it with cooked fishes, with ¨humita¨( a sort of mashed corn with cheese), chicken with mustard and honey, desserts with fresh fruits."
+      "pairing": "This Torrontés is perfect with fresh spiced flavors. You can combine it with cooked fishes, with ¨humita¨( a sort of mashed corn with cheese), chicken with mustard and honey, desserts with fresh fruits.",
+      "harvestDate": "Early January, early morning hand harvest, in 15 kg boxes.",
+      "conservation": "In a dark place free from vibrations."
     },
     "torrontes-extra-brut": {
       "name": "Torrontés Extra Brut",
       "description": "This emblematic Cafayate sparkling wine stands out for its freshness and ease of drinking, with notes of fresh bread, passion fruit, and peach. Delicate and small bubbles produced by the second fermentation in the bottle. Great structure in the mouth, enveloping and persistent.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Maceration of the fruit and fermentations at low temperatures to achieve unique aromas, fine and persistent bubbles. Second fermentation in the bottle. Foam capture and disgorging performed artisanally seeking delicacy in the product. Addition of Expedition liqueur made by us to give it a sweet nuance typical of Extra Brut.",
-      "pairing": "Ideal to pair with fresh salads, creamy pasta, empanadas."
+      "pairing": "Ideal to pair with fresh salads, creamy pasta, empanadas.",
+      "harvestDate": "Early January, early morning hand harvest, in 15 kg boxes.",
+      "conservation": "In a dark place free from vibrations."
     },
     "rose-malbec": {
       "name": "Rosé Malbec",
       "description": "A sparkling wine that highlights Argentina's emblematic grape, with a seductive color and aromas of red fruits that later turn into jams and dried fruits, a product of its re-fermentation in the bottle. Pleasant fresh and mature nuances, with excellent quality and persistence in its bubbles, making it even easier to drink.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Working at low temperatures from the moment the grapes enter the cellar to obtain an attractive color in pressing and, together with controlled fermentations, we achieve unique aromas, fine and persistent bubbles. Foam capture performed artisanally and dedicated to the delicacy of the product. Second fermentation in the bottle. Disgorging done by hand and subsequent final capping without any additions, offered as it comes from our cellar after fermentation.",
-      "pairing": "Ideal to pair with mushrooms risotto, stuffed pumpkin, sushi, stuffed pasta."
+      "pairing": "Ideal to pair with mushrooms risotto, stuffed pumpkin, sushi, stuffed pasta.",
+      "harvestDate": "Early February.",
+      "conservation": "In a dark place free from vibrations."
     },
     "chardonnay-nature": {
       "name": "Chardonnay Nature",
       "description": "The queen varietal of sparkling wines, its aromas recall elegant notes of fruity perfumes, honey, and toasted bread. In the mouth, it delivers powerful flavors close to pineapple. With a light body, pronounced acidity, and good balance, it invites you to continue drinking.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Traditional or Champenoise. Maceration of the fruit and fermentation at low temperatures to obtain unique finesse and persistent aromas. Everything crafted in an artisanal manner. Second fermentation in the bottle. Disgorging performed manually and final corking without any addition. It is available when it comes out of the cellar, after rotating the bottle in the rack.",
-      "pairing": "It completes perfect courses that have butter, grilled chicken with citric sauce with cream, with cured cheeses alpine style, parmesan cheese, wok vegetables with mushrooms, lobster or scallops."
+      "pairing": "It completes perfect courses that have butter, grilled chicken with citric sauce with cream, with cured cheeses alpine style, parmesan cheese, wok vegetables with mushrooms, lobster or scallops.",
+      "harvestDate": "Early January, early morning hand harvest in 15 kg boxes, carried out artisanally to preserve the wine’s delicacy.",
+      "conservation": "In a dark place free from vibrations."
     },
     "pet-nat-torrontes": {
       "name": "Pet Nat",
       "description": "A winemaking method that was born by accident in France in the 16th century. This ancestral method results in a sparkling wine through a single fermentation, unlike the traditional or Champenoise method which produces two fermentations. 'It is characterized by having a winemaking process without additives, only accompanied by the gradual transformation of sugar into alcohol. As it finishes its fermentation in the same bottle that is later commercialized, it is not filtered, so it presents a \"haze\" that is part of its natural expression and well-characteristic of this method.'",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Pet Nat or Pétillant Naturel",
-      "pairing": "Ideal with summer hot evenings, before any food, as a refresher."
+      "pairing": "Ideal with summer hot evenings, before any food, as a refresher.",
+      "harvestDate": "First half of February, hand-harvested in 15 kg boxes with vineyard pre-selection.",
+      "conservation": "In a dark place free from vibrations."
     },
     "pet-nat-rose": {
       "name": "Pet Nat Rosé",
       "description": "Pet Nat or Pétillant Naturel, means \"naturally sparkling\": a winemaking method that was born by accident in France in the 16th century. This ancestral method results in a sparkling wine through a single fermentation, unlike the traditional or Champenoise method which produces two fermentations.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "\"It is characterized by having a winemaking process without additives, only accompanied by the gradual transformation of sugar into alcohol. As it finishes its fermentation in the same bottle, which is later commercialized, it is not filtered, so it presents a \"haze\" that is part of its natural expression and well-characteristic of this method.",
-      "pairing": "Ideal to accompany hot summer afternoons, with a fresh Rosé or informally with your partner."
+      "pairing": "Ideal to accompany hot summer afternoons, with a fresh Rosé or informally with your partner.",
+      "harvestDate": "First half of February, hand-harvested in 15 kg boxes with vineyard pre-selection.",
+      "conservation": "In a dark place free from vibrations."
     },
     "torrontes-tinquiao": {
       "name": "Torrontés",
       "description": "Emblematic varietal of Cafayate - Northern Argentina. Crystal clear color, creating a sensation of freshness and finesse. Citric aromas and white flowers envelope the surroundings. Subtle creaminess and mineralized in the mouth, creating a unique balance on the palate.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Maceration of the grape with cold before pressing. Fermentation at low temperatures to preserve freshness.",
-      "pairing": "Ideal to pair with strong cheeses, seafood, sushi and cheese empanadas from Salta province. Recommended with summer foods and as appetizer in winter."
+      "pairing": "Ideal to pair with strong cheeses, seafood, sushi and cheese empanadas from Salta province. Recommended with summer foods and as appetizer in winter.",
+      "harvestDate": "First half of February, hand-harvested in 15 kg boxes with vineyard pre-selection.",
+      "conservation": "In a cool, dark place free from vibrations."
     },
     "torrontes-dulce-natural": {
       "name": "Torrontés Dulce Natural",
       "description": "With an attractive and bright yellowish-green color, its predominant citric aromas mixed with a tropical sensation invite you to taste it. It has a sweet entry balanced with delicate notes of lemon, grapefruit, and white peach. The natural sweetness of the grape creates an interesting unctuousness that, when tasted, reminds you of honeycomb, with a finish that lingers for a long time.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Maceration and fermentation with naturally selected yeasts from the grape. Slow fermentation with cold until obtaining the desired sugar and alcohol levels.",
-      "pairing": "Ideal to drink as appetizer with a cheese board and/or dry fruits. Sweet pies with cream. To prepare cocktails also."
+      "pairing": "Ideal to drink as appetizer with a cheese board and/or dry fruits. Sweet pies with cream. To prepare cocktails also.",
+      "harvestDate": "March, very early morning hand harvest in 15 kg boxes.",
+      "conservation": "In a cool, dark place free from vibrations."
     },
     "rose-malbec-tinquiao": {
       "name": "Rosé Malbec",
       "description": "An attractive and bright rosé color predominates. In the mouth, it has a pleasant entry with good volume, with vibrant and fresh acidity that gives it character. Aromas of cherry, sour cherry, and strawberry intertwine; a mouthfeel that recalls freshly made red fruit jam.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Gentle direct pressing of the Malbec grape, obtaining a light color but with interesting volume that later persists in the wine. Fermentation 30 days of the must without the pomace, at low temperatures. Lees stirring for 4 months in tank.",
-      "pairing": "Ideal to pair with seafood appetizer, grilled vegetables, salads with quinoa, white meat with citric sauces, creamy desserts with red fruits."
+      "pairing": "Ideal to pair with seafood appetizer, grilled vegetables, salads with quinoa, white meat with citric sauces, creamy desserts with red fruits.",
+      "harvestDate": "First half of February, hand-harvested in 15 kg boxes with vineyard pre-selection.",
+      "conservation": "In a cool, dark place free from vibrations."
     },
     "cabernet-sauvignon": {
       "name": "Cabernet Sauvignon",
       "description": "Ruby and violet color with blackish details. Aromas that evoke dark fruits, mentholated spices, green pepper. In the mouth and nose, you can find the same aromas, leaving the sensation of wanting to continue drinking. With punchy acidity and soft tannins, which gives it good body and an elegant, persistent finish.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Maceration of the grape with cold. Fermentation 10 days, 23°-28° C. Manual treading was used. Contact with oak during fermentation, seeking the greatest expression of the varietal.",
-      "pairing": "Ideal to pair with foods with strong sauces, casseroles, empanadas."
+      "pairing": "Ideal to pair with foods with strong sauces, casseroles, empanadas.",
+      "harvestDate": "Late March, hand-harvested in 15 kg boxes with vineyard pre-selection.",
+      "conservation": "Aging potential of approximately 8 years. It is recommended to decant one hour before drinking. Store in a cool, dark place free from vibrations."
     },
     "malbec": {
       "name": "Malbec",
       "description": "Purple color with reddish tones, dark in the center. Aromas that evoke red fruits, with plum and over-ripe cherry standing out. Initially soft, then it becomes complex and structured, with a persistent finish. It is a wine with great personality, due to the altitude and the large thermal amplitudes of the Cafayate vineyards.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Maceration of the grape with cold. Fermentation 20 days, 23°-28° C. Manual treading was used, wetting the cap gently. Contact with oak during fermentation, seeking fruit explosion. Malolactic fermentation in autumn. Long maceration (3 weeks). Bottling after a year in tank. In the cellar, 6 months in bottle.",
-      "pairing": "Ideal to pair with red meats or pasta with good sauce."
+      "pairing": "Ideal to pair with red meats or pasta with good sauce.",
+      "harvestDate": "Early March, hand-harvested in 15 kg boxes with vineyard pre-selection.",
+      "conservation": "Aging potential of approximately 8 years. It is recommended to decant one hour before drinking. Store in a cool, dark place free from vibrations."
     },
     "cabernet-franc": {
       "name": "Cabernet Franc",
       "description": "Ruby and violet color with blackish details. Aromas that evoke dark fruits, mentholated spices, green pepper. In the mouth and nose, you can find the same aromas, leaving the sensation of wanting to continue drinking. With punchy acidity and soft tannins, which gives it good body and an elegant, persistent finish.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Maceration of the grape with cold. Fermentation 15 days, 23°-28° C. Manual treading was used, wetting the cap gently. Contact with oak during fermentation seeking the greatest expression of the varietal. Malolactic fermentation in autumn.",
-      "pairing": "Ideal to pair with meats cooked over wood, sausages and fishes."
+      "pairing": "Ideal to pair with meats cooked over wood, sausages and fishes.",
+      "harvestDate": "Early March, hand-harvested in 15 kg boxes with vineyard pre-selection.",
+      "conservation": "Aging potential of approximately 8 years. It is recommended to decant one hour before drinking. Store in a cool, dark place free from vibrations."
     },
     "blend": {
       "name": "Blend",
       "description": "Tri-varietal with dark red color and violet tones. Aromas that transport me to ripe red fruits and field spices. In the mouth, the aromas expressed by each varietal intermingle forming a fine and elegant bouquet.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Preselection of the grape in the vineyard. Manual harvest in small boxes. Maceration of the grape with cold before grinding. Fermentation in small tanks, 23 - 28° C. Manual treading was used. Submerged cap in post-fermentation. Contact with oak during fermentation and then in used barrels for 12 months, gaining complexity in the fruit. May contain naturally precipitated sediments.",
-      "pairing": "Ideal to pair with meats over wood, stews, paella."
+      "pairing": "Ideal to pair with meats over wood, stews, paella.",
+      "harvestDate": "2022 year.",
+      "conservation": "Aging potential of approximately 8 years. It is recommended to decant one hour before drinking. Store in a cool, dark place free from vibrations."
     },
     "blend-de-blends": {
       "name": "Blend de Blends",
       "description": "It is a symbiosis between our Nordic origin and adaptation to the new American world, which is what this name refers to. This blend of varietals (Cabernet Franc, Malbec) and blend of barrels (American and French oak) show their complexity and body in this wine. The color is predominantly ruby with dark violet tones in the center.",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Pre-fermentation maceration of the grape with cold, seeking the start of slow and controlled carbonic fermentation.",
-      "pairing": "Ideal to pair with ribs on the fire, beef stew with mushrooms and bacon, smoked vegetables and cheeses like gruyere, gouda, lasagna based tomatoes and roasted vegetables."
+      "pairing": "Ideal to pair with ribs on the fire, beef stew with mushrooms and bacon, smoked vegetables and cheeses like gruyere, gouda, lasagna based tomatoes and roasted vegetables.",
+      "harvestDate": "Hand-harvested in 15 kg boxes with vineyard pre-selection.",
+      "conservation": "Its aging potential is 10 years."
     },
     "tinquiao-torrontes-liviano": {
       "name": "Tinquiao Torrontes Liviano",
       "description": "",
       "vineyardHeight": "1.800 masl (5900 feet).",
       "elaboration": "Maceration and naturally selected fermentation grape yeasts. Slow and cold fermentation until the desired sugar and alcohol are obtained.",
-      "pairing": "It is a fresh wine and as entrance before eating, and with pasta, grilled fish, ¨humita¨ (a sort of mashed corn with cheese), corn pie."
+      "pairing": "It is a fresh wine and as entrance before eating, and with pasta, grilled fish, ¨humita¨ (a sort of mashed corn with cheese), corn pie.",
+      "harvestDate": "Very early harvest in early March, hand-picked in 15 kg (33 lb) boxes with vineyard pre-selection.",
+      "conservation": "In a cool, dark place free from vibrations."
     }
   },
   "fobPrices": {
@@ -211,7 +245,7 @@
         "discountPrice": "15%"
       }
     },
-    "blend":{
+    "blend": {
       "unitPallet": {
         "label": "(112 cases) to 3 pallets (336 cases)",
         "price": "61,56",
