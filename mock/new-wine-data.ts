@@ -16,7 +16,7 @@ export const newWineData: NewWine[] = [
     temperature: "Entre 3º y 6º C.",
     timeOnLees: "18 meses",
     variety: "Torrontés 100%.",
-    vineyardAge: "",
+    vineyardAge: "2001",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.espumantes,
     subline: Subline.burbujas
@@ -35,7 +35,7 @@ export const newWineData: NewWine[] = [
     suggar: "11 G/L.",
     temperature: "Entre 3° y 6°C.",
     variety: "Torrontés 100%",
-    vineyardAge: "",
+    vineyardAge: "2002",
     timeOnLees: "18 meses",
     vineyardHeight: "1.800 metros sobre el nivel del mar.",
     line: Lines.espumantes,
@@ -56,7 +56,7 @@ export const newWineData: NewWine[] = [
     temperature: "Entre 3º y 6º C.",
     timeOnLees: "12 meses.",
     variety: "Malbec 100 %.",
-    vineyardAge: "27 años",
+    vineyardAge: "1999",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.espumantes,
     subline: Subline.burbujas
@@ -76,7 +76,7 @@ export const newWineData: NewWine[] = [
     temperature: "Entre 3° y 6° C.",
     variety: "Chardonnay 100%",
     timeOnLees: "12 meses",
-    vineyardAge: "",
+    vineyardAge: "1999",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.espumantes,
     subline: Subline.burbujas
@@ -95,7 +95,7 @@ export const newWineData: NewWine[] = [
     suggar: "3 g/lt",
     temperature: "Temperatura de servicio de este vino es entre 3º y 6º C",
     variety: "Torrontés 100%",
-    vineyardAge: "30 AÑOS",
+    vineyardAge: "1996",
     vineyardHeight: "1.800 METROS SOBRE EL NIVEL DEL MAR.",
     line: Lines.espumantes,
     subline: Subline.pet
@@ -114,7 +114,7 @@ export const newWineData: NewWine[] = [
     suggar: "3,5 G/L",
     temperature: "Entre 3º y 6º C.",
     variety: "Malbec 100%.",
-    vineyardAge: "30 años.",
+    vineyardAge: "1996",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.espumantes,
     subline: Subline.pet
@@ -133,7 +133,7 @@ export const newWineData: NewWine[] = [
     suggar: "",
     temperature: "Entre 10° y 12° C.",
     variety: "Torrontés 100%.",
-    vineyardAge: "25 años.",
+    vineyardAge: "2001",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.tinquiao,
     subline: Subline.tinquiao
@@ -152,7 +152,7 @@ export const newWineData: NewWine[] = [
     suggar: "",
     temperature: "Entre 10° y 12° C.",
     variety: "Torrontés 100%.",
-    vineyardAge: "25 años.",
+    vineyardAge: "2001",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.tinquiao,
     subline: Subline.tinquiao
@@ -171,7 +171,7 @@ export const newWineData: NewWine[] = [
     suggar: "",
     temperature: "Entre 6° y 8° C.",
     variety: "Malbec 100%.",
-    vineyardAge: "30 años.",
+    vineyardAge: "1996",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.tinquiao,
     subline: Subline.tinquiao
@@ -191,7 +191,7 @@ export const newWineData: NewWine[] = [
     suggar: "",
     temperature: "Entre 14º y 16º C.",
     variety: "Cabernet Sauvignon 100%.",
-    vineyardAge: "24 años.",
+    vineyardAge: "2002",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.tinquiao,
     subline: Subline.tinquiao
@@ -210,7 +210,7 @@ export const newWineData: NewWine[] = [
     suggar: "",
     temperature: "Entre 14º y 16º C.",
     variety: "Malbec 100%",
-    vineyardAge: "25 años",
+    vineyardAge: "2001",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.tinquiao,
     subline: Subline.tinquiao
@@ -230,7 +230,7 @@ export const newWineData: NewWine[] = [
     temperature: "Entre 16° y 18° C.",
     storedInCellar: "12 meses en tanque, más 6 meses en botella.",
     variety: "Cabernet Franc 100%.",
-    vineyardAge: "10 años.",
+    vineyardAge: "2016",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.tinquiao,
     subline: Subline.tinquiao
@@ -249,7 +249,7 @@ export const newWineData: NewWine[] = [
     suggar: "",
     temperature: "Entre 14º y 16º C.",
     variety: "Malbec 60% - Cabernet Sauvignon 30% - Cabernet Franc 10%",
-    vineyardAge: "",
+    vineyardAge: "2001",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.tinquiao,
     subline: Subline.blend
@@ -269,7 +269,7 @@ export const newWineData: NewWine[] = [
     suggar: "",
     temperature: "Entre 14º y 16º C.",
     variety: "60% Cabernet Franc - 40% Malbec",
-    vineyardAge: "",
+    vineyardAge: "2001",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.vikinga,
     subline: Subline.vinland
@@ -288,7 +288,7 @@ export const newWineData: NewWine[] = [
     suggar: " - ",
     temperature: "Entre 3º y 7º C.",
     variety: "Torrontes 100%",
-    vineyardAge: "25 años.",
+    vineyardAge: "2001",
     vineyardHeight: "1.800 mts. sobre el nivel del mar.",
     line: Lines.tinquiao,
     subline: Subline.tinquiao

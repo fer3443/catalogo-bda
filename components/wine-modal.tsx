@@ -1,12 +1,12 @@
 "use client"
 
 import Image from "next/image"
-
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { X } from "lucide-react"
 import { NewWine } from "@/interfaces"
 import { useTranslateWine } from "@/hooks"
+import { getAge } from "@/utils"
 
 interface WineModalProps {
   wine: NewWine | null
@@ -17,7 +17,8 @@ export function WineModal({ wine, onClose }: WineModalProps) {
   if (!wine) return null
   const t = useTranslations('wineModal');
   const translatedWine = useTranslateWine(wine);
-  
+  const locale = useLocale();
+
   return (
     <Dialog open={!!wine} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0 bg-card border-border">
@@ -67,7 +68,7 @@ export function WineModal({ wine, onClose }: WineModalProps) {
                   </div>
                   <div className="flex justify-between py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">{t("age")}</span>
-                    <span className="font-medium text-card-foreground text-sm text-end">{translatedWine.vineyardAge.toLowerCase()}</span>
+                    <span className="font-medium text-card-foreground text-sm text-end">{getAge(translatedWine.vineyardAge) + " " + (locale === "es" ? "años." : "years.")}</span>
                   </div>
                   <div className="flex justify-between py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">{t("alcohol")}</span>

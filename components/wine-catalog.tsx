@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 import { newWineData } from "@/mock";
+import Link from "next/link";
+import { FaChevronLeft } from "react-icons/fa6";
 import { WineModal } from "./wine-modal"
 import { Lines, NewWine, Subline } from "@/interfaces";
 import { TECHNICAL_INFO } from '../mock/new-wine-data';
@@ -20,14 +22,20 @@ const labelLine: Record<string, string> = {
 }
 export function WineCatalog({ line, subline }: Props) {
   const [selectedWine, setSelectedWine] = useState<NewWine | null>(null);
-  const t = useTranslations('fobTable')
+  const t = useTranslations('fobTable');
+  const l = useTranslations("catalog")
 
   return (
     <div>
       <div className="container mx-auto px-4 py-8 md:py-12">
+        {line && (
+          <div className="flex justify-end">
+            <Link href='/' className="flex gap-4 items-center text-center hover:shadow p-2 rounded-lg"><FaChevronLeft size={12} />Home</Link>
+          </div>
+        )}
         <div className="relative w-full my-8 flex items-center justify-center">
           <div className="hidden md:block absolute top-1/2 w-full border-t border-tercery"></div>
-          <span className="bg-primary-foreground md:px-10 font-medium uppercase z-10 text-3xl">{line ? `Vinos ${labelLine[line]}` : "Linea completa"}</span>
+          <span className="bg-primary-foreground md:px-10 font-medium uppercase z-10 text-3xl">{line ? `${l("wine")} ${labelLine[line]}` : l("allLines")}</span>
         </div>
         <SublineSection
           line={line}
@@ -35,17 +43,17 @@ export function WineCatalog({ line, subline }: Props) {
           wineData={newWineData}
           onWineSelect={(value) => setSelectedWine(value)}
         />
-        <h2 className="mt-8 text-center text-xl lg:text-2xl">{t('title')}</h2>
         {subline && subline.length > 0 && (
           <div className="w-full mx-auto flex flex-col gap-4">
-            <h3 className="capitalize text-center text-lg">{subline[0]}</h3>
+            <h2 className="mt-8 text-center text-xl lg:text-2xl">{t('title')}</h2>
+            <h3 className="capitalize text-center text-lg lg:text-xl">{subline[0]}</h3>
             <TablePricesFob subline={subline[0]} />
           </div>
         )}
         {
           subline && subline.length > 1 && (
             <div className="w-full mx-auto flex flex-col gap-4">
-              <h3 className="capitalize text-center text-lg">{subline[1]}</h3>
+              <h3 className="capitalize text-center text-lg lg:text-xl">{subline[1]}</h3>
               <TablePricesFob subline={subline[1]} />
             </div>
           )
