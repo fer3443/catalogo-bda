@@ -24,7 +24,7 @@ export function WineCard({ wine, onClick }: WineCardProps) {
           src={wine.image || "/placeholder.svg"}
           alt={wine.name}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className="object-cover scale-105 group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute top-4 left-4">
           <span className="inline-block bg-primary text-primary-foreground px-3 py-1 text-xs font-semibold rounded-full">

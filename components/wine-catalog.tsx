@@ -1,15 +1,15 @@
 "use client"
 
 import { useState } from "react"
-import { newWineData } from "@/mock";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { FaChevronLeft } from "react-icons/fa6";
-import { WineModal } from "./wine-modal"
+import { newWineData } from "@/mock";
 import { Lines, NewWine, Subline } from "@/interfaces";
+import { WineModal } from "./wine-modal"
 import { TECHNICAL_INFO } from '../mock/new-wine-data';
 import { SublineSection } from "./molecules";
 import { TablePricesFob } from "./table-prices-fob";
-import { useTranslations } from "next-intl";
 
 interface Props {
   line: Lines | undefined;
@@ -27,12 +27,10 @@ export function WineCatalog({ line, subline }: Props) {
 
   return (
     <div>
-      <div className="container mx-auto px-4 py-8 md:py-12">
-        {line && (
-          <div className="flex justify-end">
-            <Link href='/' className="flex gap-4 items-center text-center hover:shadow p-2 rounded-lg"><FaChevronLeft size={12} />Home</Link>
-          </div>
-        )}
+      <div className="container max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <div className="flex justify-end">
+          <Link href='/' className="flex gap-4 items-center text-center hover:shadow p-2 rounded-lg"><FaChevronLeft size={12} />Home</Link>
+        </div>
         <div className="relative w-full my-8 flex items-center justify-center">
           <div className="hidden md:block absolute top-1/2 w-full border-t border-tercery"></div>
           <span className="bg-primary-foreground md:px-10 font-medium uppercase z-10 text-3xl">{line ? `${l("wine")} ${labelLine[line]}` : l("allLines")}</span>

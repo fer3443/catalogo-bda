@@ -1,21 +1,21 @@
 {
   "Home": {
-    "headerTitle": "Bodega familiar boutique de Cafayate, Salta, especializada en espumantes elaborados mediante método tradicional y vinos de altura.",
-    "titleDescription": "Primer Champagnera del Norte Argentino.",
-    "homeDescription": "En Burbujas de Altura creemos que los grandes proyectos nacen cuando la tradición se anima a desafiar los límites. Con esa convicción nació un proyecto familiar que dio origen a la primera champañera del Norte Argentino. Desde Cafayate, a 1.810 metros sobre el nivel del mar, elaboramos espumantes mediante el método tradicional y vinos de altura que expresan la identidad única del territorio de Cafayate y el espíritu que dio origen a nuestra bodega.",
-    "titleDivider": "Portfolio"
+    "headerTitle": "Vinícola boutique familiar de Cafayate, Salta, especializada em espumantes elaborados pelo método tradicional e vinhos de altitude.",
+    "titleDescription": "A Primeira Casa de Espumantes do Norte Argentino.",
+    "homeDescription": "Na Burbujas de Altura, acreditamos que grandes projetos nascem quando a tradição se atreve a desafiar os limites. Foi com essa convicção que surgiu um projeto familiar que deu origem à primeira casa de espumantes do Norte Argentino. Em Cafayate, a 1.810 metros acima do nível do mar, elaboramos espumantes pelo método tradicional e vinhos de altitude que expressam a identidade única do terroir de Cafayate e o espírito que deu origem à nossa vinícola.",
+    "titleDivider": "Portfólio"
   },
   "catalog": {
-    "allLines": "Portfolio completo",
-    "wine": "Vinos"
+    "allLines": "Portfólio Completo",
+    "wine": "Vinhos"
   },
   "wineCard": {
-    "technicalSheet": "Ver ficha técnica →"
+    "technicalSheet": "Ver Ficha Técnica →"
   },
   "footer": {
-    "follow":"Síguenos",
-    "contact":"Contacto",
-    "location":"Ubicación"
+    "follow": "Siga-nos",
+    "contact": "Contato",
+    "location": "Localização"
   },
   "fobTable": {
     "title": "Tabla de Precios FOB",
@@ -182,12 +182,12 @@
     },
     "drakkar": {
       "name": "Drakkar",
-      "description": "DRAKKAR, que en vikingo antiguo significa 'Dragón', era un amuleto de suerte colocado en la proa y popa de los barcos, símbolo de poder y audacia en el mar. Inspirado en esa misma esencia, nuestro vino Drakkar es un homenaje a la fuerza y el carácter de su origen. Resultado de la fusión de uvas Malbec y Tannat, potencia las intensas notas de frutos rojos maduros y especias con un toque ahumado. En boca, con su cuerpo potente, estructurado y su final persistente.  Profundo color rojo oscuro intenso.  En nariz, se perciben aromas a mora y cereza negra, que luego se van combinando y formando aromas más complejos, como notas cárnicas y grafito.   En boca su entrada es potente, con mucha personalidad, que con el tiempo se suaviza al oxigenar el vino",
-      "conservation": "12 años. Se recomienda decantar una hora antes de beberlo. Conservar en lugar fresco, oscuro, y sin vibraciones. ",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Maceración prefermentativa de la uva con frío, buscando inicio de fermentación carbónica. Fermentación lenta y controlada. Prensado suave. Añejamiento en barrica de roble durante 15 meses, en botella 8 meses.",
-      "harvestDate": "A mano. Selección en viñedo, en cajas de 15 kg (33 Lb). Preselección en viñedo.",
-      "pairing": "Drakkar es ideal para acompañar momentos especiales robustos y audaces."
+      "description": "DRAKKAR, que em nórdico antigo significa 'Dragão', era um amuleto da sorte colocado na proa e na popa dos navios vikings, símbolo de força e ousadia no mar. Inspirado nessa mesma essência, nosso vinho Drakkar é uma homenagem à força e ao caráter de sua origem. Elaborado a partir da união das uvas Malbec e Tannat, destaca intensas notas de frutas vermelhas maduras e especiarias, com um delicado toque defumado. Em boca, tem entrada potente e cheia de personalidade, tornando-se mais macio e elegante à medida que o vinho se oxigena.",
+      "conservation": "Potencial de guarda de até 12 anos. Recomenda-se decantar uma hora antes de servir. Conservar em local fresco, escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Maceração pré-fermentativa a frio para favorecer o início da fermentação carbônica. Fermentação lenta e com temperatura controlada. Prensagem suave. Envelhecimento por 15 meses em barricas de carvalho e mais 8 meses em garrafa.",
+      "harvestDate": "Colheita manual. Seleção dos cachos no vinhedo, em caixas de 15 kg (33 lb), com pré-seleção realizada ainda no campo.",
+      "pairing": "Em boca, seu corpo encorpado, estrutura marcante e final persistente fazem do Drakkar a escolha ideal para momentos especiais e marcantes. Apresenta uma profunda e intensa coloração vermelho-escura. No nariz, revela aromas de amora e cereja-preta, que evoluem para notas mais complexas de carne curada e grafite."
     }
   },
   "fobPrices": {
