@@ -1,11 +1,13 @@
 export type LanguageT = {
   value: LanguageEnum;
-  label:string
+  label:string;
+  label_mobile:string;
 };
 
 export enum LanguageEnum {
   es = "es",
-  en = "en"
+  en = "en",
+  pt = "pt"
 };
 
 export interface LinesLabels{

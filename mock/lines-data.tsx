@@ -7,19 +7,19 @@ type LinesDataT = {
 }
 export const LINES_DATA: LinesDataT = {
   all: {
-    label: "Todas las líneas",
+    label: "Portfolio completo",
     path: '/lines',
-    image: '/bda-all-lines.webp'
+    image: 'https://res.cloudinary.com/dndrbcmkg/image/upload/v1785210373/Bodega_de_frente_e6dwoa.png'
   },
   espumantes: {
     label: 'Espumantes',
     path: '/lines/espumantes',
-    image: '/bda-espumantes-lines.webp'
+    image: 'https://res.cloudinary.com/dndrbcmkg/image/upload/v1785210371/Burbujas_Espumantes_zierdr.png'
   },
   tinquiao: {
     label: 'Tinquiao',
     path: '/lines/tinquiao',
-    image: '/bda-tinquiao-line.webp'
+    image: 'https://res.cloudinary.com/dndrbcmkg/image/upload/v1785210371/Linea_Tinquiao_wepsvs.png'
   },
   vikinga: {
     label: 'Vikinga',

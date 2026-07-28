@@ -1,14 +1,20 @@
 import { LanguageEnum } from "@/interfaces";
 
 export const handleLabelByLanguage = (lang: LanguageEnum, label: string) => {
-    if (label === "Todas las lineas" && lang === LanguageEnum.en) {
-      return "All lines"
+    if (label === "Portfolio completo" && lang === LanguageEnum.en) {
+      return "Complete portfolio"
     }
-    if (label === "Todas las lineas" && lang === LanguageEnum.es) {
+    if (label === "Portfolio completo" && lang === LanguageEnum.pt) {
+      return "Portfólio Completo"
+    }
+    if (label === "Portfolio completo" && lang === LanguageEnum.es) {
       return label;
     }
     if (label && lang === LanguageEnum.en) {
-      return (label !== "Todas las lineas" && label === "Espumantes") ? "Sparkling Wines Line" : `${label} line`;
+      return (label !== "Portfolio completo" && label === "Espumantes") ? "Sparkling Wines" : `${label}`;
     }
-    return `Línea ${label}`
+    if (label && lang === LanguageEnum.pt) {
+      return (label !== "Portfolio completo" && label === "Espumantes") ? "Espumantes" : `${label}`;
+    }
+    return `${label}`
   }

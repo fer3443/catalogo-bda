@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing';
 import { lora } from '@/config/fonts'
 import { Header } from '@/components/molecules/header'
 import './globals.css'
+import { Footer } from '@/components/molecules';
 
 export const metadata: Metadata = {
   title: 'Burbujas de Altura - Catalogo',
@@ -46,6 +47,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <Header />
           {children}
+          <Footer/>
         </NextIntlClientProvider>
         <Analytics />
       </body>
