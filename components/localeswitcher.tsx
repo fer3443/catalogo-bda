@@ -20,16 +20,16 @@ export const LocaleSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
   const locale = useLocale();
 
   const handleChange = (newLocale: string) => {
-    const newPath = `/${newLocale}${pathname.slice(3)}`;
+    const newPath = `/${newLocale}${pathname.slice(locale.length + 1)}`;
     router.push(newPath);
   };
-//TODO: cambiar color del selectItem para que coincida con el bg del header
+  //TODO: cambiar color del selectItem para que coincida con el bg del header
   return (
     <Select value={locale} onValueChange={handleChange}>
       <SelectTrigger
-        className={clsx(`p-2 h-8 border shadow-none font-medium`, {
+        className={clsx(`p-2 h-8 border shadow-none font-medium cursor-pointer`, {
           "w-20": mobile,
-          "w-full": !mobile
+          "min-w-auto": !mobile
         })}
       >
         <SelectValue className="p-1" />
@@ -42,9 +42,9 @@ export const LocaleSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
               value={lang.value}
               className="flex border-none flex-nowrap gap-1 hover:text-accent"
             >
-              <span className="flex flex-nowrap gap-1 items-center justify-center text-white">
+              <span className="flex flex-nowrap gap-1 items-center justify-center text-white hover:font-semibold transition-all duration-200 cursor-pointer">
                 <IoEarthSharp className="h-4 w-4 text-white" />
-                {lang.label}
+                {mobile ? lang.label_mobile : lang.label}
               </span>
             </SelectItem>
           ))

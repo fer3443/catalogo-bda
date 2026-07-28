@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <div className="bg-[#5B2333] text-primary-foreground">
       {isMobile ? <NavMobile /> : <NavDesktop />}
-      <div className="container mx-auto pb-6 md:pb-8">
+      <div className="container mx-auto py-6 md:py-10">
         <div className="max-w-4xl mx-auto text-center px-4 py-2">
           <Link href='/' className='w-56 md:w-64 mx-auto mb-6 block'>
             <Image

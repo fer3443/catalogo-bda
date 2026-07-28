@@ -1,15 +1,16 @@
-import {defineRouting} from 'next-intl/routing';
- 
+import { defineRouting } from 'next-intl/routing';
+
 export const routing = defineRouting({
   // A list of all locales that are supported
-  locales: ['en', 'es'],
- 
+  locales: ['en', 'es','pt'],
+
   // Used when no locale matches
   defaultLocale: 'es',
   pathnames: {
-   '/lines': {
-    es:'/lineas',
-    en:'/lines'
-   }
+    '/lines': {
+      es: '/lineas',
+      en: '/lines',
+      pt: '/linhas'
+    }
   }
 });

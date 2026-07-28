@@ -1,16 +1,21 @@
 {
-  "Home": {
-    "headerTitle": "Discover our exclusive selection of Wines and Sparkling, carefully crafted for people's enjoyment",
-    "titleDescription": "First Champagne House in Northern Argentina.",
-    "homeDescription": "A family-run boutique winery, deeply in love with the Calchaquí Valley. Creator of the sparkling wine Burbujas de Altura, complemented by its diverse wine lines: Tinquiao, Vinland, Freya, Drakkar, and aged blends. Discover the secrets of our vineyards, how we craft our sparkling wines, and savor our wines with the personalized, family-friendly, and passionate wine tourism experience that defines us.",
-    "titleDivider": "Our Lines"
+   "Home": {
+    "headerTitle": "Family-owned boutique winery in Cafayate, Salta, specializing in traditional method sparkling wines and high-altitude wines.",
+    "titleDescription": "The First Sparkling Wine House in Northern Argentina.",
+    "homeDescription": "At Burbujas de Altura, we believe that great projects are born when tradition dares to push boundaries. Driven by that conviction, our family launched a project that became the first sparkling wine house in Northern Argentina. From Cafayate, at 1,810 meters (5,938 ft) above sea level, we craft sparkling wines using the traditional method and high-altitude wines that reflect the unique identity of the Cafayate terroir and the spirit that inspired our winery.",
+    "titleDivider": "Portfolio"
   },
-  "catalog": {
-    "allLines": "Complet Line",
+ "catalog": {
+    "allLines": "Complete Portfolio",
     "wine": "Wines"
   },
+ "footer": {
+    "follow": "Follow Us",
+    "contact": "Contact",
+    "location": "Location"
+  },
   "wineCard": {
-    "technicalSheet": "See technical sheet →"
+    "technicalSheet": "View Technical Sheet →"
   },
   "fobTable": {
     "title": "FOB Price Table",
@@ -174,7 +179,16 @@
       "pairing": "It is a fresh wine and as entrance before eating, and with pasta, grilled fish, ¨humita¨ (a sort of mashed corn with cheese), corn pie.",
       "harvestDate": "Very early harvest in early March, hand-picked in 15 kg (33 lb) boxes with vineyard pre-selection.",
       "conservation": "In a cool, dark place free from vibrations."
-    }
+    },
+      "drakkar": {
+    "name": "Drakkar",
+    "description": "DRAKKAR, that in ¨gammel Norsk¨ (ancient Norse) means 'Dragon', was a good luck of amulet placed  on the bow and stern of the longships, power and bravery  symbol in the sea. Inspired in the same essence, our Drakkar wine is a tribute to strength and character of its origin. Result of combining Malbec and Tannat grapes, enhancing the intense notes of ripe red fruits and a touch of smoked spices.",
+    "conservation": "Cellaring potential: up to 12 years. Decant one hour before serving. Store in a cool, dark place free from vibrations.",
+    "vineyardHeight": "1.800 masl (5.900 feet)",
+    "elaboration": "Prefermentation maceration of the berries with cold, seeking the start of carbonic fermentation. Low and controled fermentation. Soft pressing. Aging in oak barrels during 15 months, in bottle 8 months",
+    "harvestDate": "Hand-harvested. Vineyard selection with grapes collected in 15 kg (30 pounds) boxes. Preselected in the vineyard.",
+    "pairing": "In mouth, with a strong body, structured and large persistent end. Drakkar is ideal to pair to especial and robust daring moments."
+  }
   },
   "fobPrices": {
     "burbujas": {
