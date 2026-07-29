@@ -69,6 +69,24 @@ export const PRECIOS_FOB: PreciosFob[] = [
     }
   },
   {
+    sublineId: Subline.drakkar,
+    unitPallet: {
+      label: "(112 cajas) a 3 pallets (336 cajas)",
+      price:"118,38",
+      discountPrice: "Precio neto"
+    },
+    fourPallets: {
+      label:"(320 cajas) hasta 8 pallets (640 cajas)",
+      price: "106,52",
+      discountPrice: "10%"
+    },
+    ninePallets: {
+      label: "(720 cajas) en adelante",
+      price: "100,62",
+      discountPrice: "15%"
+    }
+  },
+  {
     sublineId: Subline.vinland,
     unitPallet: {
       label: "(112 cajas) a 3 pallets (336 cajas)",

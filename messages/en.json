@@ -211,17 +211,17 @@
     "pet": {
       "unitPallet": {
         "label": "(80 cases) up to 3 pallets (240 cases)",
-        "price": "65,96",
+        "price": "75,85",
         "discountPrice": "Net price"
       },
       "fourPallets": {
         "label": "(320 cases) up to 8 pallets (640 cases)",
-        "price": "59,36",
+        "price": "68,26",
         "discountPrice": "10%"
       },
       "ninePallets": {
         "label": "(720 cases) onwards",
-        "price": "68,08",
+        "price": "64,47",
         "discountPrice": "15%"
       }
     },
@@ -243,6 +243,23 @@
       }
     },
     "vinland": {
+      "unitPallet": {
+        "label": "(112 cases) to 3 pallets (336 cases)",
+        "price": "130,2",
+        "discountPrice": "Net price"
+      },
+      "fourPallets": {
+        "label": "(448 cases) up to 8 pallets (896 cases)",
+        "price": "117,18",
+        "discountPrice": "10%"
+      },
+      "ninePallets": {
+        "label": "(1.008 cases) onwards",
+        "price": "110,67",
+        "discountPrice": "15%"
+      }
+    },
+    "drakkar": {
       "unitPallet": {
         "label": "(112 cases) to 3 pallets (336 cases)",
         "price": "130,2",

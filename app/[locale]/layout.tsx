@@ -5,8 +5,8 @@ import { Analytics } from '@vercel/analytics/next'
 import { routing } from '@/i18n/routing';
 import { lora } from '@/config/fonts'
 import { Header } from '@/components/molecules/header'
-import './globals.css'
 import { Footer } from '@/components/molecules';
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Burbujas de Altura - Catalogo',
