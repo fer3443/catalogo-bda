@@ -9,7 +9,7 @@ export default async function LinePage({ params }: Props) {
   const subline: Record<string, Subline[]> = {
     espumantes: [Subline.burbujas, Subline.pet],
     tinquiao: [Subline.tinquiao, Subline.blend],
-    vikinga: [Subline.vinland]
+    vikinga: [Subline.vinland, Subline.drakkar]
   }
 
   return (

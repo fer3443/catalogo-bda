@@ -10,7 +10,6 @@ import { WineModal } from "./wine-modal"
 import { TECHNICAL_INFO } from '../mock/new-wine-data';
 import { SublineSection } from "./molecules";
 import { TablePricesFob } from "./table-prices-fob";
-import { Separator } from "./ui/separator";
 
 interface Props {
   line: Lines | undefined;
@@ -36,7 +35,7 @@ export function WineCatalog({ line, subline }: Props) {
         </div>
         <div className="relative w-full my-8 flex items-center justify-center">
           <div className="hidden md:block absolute top-1/2 w-full border-t border-tercery"></div>
-          <span className="bg-primary-foreground md:px-10 font-medium uppercase z-10 text-3xl">{line ? `${l("wine")} ${labelLine[line]}` : l("allLines")}</span>
+          <span className="bg-primary-foreground text-xl md:px-10 font-medium uppercase z-10 md:text-3xl">{line ? `${l("wine")} ${labelLine[line]}` : l("allLines")}</span>
         </div>
         <SublineSection
           line={line}

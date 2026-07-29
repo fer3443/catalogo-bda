@@ -24,6 +24,6 @@ export const LINES_DATA: LinesDataT = {
   vikinga: {
     label: 'Vikinga',
     path: '/lines/vikinga',
-    image: '/bda-vikingo-line.webp'
+    image: 'https://res.cloudinary.com/dndrbcmkg/image/upload/v1785351660/Tarjeta_Vikingos_zqalbp.png'
   },
 }
