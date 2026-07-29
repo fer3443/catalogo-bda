@@ -20,10 +20,10 @@ export const NavMobile = () => {
           Cafayate, Salta - Argentina
         </Link>
         <Link
-          href="mailto:info@burbujasdealtura.com.ar"
+          href="mailto:export@burbujasdealtura.com.ar"
           className="text-xs text-secondary hover:text-white font-light flex justify-center items-center gap-2  text-nowrap hover:font-medium px-1 duration-200"
         >
-          info@burbujasdealtura.com.ar
+          export@burbujasdealtura.com.ar
         </Link>
       </div>
       <div className='flex justify-between px-4'>
@@ -35,8 +35,8 @@ export const NavMobile = () => {
           height={40}
           className="w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-cover"
         />
-        <div className="max-w-20">
-          <LocaleSwitcher mobile/>
+        <div className="max-w-32">
+          <LocaleSwitcher/>
         </div>
       </div>
     </nav>

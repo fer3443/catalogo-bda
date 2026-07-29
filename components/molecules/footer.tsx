@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import { MdOutlineLocationOn } from 'react-icons/md'
-import { LuInstagram, LuFacebook, LuMail, LuEarth } from "react-icons/lu";
+import { LuInstagram, LuMail, LuEarth } from "react-icons/lu";
+import { FaFacebookF } from "react-icons/fa6";
 import { getTranslations } from 'next-intl/server';
 
 export async function Footer(){
@@ -19,6 +20,21 @@ export async function Footer(){
               height={300}
               className='h-full'
             />
+          </Link>
+        </div>
+          <div className='col-span-full md:col-span-1 space-y-2'>
+          <h3 className="font-semibold">{f("contact")}</h3>
+          <Link
+            href="mailto:export@burbujasdealtura.com.ar"
+            className="text-xs lg:text-base font-light flex items-center gap-2 text-nowrap hover:font-medium px-1 duration-200 text-secondary hover:text-white"
+          >
+            <LuMail /> export@burbujasdealtura.com.ar
+          </Link>
+          <Link
+            href="mailto:info@burbujasdealtura.com.ar"
+            className="text-xs lg:text-base font-light flex items-center gap-2 text-nowrap hover:font-medium px-1 duration-200 text-secondary hover:text-white"
+          >
+            <LuMail /> info@burbujasdealtura.com.ar
           </Link>
         </div>
         <div className='col-span-full md:col-span-1 flex flex-col gap-2 space-y-2'>
@@ -41,28 +57,13 @@ export async function Footer(){
                 <LuInstagram className='size-4 sm:size-5' />
               </Link>
               <Link href="https://www.facebook.com/profile.php?id=100064148794896" target='_blank' className='rounded-full bg-[#773c4d] p-2'>
-                <LuFacebook className='size-4 sm:size-5' />
+                <FaFacebookF className='size-4 sm:size-5' />
               </Link>
               <Link href="https://www.burbujasdealtura.com.ar/" target='_blank' className='rounded-full bg-[#773c4d] p-2'>
                 <LuEarth className='size-4 sm:size-5' />
               </Link>
             </div>
           </div>
-        </div>
-        <div className='col-span-full md:col-span-1 space-y-2'>
-          <h3 className="font-semibold">{f("contact")}</h3>
-          <Link
-            href="mailto:info@burbujasdealtura.com.ar"
-            className="text-xs lg:text-base font-light flex items-center gap-2 text-nowrap hover:font-medium px-1 duration-200 text-secondary hover:text-white"
-          >
-            <LuMail /> info@burbujasdealtura.com.ar
-          </Link>
-          <Link
-            href="mailto:export@burbujasdealtura.com.ar"
-            className="text-xs lg:text-base font-light flex items-center gap-2 text-nowrap hover:font-medium px-1 duration-200 text-secondary hover:text-white"
-          >
-            <LuMail /> export@burbujasdealtura.com.ar
-          </Link>
         </div>
       </div>
     </footer>

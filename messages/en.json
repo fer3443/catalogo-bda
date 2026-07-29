@@ -1,15 +1,15 @@
 {
-   "Home": {
+  "Home": {
     "headerTitle": "Family-owned boutique winery in Cafayate, Salta, specializing in traditional method sparkling wines and high-altitude wines.",
     "titleDescription": "The First Sparkling Wine House in Northern Argentina.",
     "homeDescription": "At Burbujas de Altura, we believe that great projects are born when tradition dares to push boundaries. Driven by that conviction, our family launched a project that became the first sparkling wine house in Northern Argentina. From Cafayate, at 1,810 meters (5,938 ft) above sea level, we craft sparkling wines using the traditional method and high-altitude wines that reflect the unique identity of the Cafayate terroir and the spirit that inspired our winery.",
     "titleDivider": "Portfolio"
   },
- "catalog": {
+  "catalog": {
     "allLines": "Complete Portfolio",
     "wine": "Wines"
   },
- "footer": {
+  "footer": {
     "follow": "Follow Us",
     "contact": "Contact",
     "location": "Location"
@@ -180,31 +180,31 @@
       "harvestDate": "Very early harvest in early March, hand-picked in 15 kg (33 lb) boxes with vineyard pre-selection.",
       "conservation": "In a cool, dark place free from vibrations."
     },
-      "drakkar": {
-    "name": "Drakkar",
-    "description": "DRAKKAR, that in ¨gammel Norsk¨ (ancient Norse) means 'Dragon', was a good luck of amulet placed  on the bow and stern of the longships, power and bravery  symbol in the sea. Inspired in the same essence, our Drakkar wine is a tribute to strength and character of its origin. Result of combining Malbec and Tannat grapes, enhancing the intense notes of ripe red fruits and a touch of smoked spices.",
-    "conservation": "Cellaring potential: up to 12 years. Decant one hour before serving. Store in a cool, dark place free from vibrations.",
-    "vineyardHeight": "1.800 masl (5.900 feet)",
-    "elaboration": "Prefermentation maceration of the berries with cold, seeking the start of carbonic fermentation. Low and controled fermentation. Soft pressing. Aging in oak barrels during 15 months, in bottle 8 months",
-    "harvestDate": "Hand-harvested. Vineyard selection with grapes collected in 15 kg (30 pounds) boxes. Preselected in the vineyard.",
-    "pairing": "In mouth, with a strong body, structured and large persistent end. Drakkar is ideal to pair to especial and robust daring moments."
-  }
+    "drakkar": {
+      "name": "Drakkar",
+      "description": "DRAKKAR, that in ¨gammel Norsk¨ (ancient Norse) means 'Dragon', was a good luck of amulet placed  on the bow and stern of the longships, power and bravery  symbol in the sea. Inspired in the same essence, our Drakkar wine is a tribute to strength and character of its origin. Result of combining Malbec and Tannat grapes, enhancing the intense notes of ripe red fruits and a touch of smoked spices.",
+      "conservation": "Cellaring potential: up to 12 years. Decant one hour before serving. Store in a cool, dark place free from vibrations.",
+      "vineyardHeight": "1.800 masl (5.900 feet)",
+      "elaboration": "Prefermentation maceration of the berries with cold, seeking the start of carbonic fermentation. Low and controled fermentation. Soft pressing. Aging in oak barrels during 15 months, in bottle 8 months",
+      "harvestDate": "Hand-harvested. Vineyard selection with grapes collected in 15 kg (30 pounds) boxes. Preselected in the vineyard.",
+      "pairing": "In mouth, with a strong body, structured and large persistent end. Drakkar is ideal to pair to especial and robust daring moments."
+    }
   },
   "fobPrices": {
     "burbujas": {
       "unitPallet": {
         "label": "(80 cases) up to 3 pallets (240 cases)",
-        "price": "94.23",
+        "price": "103,68",
         "discountPrice": "Net price"
       },
       "fourPallets": {
         "label": "(320 cases) up to 8 pallets (640 cases)",
-        "price": "84.81",
+        "price": "93,31",
         "discountPrice": "10%"
       },
       "ninePallets": {
         "label": "(720 cases) onwards",
-        "price": "80.09",
+        "price": "88,13",
         "discountPrice": "15%"
       }
     },
@@ -228,53 +228,70 @@
     "tinquiao": {
       "unitPallet": {
         "label": "(112 cases) to 3 pallets (336 cases)",
-        "price": "43,66",
+        "price": "43,62",
         "discountPrice": "Net price"
       },
       "fourPallets": {
-        "label": "(320 cases) up to 8 pallets (640 cases)",
-        "price": "39.29",
+        "label": "(448 cases) up to 8 pallets (896 cases)",
+        "price": "39,25",
         "discountPrice": "10%"
       },
       "ninePallets": {
-        "label": "(720 cases) onwards",
-        "price": "37.11",
+        "label": "(1.008 cases) onwards",
+        "price": "37,07",
         "discountPrice": "15%"
       }
     },
     "vinland": {
       "unitPallet": {
         "label": "(112 cases) to 3 pallets (336 cases)",
-        "price": "118.38",
+        "price": "130,2",
         "discountPrice": "Net price"
       },
       "fourPallets": {
-        "label": "(320 cases) up to 8 pallets (640 cases)",
-        "price": "106.52",
+        "label": "(448 cases) up to 8 pallets (896 cases)",
+        "price": "117,18",
         "discountPrice": "10%"
       },
       "ninePallets": {
-        "label": "(720 cases) onwards",
-        "price": "100.62",
+        "label": "(1.008 cases) onwards",
+        "price": "110,67",
         "discountPrice": "15%"
       }
     },
     "blend": {
       "unitPallet": {
         "label": "(112 cases) to 3 pallets (336 cases)",
-        "price": "61,56",
+        "price": "67,74",
         "discountPrice": "Net price"
       },
       "fourPallets": {
-        "label": "(320 cases) up to 8 pallets (640 cases)",
-        "price": "55,40",
+        "label": "(448 cases) up to 8 pallets (896 cases)",
+        "price": "60,97",
         "discountPrice": "10%"
       },
       "ninePallets": {
         "label": "(1,008 cases) and further",
-        "price": "52,33",
+        "price": "57,57",
         "discountPrice": "15%"
       }
     }
+  },
+  "notesFob": {
+    "notes": "Notes",
+    "casesCount": "Number of bottles per case",
+    "palletCount": "Number of cases per pallet",
+    "palletDimensions": "Pallet dimensions",
+    "totalWeight": "Total weight",
+    "internalNotes": "Internal notes"
+  },
+  "aditionalNote": {
+    "fobPrice": "Prices are always quoted FOB.",
+    "taxExemption": "Foreign companies are exempt from VAT (Value Added Tax).",
+    "paymentCurrency": "Payment must be made in U.S. dollars.",
+    "destinationBank": "The destination account is held at BANCO MACRO, Cafayate branch.",
+    "beneficiary": "The beneficiary is LA CONSTANCIA SRL, with a U.S. dollar checking account.",
+    "advancePayment": "Payment must be made in advance.",
+    "palletSizes": "Pallet dimensions may vary depending on the destination country."
   }
 }

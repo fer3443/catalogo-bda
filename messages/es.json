@@ -13,9 +13,9 @@
     "technicalSheet": "Ver ficha técnica →"
   },
   "footer": {
-    "follow":"Síguenos",
-    "contact":"Contacto",
-    "location":"Ubicación"
+    "follow": "Síguenos",
+    "contact": "Contacto",
+    "location": "Ubicación"
   },
   "fobTable": {
     "title": "Tabla de Precios FOB",
@@ -194,17 +194,17 @@
     "burbujas": {
       "unitPallet": {
         "label": "(80 cajas) hasta 3 pallets (240 cajas)",
-        "price": "94,23",
+        "price": "103,68",
         "discountPrice": "Precio neto"
       },
       "fourPallets": {
         "label": "(320 cajas) hasta 8 pallets (640 cajas)",
-        "price": "84,81",
+        "price": "93,31",
         "discountPrice": "10%"
       },
       "ninePallets": {
         "label": "(720 cajas) en adelante",
-        "price": "80,09",
+        "price": "88,13",
         "discountPrice": "15%"
       }
     },
@@ -228,53 +228,70 @@
     "tinquiao": {
       "unitPallet": {
         "label": "(112 cajas) a 3 pallets (336 cajas)",
-        "price": "43,66",
+        "price": "43,62",
         "discountPrice": "Precio neto"
       },
       "fourPallets": {
-        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
-        "price": "39,29",
+        "label": "(448 cajas) hasta 8 pallets (896 cajas)",
+        "price": "39,25",
         "discountPrice": "10%"
       },
       "ninePallets": {
-        "label": "(720 cajas) en adelante",
-        "price": "37,11",
+        "label": "(1.008 cajas) en adelante",
+        "price": "37,07",
         "discountPrice": "15%"
       }
     },
     "vinland": {
       "unitPallet": {
         "label": "(112 cajas) a 3 pallets (336 cajas)",
-        "price": "118,38",
+        "price": "130,20",
         "discountPrice": "Precio neto"
       },
       "fourPallets": {
-        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
-        "price": "106,52",
+        "label": "(448 cajas) hasta 8 pallets (896 cajas)",
+        "price": "117,18",
         "discountPrice": "10%"
       },
       "ninePallets": {
-        "label": "(720 cajas) en adelante",
-        "price": "100,62",
+        "label": "(1.008 cajas) en adelante",
+        "price": "110,67",
         "discountPrice": "15%"
       }
     },
     "blend": {
       "unitPallet": {
         "label": "(112 cajas) a 3 pallets (336 cajas)",
-        "price": "61,56",
+        "price": "67,74",
         "discountPrice": "Precio neto"
       },
       "fourPallets": {
-        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
-        "price": "55,40",
+        "label": "(448 cajas) hasta 8 pallets (896 cajas)",
+        "price": "60,97",
         "discountPrice": "10%"
       },
       "ninePallets": {
         "label": "(1,008 cajas) y más",
-        "price": "52,33",
+        "price": "57,57",
         "discountPrice": "15%"
       }
     }
+  },
+  "notesFob": {
+    "notes": "Notas",
+    "casesCount": "Cantidad de botellas por caja",
+    "palletCount": "Cantidad de cajas por pallet",
+    "palletDimensions": "Medida de pallet",
+    "totalWeight": "Peso total",
+    "internalNotes": "Notas internas"
+  },
+  "aditionalNote": {
+    "fobPrice": "El precio es siempre FOB.",
+    "taxExemption": "Las empresas extranjeras no pagan IVA (Impuesto al Valor Agregado).",
+    "paymentCurrency": "El pago debe realizarse en dólares estadounidenses.",
+    "destinationBank": "La cuenta de destino corresponde al BANCO MACRO, sucursal Cafayate.",
+    "beneficiary": "El beneficiario es LA CONSTANCIA SRL, en cuenta corriente en dólares.",
+    "advancePayment": "El pago debe realizarse por adelantado.",
+    "palletSizes": "Los pallets tienen diferentes dimensiones según el país de destino."
   }
 }
