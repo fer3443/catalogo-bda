@@ -18,31 +18,31 @@
     "location": "Localização"
   },
   "fobTable": {
-    "title": "Tabla de Precios FOB",
-    "subline": "Sublinea",
-    "units": "Unidades (cajas)",
-    "pricePerCase": "USD/Caja",
-    "discount": "Descuento",
-    "unitPallet": "Unidad Pallet",
-    "fourPallets": "4 Pallets",
-    "ninePallets": "9+ Pallets"
+    "title": "Tabela de Preços FOB",
+    "subline": "Subcategoria",
+    "units": "Unidades (caixas)",
+    "pricePerCase": "USD/Caixa",
+    "discount": "Desconto",
+    "unitPallet": "1 Palete",
+    "fourPallets": "4 Paletes",
+    "ninePallets": "9+ Paletes"
   },
   "wineModal": {
-    "line": "Línea",
-    "description": "Descripción",
+    "line": "Linha",
+    "description": "Descrição",
     "technicalSheet": "Ficha Técnica",
-    "origin": "Origen",
-    "vineyardAltitude": "Altura de los viñedos",
-    "age": "Edad de los viñedos",
-    "alcohol": "Alcohol",
-    "suggar": "Azúcar",
-    "serviceTemp": "Temperatura de servicio",
-    "timeOnLees": "Tiempo sobre lías",
-    "conservation": "Conservar",
-    "harvestDate": "Fecha de cosecha",
-    "cellarAging": "Guarda en bodega",
-    "winemaking": "Elaboración",
-    "pairing": "Maridaje sugerido"
+    "origin": "Origem",
+    "vineyardAltitude": "Altitude dos vinhedos",
+    "age": "Idade dos vinhedos",
+    "alcohol": "Álcool",
+    "suggar": "Açúcar",
+    "serviceTemp": "Temperatura de serviço",
+    "timeOnLees": "Tempo sobre as borras",
+    "conservation": "Conservação",
+    "harvestDate": "Data da colheita",
+    "cellarAging": "Potencial de guarda",
+    "winemaking": "Elaboração",
+    "pairing": "Harmonização sugerida"
   },
   "wines": {
     "torrontes-brut-nature": {
@@ -193,88 +193,105 @@
   "fobPrices": {
     "burbujas": {
       "unitPallet": {
-        "label": "(80 cajas) hasta 3 pallets (240 cajas)",
-        "price": "94,23",
-        "discountPrice": "Precio neto"
+        "label": "(80 caixas) até 3 paletes (240 caixas)",
+        "price": "103,68",
+        "discountPrice": "Preço líquido"
       },
       "fourPallets": {
-        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
-        "price": "84,81",
+        "label": "(320 caixas) até 8 paletes (640 caixas)",
+        "price": "93,31",
         "discountPrice": "10%"
       },
       "ninePallets": {
-        "label": "(720 cajas) en adelante",
-        "price": "80,09",
+        "label": "(720 caixas) em diante",
+        "price": "88,13",
         "discountPrice": "15%"
       }
     },
     "pet": {
       "unitPallet": {
-        "label": "(80 cajas) hasta 3 pallets (240 cajas)",
+        "label": "(80 caixas) até 3 paletes (240 caixas)",
         "price": "65,96",
-        "discountPrice": "Precio neto"
+        "discountPrice": "Preço líquido"
       },
       "fourPallets": {
-        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
+        "label": "(320 caixas) até 8 paletes (640 caixas)",
         "price": "59,36",
         "discountPrice": "10%"
       },
       "ninePallets": {
-        "label": "(720 cajas) en adelante",
+        "label": "(720 caixas) em diante",
         "price": "68,08",
         "discountPrice": "15%"
       }
     },
     "tinquiao": {
       "unitPallet": {
-        "label": "(112 cajas) a 3 pallets (336 cajas)",
-        "price": "43,66",
-        "discountPrice": "Precio neto"
+        "label": "(112 caixas) até 3 paletes (336 caixas)",
+        "price": "43,62",
+        "discountPrice": "Preço líquido"
       },
       "fourPallets": {
-        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
-        "price": "39,29",
+        "label": "(448 caixas) até 8 paletes (896 caixas)",
+        "price": "39,25",
         "discountPrice": "10%"
       },
       "ninePallets": {
-        "label": "(720 cajas) en adelante",
-        "price": "37,11",
+        "label": "(1.008 caixas) em diante",
+        "price": "37,07",
         "discountPrice": "15%"
       }
     },
     "vinland": {
       "unitPallet": {
-        "label": "(112 cajas) a 3 pallets (336 cajas)",
-        "price": "118,38",
-        "discountPrice": "Precio neto"
+        "label": "(112 caixas) até 3 paletes (336 caixas)",
+        "price": "130,20",
+        "discountPrice": "Preço líquido"
       },
       "fourPallets": {
-        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
-        "price": "106,52",
+        "label": "(448 caixas) até 8 paletes (896 caixas)",
+        "price": "117,18",
         "discountPrice": "10%"
       },
       "ninePallets": {
-        "label": "(720 cajas) en adelante",
-        "price": "100,62",
+        "label": "(1.008 caixas) em diante",
+        "price": "110,67",
         "discountPrice": "15%"
       }
     },
     "blend": {
       "unitPallet": {
-        "label": "(112 cajas) a 3 pallets (336 cajas)",
-        "price": "61,56",
-        "discountPrice": "Precio neto"
+        "label": "(112 caixas) até 3 paletes (336 caixas)",
+        "price": "67,74",
+        "discountPrice": "Preço líquido"
       },
       "fourPallets": {
-        "label": "(320 cajas) hasta 8 pallets (640 cajas)",
-        "price": "55,40",
+        "label": "(448 caixas) até 8 paletes (896 caixas)",
+        "price": "60,97",
         "discountPrice": "10%"
       },
       "ninePallets": {
-        "label": "(1,008 cajas) y más",
-        "price": "52,33",
+        "label": "(1.008 caixas) e mais",
+        "price": "57,57",
         "discountPrice": "15%"
       }
     }
+  },
+  "notesFob": {
+    "notes": "Observações",
+    "casesCount": "Quantidade de garrafas por caixa",
+    "palletCount": "Quantidade de caixas por palete",
+    "palletDimensions": "Dimensões do palete",
+    "totalWeight": "Peso total",
+    "internalNotes": "Observações internas"
+  },
+   "aditionalNote": {
+    "fobPrice": "O preço é sempre FOB.",
+    "taxExemption": "Empresas estrangeiras não pagam IVA (Imposto sobre Valor Agregado).",
+    "paymentCurrency": "O pagamento deve ser feito em dólares americanos.",
+    "destinationBank": "A conta de destino é do BANCO MACRO - Agência Cafayate.",
+    "beneficiary": "O beneficiário é LA CONSTANCIA SRL, em conta corrente em dólares.",
+    "advancePayment": "O pagamento deve ser realizado de forma antecipada.",
+    "palletSizes": "Os pallets possuem tamanhos diferentes dependendo do país."
   }
 }

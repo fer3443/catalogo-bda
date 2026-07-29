@@ -28,7 +28,7 @@ export const LocaleSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
     <Select value={locale} onValueChange={handleChange}>
       <SelectTrigger
         className={clsx(`p-2 h-8 border shadow-none font-medium cursor-pointer`, {
-          "w-20": mobile,
+          "w-32": mobile,
           "min-w-auto": !mobile
         })}
       >
