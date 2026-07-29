@@ -26,5 +26,6 @@ export enum Subline {
   burbujas = "burbujas",
   tinquiao = "tinquiao",
   vinland = "vinland",
+  drakkar = "drakkar",
   blend = "blend"
 }

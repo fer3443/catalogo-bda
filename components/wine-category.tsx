@@ -14,7 +14,7 @@ export const WineCategory = () => {
   const t = useTranslations("Home");
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 p-4 mb-10">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 p-4 lg:px-8 mb-10">
       <div className="col-span-full space-y-8 px-1">
         <h2 className={`${alternativeTitleFont.className} text-4xl pt-4 text-center md:text-start`}>
           {t("titleDescription")}
