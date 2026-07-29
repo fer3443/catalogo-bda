@@ -5,7 +5,7 @@ import { LocaleSwitcher } from "../localeswitcher"
 
 export const NavDesktop = () => {
   return (
-    <nav className="bg-[#3f1b26] w-full py-2 px-6 flex justify-between items-center mb-2">
+    <nav className="bg-[#3f1b26] w-full py-2 px-4 flex justify-between items-center mb-2">
       <div className="flex gap-2 items-center">
         <MdOutlineLocationOn/>
         <Link
@@ -18,10 +18,10 @@ export const NavDesktop = () => {
         </Link>
         <span> - </span>
         <Link
-          href="mailto:info@burbujasdealtura.com.ar"
+          href="mailto:export@burbujasdealtura.com.ar"
           className="text-xs lg:text-base font-light flex justify-center items-center gap-2 text-nowrap hover:font-medium px-1 duration-200 text-secondary hover:text-white"
         >
-          info@burbujasdealtura.com.ar
+          export@burbujasdealtura.com.ar
         </Link>
       </div>
       <div className="flex gap-4 items-center">

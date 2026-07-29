@@ -10,6 +10,7 @@ import { WineModal } from "./wine-modal"
 import { TECHNICAL_INFO } from '../mock/new-wine-data';
 import { SublineSection } from "./molecules";
 import { TablePricesFob } from "./table-prices-fob";
+import { Separator } from "./ui/separator";
 
 interface Props {
   line: Lines | undefined;
@@ -23,7 +24,9 @@ const labelLine: Record<string, string> = {
 export function WineCatalog({ line, subline }: Props) {
   const [selectedWine, setSelectedWine] = useState<NewWine | null>(null);
   const t = useTranslations('fobTable');
-  const l = useTranslations("catalog")
+  const l = useTranslations("catalog");
+  const n = useTranslations('notesFob');
+  const an = useTranslations('aditionalNote');
 
   return (
     <div>
@@ -61,17 +64,30 @@ export function WineCatalog({ line, subline }: Props) {
             <>
               <div className="col-span-full mt-10 mb-4 space-y-2">
                 <div className="flex flex-col lg:items-center lg:flex-row gap-2 text-xs md:text-sm justify-center">
-                  <p className="font-medium">Notas:</p>
-                  <p className="flex items-center gap-1"><span className="font-semibold">Cantidad de botellas por caja:</span>{TECHNICAL_INFO[line].main_note.bottles_per_box}</p>
-                  <p className="flex items-center gap-1"><span className="font-semibold">Cantidad de cajas por pallet:</span>{TECHNICAL_INFO[line].main_note.box_per_pallet}</p>
-                  <p className="flex items-center gap-1"><span className="font-semibold">Medida de pallet:</span>{TECHNICAL_INFO[line].main_note.pallet_measurements}</p>
-                  <p className="flex items-center gap-1"><span className="font-semibold">Peso total:</span>{TECHNICAL_INFO[line].main_note.total_weight}</p>
+                  <p className="font-medium">{n("notes")}:</p>
+                  <p className="flex items-center gap-1"><span className="font-semibold">{n("casesCount")}:</span>{TECHNICAL_INFO[line].main_note.bottles_per_box}</p>
+                  <p className="flex items-center gap-1"><span className="font-semibold">{n("palletCount")}:</span>{TECHNICAL_INFO[line].main_note.box_per_pallet}</p>
+                  <p className="flex items-center gap-1"><span className="font-semibold">{n("palletDimensions")}:</span>{TECHNICAL_INFO[line].main_note.pallet_measurements}</p>
+                  <p className="flex items-center gap-1"><span className="font-semibold">{n("totalWeight")}:</span>{TECHNICAL_INFO[line].main_note.total_weight}</p>
                 </div>
               </div>
               <div className="col-span-full mb-4 space-y-2">
                 <div className="flex flex-col lg:items-center lg:flex-row justify-center text-xs md:text-sm gap-2">
-                  <p className="font-medium">Notas internas:</p>
+                  <p className="font-medium">{n("internalNotes")}:</p>
                   <p><span className="font-semibold mr-1">{TECHNICAL_INFO[line].internal_note.name}:</span>{TECHNICAL_INFO[line].internal_note.measures}</p>
+                </div>
+              </div>
+              <div className="my-10 col-span-full flex flex-col lg:flex-row justify-around items-start mb-4 space-y-2 border border-slate-200 bg-slate-100 rounded-lg p-4 md:p-6">
+                <div className="flex flex-col text-muted-foreground lg:items-start text-xs lg:text-sm gap-2">
+                  <p>{an("fobPrice")}</p>
+                  <p>{an("taxExemption")}</p>
+                  <p>{an("paymentCurrency")}</p>
+                  <p>{an("destinationBank")}</p>
+                </div>
+                <div className="flex flex-col text-muted-foreground lg:items-start text-xs lg:text-sm gap-2">
+                  <p>{an("beneficiary")}</p>
+                  <p>{an("advancePayment")}</p>
+                  <p>{an("palletSizes")}</p>
                 </div>
               </div>
             </>
