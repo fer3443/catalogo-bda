@@ -296,7 +296,7 @@ export const newWineData: NewWine[] = [
   {
     id: "drakkar",
     name: "Drakkar",
-    image: "https://res.cloudinary.com/dndrbcmkg/image/upload/v1785199222/v-vinland_ok23t9.webp",
+    image: "https://res.cloudinary.com/dndrbcmkg/image/upload/v1785379081/Drakkar_fondo_blanco_g07bl8.png",
     description: "DRAKKAR, que en vikingo antiguo significa 'Dragón', era un amuleto de suerte colocado en la proa y popa de los barcos, símbolo de poder y audacia en el mar. Inspirado en esa misma esencia, nuestro vino Drakkar es un homenaje a la fuerza y el carácter de su origen. Resultado de la fusión de uvas Malbec y Tannat, potencia las intensas notas de frutos rojos maduros y especias con un toque ahumado. Profundo color rojo oscuro intenso.  En nariz, se perciben aromas a mora y cereza negra, que luego se van combinando y formando aromas más complejos, como notas cárnicas y grafito.   En boca su entrada es potente, con mucha personalidad, que con el tiempo se suaviza al oxigenar el vino",
     origin: "CAFAYATE - SALTA - ARGENTINA",
     elaboration: "Maceración prefermentativa de la uva con frío, buscando inicio de fermentación carbónica. Fermentación lenta y controlada. Prensado suave. Añejamiento en barrica de roble durante 15 meses, en botella 8 meses.",
@@ -325,7 +325,7 @@ export const INFO_LINES: Record<Lines, LineDescription[]> = {
     },
     {
       title: NameWine.pet,
-      content: `(Abreviatura de Pétillant Naturel, "Naturalmente Espumoso). Está elaborado en Método Ancestral, donde el vino se embotella antes de que la fermentacíon principal termine, dentro de esta botella las levaduras siguen trabajando hasta generar las burbujas. No se filtra y en el fondo quedan los residuos de las levaduras. Es de textura fina, de aromas y colores intensos con espuma delicada y cremosa por lo que se percibe la uva con mayor intensidad.`
+      content: `(Abreviatura de Pétillant Naturel, Naturalmente Espumoso). Está elaborado en Método Ancestral, donde el vino se embotella antes de que la fermentacíon principal termine, dentro de esta botella las levaduras siguen trabajando hasta generar las burbujas. No se filtra y en el fondo quedan los residuos de las levaduras. Es de textura fina, de aromas y colores intensos con espuma delicada y cremosa por lo que se percibe la uva con mayor intensidad.`
     },
   ],
   Tinquiao: [
