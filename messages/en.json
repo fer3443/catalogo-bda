@@ -240,12 +240,12 @@
       },
       "fourPallets": {
         "label": "(320 cases) up to 8 pallets (640 cases)",
-        "price": "68,26",
+        "price": "68,29",
         "discountPrice": "10%"
       },
       "ninePallets": {
         "label": "(720 cases) onwards",
-        "price": "64,47",
+        "price": "64,48",
         "discountPrice": "15%"
       }
     },
