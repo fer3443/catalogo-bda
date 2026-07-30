@@ -9,6 +9,30 @@
     "allLines": "Portfólio Completo",
     "wine": "Vinhos"
   },
+  "description_variety": {
+    "espumantes": {
+      "burbujas": {
+        "title": "Burbujas de Altura",
+        "description": "O primeiro espumante criado a 1.800 metros acima do nível do mar na Argentina, pelo Método Tradicional. São realizadas duas fermentações. A primeira ocorre em tanques de aço inoxidável, onde o álcool é produzido pela ação das leveduras e dos açúcares naturais das uvas. Após a conclusão desse processo, são adicionados leveduras e açúcar para realizar uma segunda fermentação, desta vez na garrafa. As garrafas são colocadas em pupitres e giradas 180° duas vezes ao dia, para desenvolver as borbulhas de forma natural. Quando consideramos que o tempo sobre as borras já formou borbulhas delicadas, finas e consistentes, é realizado o dégorgement, seguido da adição do licor de expedição. Finalmente, colocamos a rolha de cortiça e deixamos o vinho repousar para que alcance seu equilíbrio. São espumantes de alta qualidade, que proporcionam complexidade e elegância."
+      },
+      "pet": {
+        "title": "Pet Nat",
+        "description": "(Abreviação de Pétillant Naturel, naturalmente espumante). É elaborado pelo Método Ancestral, no qual o vinho é engarrafado antes que a fermentação principal termine. Dentro da garrafa, as leveduras continuam atuando até gerar as borbulhas. Não é filtrado, e os resíduos das leveduras permanecem no fundo da garrafa. Apresenta textura fina, aromas e cores intensos, com uma espuma delicada e cremosa, permitindo perceber a expressão da uva com maior intensidade."
+      }
+    },
+    "v_tinquiao": {
+      "tinquiao": {
+        "title": "Tinquiao",
+        "description": "Tinquiao, em Cafayate, Salta, significa 'estar alegre, animado, mas não bêbado', na antiga língua quéchua — o momento que antecede essa condição. São vinhos frescos, fáceis de beber e com aromas marcantes que expressam a personalidade da uva. O rótulo apresenta uma fotografia da Quebrada de las Conchas, enquanto suas diferentes cores sugerem o horário ideal do dia para apreciar cada vinho."
+      }
+    },
+    "vikinga": {
+      "vinland": {
+        "title": "Vinland",
+        "description": "Vinland é um vinho de altitude de grande presença. Não é apenas um corte de duas variedades (60% Cabernet Franc - 40% Malbec), mas também uma combinação de carvalho americano e carvalho francês de primeiro uso, proporcionando complexidade aos aromas e sabores. Este vinho carrega um espírito viking, pois temos ascendência nórdica e nossa vinícola combina duas culturas: a Noruega e Cafayate, onde nasceram os filhos. O nome e o design do rótulo foram inspirados em um famoso viking, Leifr Eiríksson, que viajou para a América do Norte, chegando à Terra Nova, no Canadá. Em busca de madeira, encontrou videiras e uvas e produziu vinho, que posteriormente comercializou como uma novidade, já que os vikings consumiam grandes quantidades de cerveja e hidromel."
+      }
+    }
+  },
   "wineCard": {
     "technicalSheet": "Ver Ficha Técnica →"
   },
@@ -47,138 +71,138 @@
   "wines": {
     "torrontes-brut-nature": {
       "name": "Torrontés Brut Nature",
-      "description": "Espléndido espumante único en el Valle, presenta excelente calidad y persistencia en sus Burbujas. Sus aromas recuerdan rosas, durazno blanco y manzana verde, característicos del Torrontés, con notas de pan fresco y levadura producidos por la fermentación en botella. En boca resulta de gran estructura y agradable sensación fresca, que invita a seguir tomándolo.",
-      "conservation": "En un lugar oscuro y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Maceración de la fruta y fermentaciones a bajas temperaturas para lograr aromas únicos, burbujas finas y persistentes. Segunda fermentación dentro de cada botella. Toma de espuma y degüelle realizados en forma artesanal buscando delicadeza en el producto. Agregado de licor de Expedición elaborado por nosotros para darle un matiz dulzón, propio de los Extra Brut.",
-      "harvestDate": "Principios de Enero, bien temprano y a mano, cajas de 15 Kg.",
-      "pairing": "Este Torrontés es perfecto con sabores frescos, especiados y picantes. Lo puedes probar con pescados cocinados, con platos con maíz (humita), pollo con mostaza y miel, postres con frutas frescas."
+      "description": "Um espumante único e esplêndido no Vale, que apresenta excelente qualidade e persistência de suas borbulhas. Seus aromas remetem a rosas, pêssego branco e maçã verde, características do Torrontés, com notas de pão fresco e levedura produzidas pela fermentação em garrafa. Em boca, apresenta grande estrutura e uma agradável sensação de frescor, que convida a continuar apreciando.",
+      "conservation": "Em local escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Maceração das frutas e fermentações em baixas temperaturas para obter aromas únicos, borbulhas finas e persistentes. Segunda fermentação dentro de cada garrafa. Tomada de espuma e dégorgement realizados de forma artesanal, buscando delicadeza no produto. Adição de licor de expedição elaborado por nós, proporcionando um toque levemente adocicado, característico dos Extra Brut.",
+      "harvestDate": "No início de janeiro, bem cedo e manualmente, em caixas de 15 kg.",
+      "pairing": "Este Torrontés combina perfeitamente com sabores frescos, condimentados e picantes. Pode ser apreciado com peixes preparados de diferentes maneiras, pratos à base de milho, como humita, frango com mostarda e mel e sobremesas com frutas frescas."
     },
     "torrontes-extra-brut": {
       "name": "Torrontés Extra Brut",
-      "description": "Este espumante Torrontés emblemático de Cafayate, destaca por su frescura y facilidad para tomar, tiene notas a pan fresco, maracuyá y durazno. Burbujas delicadas y pequeñas producidas por la segunda fermentación en botella. Gran estructura en boca, envolvente y persistente",
-      "conservation": "En un lugar oscuro y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Maceración de la fruta y fermentaciones a bajas temperaturas para lograr aromas únicos, burbujas finas y persistentes. Segunda fermentación dentro de cada botella. Toma de espuma y degüelle realizados en forma artesanal buscando delicadeza en el producto. Agregado de licor de Expedición elaborado por nosotros para darle un matiz dulzón propio de los Extra Brut.",
-      "harvestDate": "Principios de enero bien temprano y a mano, cajas de 15 KG.",
-      "pairing": "Ideal para acompañar ensaladas frescas, pastas con crema, empanadas"
+      "description": "Este emblemático espumante Torrontés de Cafayate destaca-se por seu frescor e facilidade de beber, apresentando notas de pão fresco, maracujá e pêssego. Suas borbulhas delicadas e pequenas são produzidas pela segunda fermentação em garrafa. Apresenta grande estrutura em boca, com uma sensação envolvente e persistente.",
+      "conservation": "Em local escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Maceração das frutas e fermentações em baixas temperaturas para obter aromas únicos, borbulhas finas e persistentes. Segunda fermentação dentro de cada garrafa. Tomada de espuma e dégorgement realizados de forma artesanal, buscando delicadeza no produto. Adição de licor de expedição elaborado por nós, proporcionando um toque levemente adocicado, característico dos Extra Brut.",
+      "harvestDate": "No início de janeiro, bem cedo e manualmente, em caixas de 15 kg.",
+      "pairing": "Ideal para acompanhar saladas frescas, massas com molho de creme e empanadas."
     },
     "rose-malbec": {
       "name": "Rosé Malbec",
-      "description": "Espumante que destaca la uva emblemática de Argentina, con un color seductor y aromas a frutos rojos que se convierten luego en mermeladas, y frutos secos, producto de su re-fermentación en botella. Agradable matices frescos y maduros, con excelente calidad y persistencia en sus Burbujas, que lo hace aun mas fácil de tomar.",
-      "conservation": "En un lugar oscuro y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Trabajando a bajas temperaturas desde el ingreso de la uva a bodega para obtener un color atractivo en la prensada y, junto a fermentaciones controladas, logramos aromas únicos, burbujas finas y persistentes. Toma de espuma realizada en forma artesanal y dedicada a la delicadeza del producto. Segunda fermentación dentro de cada botella. Degüelle producido a mano y posterior tapado final sin ningún agregado, se ofrece como sale de nuestra cava luego de la fermentación.",
-      "harvestDate": "Principios de Febrero.",
-      "pairing": "Ideal para acompañar risotto de hongos, cabutia rellena, sushi, pastas rellenas"
+      "description": "Espumante que destaca a uva emblemática da Argentina, com uma cor sedutora e aromas de frutas vermelhas que evoluem para notas de geleias e frutas secas, resultado de sua refermentação em garrafa. Apresenta agradáveis nuances frescas e maduras, com excelente qualidade e persistência de suas borbulhas, tornando-o ainda mais fácil de beber.",
+      "conservation": "Em local escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Trabalhamos em baixas temperaturas desde a chegada das uvas à vinícola para obter uma cor atraente durante a prensagem e, juntamente com fermentações controladas, alcançar aromas únicos e borbulhas finas e persistentes. A tomada de espuma é realizada de forma artesanal, com especial atenção à delicadeza do produto. Segunda fermentação dentro de cada garrafa. O dégorgement é realizado manualmente, seguido do fechamento final sem qualquer adição. O vinho é apresentado exatamente como sai de nossa adega após a fermentação.",
+      "harvestDate": "No início de fevereiro.",
+      "pairing": "Ideal para acompanhar risoto de cogumelos, cabotiá recheada, sushi e massas recheadas."
     },
     "chardonnay-nature": {
       "name": "Chardonnay Nature",
-      "description": "Varietal reina de los espumantes, sus aromas hacen recordar elegantes notas a perfumes frutales, miel y pan tostado. En boca resulta sabores poderosos y cercano a ananá (o piña). Con un cuerpo ligero, con acidez pronunciada y buen equilibrio, que invita a seguir bebiéndolo",
-      "conservation": "En un lugar oscuro y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Tradicional o Champenoise. Maceración de la fruta y fermentación con bajas temperaturas para obtener una finesa única y aromas persistentes. Todo elaborado en un modo artesanal. Segunda fermentación dentro de cada botella. Degüelle producido en forma manual y encorchado final sin ninguna adición. Se encuentra disponible cuando sale de la cava, después de girar la botella en el pupitre.",
-      "harvestDate": "Comienzos de enero, muy temprano, manual y en cajas de 15 kg de un modo artesanal buscando delicadeza en el producto.",
-      "pairing": "Completa a la perfección platos que lleven como base mantequilla, pollo asado con una salsa cítrica con crema, quesos curados estilo alpino, parmesano, verduras al wok con hongos, langosta o vieiras."
+      "description": "Variedade rainha dos espumantes, seus aromas remetem a elegantes notas de perfumes frutados, mel e pão tostado. Em boca, apresenta sabores intensos e lembrando abacaxi. Com corpo leve, acidez marcante e bom equilíbrio, que convida a continuar apreciando.",
+      "conservation": "Em local escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Método Tradicional ou Champenoise. Maceração das frutas e fermentação em baixas temperaturas para obter uma delicadeza única e aromas persistentes. Todo o processo é realizado de forma artesanal. Segunda fermentação dentro de cada garrafa. Dégorgement realizado manualmente e fechamento final com rolha, sem qualquer adição. O vinho é disponibilizado assim que sai da adega, após o processo de remuage nas pupitres.",
+      "harvestDate": "No início de janeiro, bem cedo, colhido manualmente em caixas de 15 kg, de forma artesanal, buscando a delicadeza do produto.",
+      "pairing": "Combina perfeitamente com pratos à base de manteiga, frango assado com molho cítrico e creme, queijos curados de estilo alpino, parmesão, legumes preparados no wok com cogumelos, lagosta ou vieiras."
     },
     "pet-nat-torrontes": {
       "name": "Pet Nat",
-      "description": "método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones. 'Se caracteriza por tener un proceso de elaboración sin agregados, solo acompañando por la transformación de azúcar en alcohol de manera paulatina.Como termina su fermentación en la misma botella que luego se comercializa, no es filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método'",
-      "conservation": "En un lugar oscuro y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Pet Nat o Pétillant Naturel",
-      "harvestDate": "Primer quincena de febrero. Cosechado a mano, en cajas de 15 KG. Preselección en viñedo",
-      "pairing": "Ideal para acompañar las tardes veraniegas y calurosas, antes de alguna comida, como refresco"
+      "description": "Método de elaboração que surgiu por acidente na França no século XVI. Esse método ancestral resulta em um vinho espumante por meio de uma única fermentação, ao contrário do Método Tradicional ou Champenoise, no qual são realizadas duas fermentações. Caracteriza-se por um processo de elaboração sem adições, acompanhando apenas a transformação gradual do açúcar em álcool. Como a fermentação termina na mesma garrafa que posteriormente é comercializada, o vinho não é filtrado e apresenta uma espécie de 'névoa', que faz parte de sua expressão natural e é uma característica marcante desse método.",
+      "conservation": "Em local escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Pet Nat ou Pétillant Naturel.",
+      "harvestDate": "Primeira quinzena de fevereiro. Colheita manual, em caixas de 15 kg. Pré-seleção no vinhedo.",
+      "pairing": "Ideal para acompanhar tardes quentes de verão, antes de uma refeição ou simplesmente como uma bebida refrescante."
     },
     "pet-nat-rose": {
       "name": "Pet Nat Rosé",
-      "description": "Pet Nat o Pétillant Naturel, significa \"naturalmente espumoso\": un método de elaboración que nació por accidente en Francia en el Siglo XVI. Este método ancestral resulta en un vino espumoso a través de una sola fermentación, a diferencia del método tradicional o Champenoise en el que se producen dos fermentaciones.",
-      "conservation": "En un lugar oscuro y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "\"Se caracteriza por tener un proceso de elaboración sin agregados, sólo acompañando por la transformación de azúcar en alcohol de manera paulatina. Como termina su fermentación en la misma botella, la que luego se comercializa, no es filtrado, por lo que presenta una ¨neblina¨ que es parte de su expresión natural y bien característica de este método.",
-      "harvestDate": "Primer quincena de febrero. Cosechado a mano, en cajas de 15 kg. Preselección en viñedo.",
-      "pairing": "Ideal para acompañar las tardes veraniegas y calurosas, con un «fresco Rosé o informalmente con su pareja»"
+      "description": "Pet Nat ou Pétillant Naturel significa 'naturalmente espumante': um método de elaboração que surgiu por acidente na França no século XVI. Esse método ancestral resulta em um vinho espumante por meio de uma única fermentação, ao contrário do Método Tradicional ou Champenoise, no qual são realizadas duas fermentações.",
+      "conservation": "Em local escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Caracteriza-se por um processo de elaboração sem adições, acompanhando apenas a transformação gradual do açúcar em álcool. Como a fermentação termina na mesma garrafa que posteriormente é comercializada, o vinho não é filtrado e apresenta uma espécie de 'névoa', que faz parte de sua expressão natural e é uma característica marcante desse método.",
+      "harvestDate": "Primeira quinzena de fevereiro. Colheita manual, em caixas de 15 kg. Pré-seleção no vinhedo.",
+      "pairing": "Ideal para acompanhar tardes quentes de verão, como um Rosé fresco ou para ser apreciado de maneira descontraída a dois."
     },
     "torrontes-tinquiao": {
       "name": "Torrontés",
-      "description": "Varietal Emblemático de Cafayate - Norte Argentino . Color límpido como el agua, genera sensación de frescura y fineza. Aroma cítricos y flores blancas envuelven el ambiente. Sutil cremosidad y mineralizada en boca, procovando un equilibrio único en el paladar.",
-      "conservation": "En lugar fresco, oscuro y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Maceración de la uva con frío antes de su prensado. Fermentación a bajas temperaturas para preservar frescura.",
-      "harvestDate": "Principio de Febrero, cosechado a mano en cajas de 15 Kg. Preselección en viñedo.",
-      "pairing": "Ideal para acompañar quesos fuertes, mariscos, sushi y también empanadas salteñas. Se recomienda con comidas en verano y como aperitivo en invierno."
+      "description": "Variedade emblemática de Cafayate, no Norte Argentino. De cor límpida como a água, transmite uma sensação de frescor e delicadeza. Aromas cítricos e flores brancas envolvem o ambiente. Em boca, apresenta uma sutil cremosidade e mineralidade, proporcionando um equilíbrio único ao paladar.",
+      "conservation": "Em local fresco, escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Maceração das uvas a frio antes da prensagem. Fermentação em baixas temperaturas para preservar o frescor.",
+      "harvestDate": "No início de fevereiro, colheita manual em caixas de 15 kg. Pré-seleção no vinhedo.",
+      "pairing": "Ideal para acompanhar queijos intensos, frutos do mar, sushi e também empanadas salteñas. Recomendado para acompanhar refeições no verão e como aperitivo no inverno."
     },
     "torrontes-dulce-natural": {
       "name": "Torrontés Dulce Natural",
-      "description": "De color amarillo verdoso atractivo y brillante, invita a la boca sus aromas cítricos preponderantes mezclados con una sensación tropical. Tiene una entrada dulce equilibrada con delicadas notas a limón, pomelo, durazno blanco. El dulce Natural de la uva genera una untuosidad interesante que al sentirlo recuerda a miel en panal, con un final presente por un largo tiempo.",
-      "conservation": "En lugar fresco, oscuro y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Maceración y fermentación con levaduras seleccionadas naturalmente de la uva. Fermentación lenta y con frío, hasta obtener el azúcar y alcohol deseados.",
-      "harvestDate": "Marzo. Cosecha bien temprano y a mano. Cajas de 15 Kg.",
-      "pairing": "Ideal para beber como aperitivo acompañando tabla de quesos y/o frutos secos. Tartas dulces con crema. También para preparar cocteles."
+      "description": "De atraente e brilhante coloração amarelo-esverdeada, revela aromas cítricos marcantes combinados com uma sensação tropical. Apresenta uma entrada doce e equilibrada, com delicadas notas de limão, grapefruit e pêssego branco. A doçura natural da uva proporciona uma textura aveludada e envolvente que remete ao mel em favo, com um final longo e persistente.",
+      "conservation": "Em local fresco, escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Maceração e fermentação com leveduras naturalmente selecionadas das uvas. Fermentação lenta e a frio, até alcançar os níveis desejados de açúcar e álcool.",
+      "harvestDate": "Março. Colheita realizada bem cedo e manualmente, em caixas de 15 kg.",
+      "pairing": "Ideal para ser apreciado como aperitivo, acompanhado de uma tábua de queijos e/ou frutas secas. Combina também com tortas doces à base de creme e pode ser utilizado no preparo de coquetéis."
     },
     "rose-malbec-tinquiao": {
       "name": "Rosé Malbec",
-      "description": "Predomina un rosado atractivo y brillante. En boca tiene una entrada agradable y de buen volumen, con una acidez vibrante y fresca que le da carácter. Entrelazan aromas de cereza, guinda, frutilla; final envolvente en boca que recuerda a mermelada recién realizada de frutos rojos.",
-      "conservation": "En lugar fresco, oscuro y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Prensado directo suave de la uva Malbec, obteniendo un color leve, pero con un volumen interesante, que luego persiste en el vino. Fermentación 30 días del mosto sin el orujo, a bajas temperaturas. Removido de lías por 4 meses en tanque.",
-      "harvestDate": "Primera quincena de febrero. Cosechado a mano, en cajas de 15 kg. Preselección en viñedo.",
-      "pairing": "Ideal para acompañar aperitivos con mariscos, verduras a la parrilla, ensaladas con quinoa, carnes blancas con salsas cítricas, postres cremosos que tengan frutos rojos."
+      "description": "Predomina uma atraente e brilhante tonalidade rosada. Em boca, apresenta uma entrada agradável e de bom volume, com uma acidez vibrante e fresca que lhe confere personalidade. Aromas de cereja, ginja e morango se entrelaçam, com um final envolvente que remete a uma geleia recém-preparada de frutas vermelhas.",
+      "conservation": "Em local fresco, escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Prensagem direta e suave das uvas Malbec, obtendo uma coloração delicada, mas com um volume interessante que permanece no vinho. Fermentação do mosto por 30 dias, sem as cascas, em baixas temperaturas. Remoção das borras durante 4 meses em tanque.",
+      "harvestDate": "Primeira quinzena de fevereiro. Colheita manual, em caixas de 15 kg. Pré-seleção no vinhedo.",
+      "pairing": "Ideal para acompanhar aperitivos com frutos do mar, legumes grelhados, saladas com quinoa, carnes brancas com molhos cítricos e sobremesas cremosas com frutas vermelhas."
     },
     "cabernet-sauvignon": {
       "name": "Cabernet Sauvignon",
-      "description": "Color rubí y violáceo con detalles negruzcos. Aromas que recuerdan a frutos negros, especies mentoladas, pimiento verde. En boca y nariz se pueden encontrar los mismos aromas, dejando la sensación de continuar bebiéndolo. De acidez punzante y taninos suaves, que le otorga buen cuerpo y un final elegante y persistente.",
-      "conservation": "Potencial de guarda unos 8 años. Se recomienda decantar una hora antes de beberlo. Conservar en lugar fresco, oscuro, y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Maceración de la uva con frío. Fermentación 10 días, 23°-28° C. Se usaron pizoneos manuales. Contacto con roble durante fermentación, buscando la mayor expresión del varietal.",
-      "harvestDate": "Fin de Marzo, cosechado a mano en cajas de 15 Kg. Preselección en viñedo.",
-      "pairing": "Ideal para acompañar comidas con salsas fuertes, cazuelas, empanadas."
+      "description": "Cor rubi e violácea com nuances enegrecidas. Aromas que remetem a frutas negras, especiarias mentoladas e pimentão verde. Em boca e no nariz, os mesmos aromas se revelam, deixando uma sensação que convida a continuar apreciando o vinho. Com acidez marcante e taninos suaves, apresenta bom corpo e um final elegante e persistente.",
+      "conservation": "Potencial de guarda de aproximadamente 8 anos. Recomenda-se decantar uma hora antes de servir. Conservar em local fresco, escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Maceração das uvas a frio. Fermentação durante 10 dias, entre 23 °C e 28 °C. Foram realizados pigeages manuais. Contato com carvalho durante a fermentação, buscando a máxima expressão da variedade.",
+      "harvestDate": "Final de março, colheita manual em caixas de 15 kg. Pré-seleção no vinhedo.",
+      "pairing": "Ideal para acompanhar pratos com molhos intensos, ensopados e empanadas."
     },
     "malbec": {
       "name": "Malbec",
-      "description": "Color púrpura con matices rojizos, oscuro en el centro. Aromas que recuerdan a frutos rojos, destacándose la ciruela y cereza sobre-madura. Es inicialmente suave, luego se torna complejo y estructurado, con un acabado persistente. Es un vino con mucha personalidad, debido a la altitud y las grandes amplitudes térmicas de los viñedos Cafayateños.",
-      "conservation": "Potencial de guarda unos 8 años. Se recomienda decantar una hora antes de beberlo. Conservar en lugar fresco, oscuro, y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Maceración de la uva con frío. Fermentación 20 días, 23°-28° C. Se usaron pizoneos manuales, mojando el sombrero suavemente. Contacto con roble durante fermentación, buscando explosión de fruta. Fermentación maloláctica en otoño. Maceración larga (3 semanas). Envasado después de un año en tanque. En bodega, 6 meses en botella.",
-      "harvestDate": "Principio de Marzo, cosechado a mano en cajas de 15 Kg. Preselección en viñedo.",
-      "pairing": "Ideal para acompañar carnes rojas o pastas con una buena salsa."
+      "description": "Cor púrpura com nuances avermelhadas, escura no centro. Aromas que remetem a frutas vermelhas, com destaque para ameixa e cereja muito madura. Inicialmente suave, torna-se depois complexo e estruturado, com um final persistente. É um vinho de grande personalidade, resultado da altitude e das grandes amplitudes térmicas dos vinhedos de Cafayate.",
+      "conservation": "Potencial de guarda de aproximadamente 8 anos. Recomenda-se decantar uma hora antes de servir. Conservar em local fresco, escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Maceração das uvas a frio. Fermentação durante 20 dias, entre 23 °C e 28 °C. Foram realizados pigeages manuais, umedecendo suavemente o chapéu de bagaço. Contato com carvalho durante a fermentação, buscando uma explosão de fruta. Fermentação malolática no outono. Maceração prolongada durante 3 semanas. Engarrafamento após um ano em tanque. Na vinícola, permanece 6 meses em garrafa.",
+      "harvestDate": "Início de março, colheita manual em caixas de 15 kg. Pré-seleção no vinhedo.",
+      "pairing": "Ideal para acompanhar carnes vermelhas ou massas com um bom molho."
     },
     "cabernet-franc": {
       "name": "Cabernet Franc",
-      "description": "Color rubí y violáceo con detalles negruzcos. Aromas que recuerdan a frutos negros, especies mentoladas, pimiento verde. En boca y nariz se pueden encontrar los mismos aromas, dejando la sensación de continuar bebiéndolo. De acidez punzante y taninos suaves, que le otorga buen cuerpo y un final elegante y persistente.",
-      "conservation": "Potencial de guarda unos 8 años. Se recomienda decantar una hora antes de beberlo. Conservar en lugar fresco, oscuro, y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Maceración de la uva con frío. Fermentación 15 días, 23°-28° C. Se usaron pizoneos manuales, mojando el sombrero suavemente. Contacto con roble durante fermentación buscando la mayor expresión del varietal. Fermentación maloláctica en otoño.",
-      "harvestDate": "Principio de Marzo, cosechado a mano en cajas de 15 Kg. Preselección en viñedo.",
-      "pairing": "Ideal para acompañar carnes cocinadas a leña, embutidos y pescados."
+      "description": "Cor rubi e violácea com nuances enegrecidas. Aromas que remetem a frutas negras, especiarias mentoladas e pimentão verde. Em boca e no nariz, os mesmos aromas se revelam, deixando uma sensação que convida a continuar apreciando o vinho. Com acidez marcante e taninos suaves, apresenta bom corpo e um final elegante e persistente.",
+      "conservation": "Potencial de guarda de aproximadamente 8 anos. Recomenda-se decantar uma hora antes de servir. Conservar em local fresco, escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Maceração das uvas a frio. Fermentação durante 15 dias, entre 23 °C e 28 °C. Foram realizados pigeages manuais, umedecendo suavemente o chapéu de bagaço. Contato com carvalho durante a fermentação, buscando a máxima expressão da variedade. Fermentação malolática no outono.",
+      "harvestDate": "Início de março, colheita manual em caixas de 15 kg. Pré-seleção no vinhedo.",
+      "pairing": "Ideal para acompanhar carnes preparadas na lenha, embutidos e peixes."
     },
     "blend": {
       "name": "Blend",
-      "description": "Tri-varietal de color rojo oscuro con matices violáceos. Aromas que me transportan a frutos rojos maduros y especies de campo. En boca, los aromas expresados por cada varietal se entremezclan formando un bouquet fino y elegante.",
-      "conservation": "Potencial de guarda unos 8 años. Se recomienda decantar una hora antes de beberlo. Conservar en lugar fresco, oscuro, y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Preselección de la uva en el viñedo. Cosecha manual en pequeñas cajas. Maceración de la uva con frío antes de su molienda. Fermentación en pequeños tanques, 23 - 28° C. Se usaron pizoneos manuales. Sombrero sumergido en pos-fermentación. Contacto con roble durante fermentación y luego en barricas usadas por 12 meses, ganando complejidad en la fruta. Puede contener sedimentos naturales precipitados.",
-      "harvestDate": "año 2022.",
-      "pairing": "Ideal para acompañar carnes cocinadas a leña, estofados, paellas."
+      "description": "Corte de três variedades, de coloração vermelho-escura com nuances violáceas. Aromas que remetem a frutas vermelhas maduras e especiarias do campo. Em boca, os aromas expressos por cada variedade se entrelaçam, formando um bouquet fino e elegante.",
+      "conservation": "Potencial de guarda de aproximadamente 8 anos. Recomenda-se decantar uma hora antes de servir. Conservar em local fresco, escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Pré-seleção das uvas no vinhedo. Colheita manual em pequenas caixas. Maceração das uvas a frio antes da moagem. Fermentação em pequenos tanques, entre 23 °C e 28 °C. Foram realizados pigeages manuais. Chapéu de bagaço submerso durante a pós-fermentação. Contato com carvalho durante a fermentação e posteriormente em barricas usadas durante 12 meses, adquirindo maior complexidade na fruta. Pode conter sedimentos naturais precipitados.",
+      "harvestDate": "Ano de 2022.",
+      "pairing": "Ideal para acompanhar carnes preparadas na lenha, ensopados e paellas."
     },
     "blend-de-blends": {
       "name": "Blend de Blends",
-      "description": "Es una simbiosis entre nuestro origen noruego con la adaptación al nuevo mundo americano, a lo que se refiere este nombre. Este Blend de Varietales (Cabernet Franc, Malbec) , y Blend de Barricas (Roble Americano y Roble Francés) muestran su complejidad y cuerpo en este vino. En su color predomina el rubí con matices violáceos oscuros en el medio.",
-      "conservation": "Su potencial de guarda es de 10 años.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Maceración prefermentativa de la uva con frio, buscando inicio de fermentación carbónica, lenta y controlada.",
-      "harvestDate": "A mano. Preselección en viñedo, en cajas de 15 Kg.",
-      "pairing": "Ideal para acompañar costillar al fuego, estofado de carne con champiñones y panceta, verduras ahumadas y quesos como gruyère, gouda, lasagna con base de tomates y verduras asadas"
+      "description": "É uma simbiose entre nossa origem norueguesa e a adaptação ao Novo Mundo americano, à qual este nome faz referência. Este Blend de Variedades (Cabernet Franc, Malbec) e Blend de Barricas (Carvalho Americano e Carvalho Francês) revelam sua complexidade e corpo neste vinho. Em sua coloração predomina o rubi, com nuances violáceas escuras no centro.",
+      "conservation": "Seu potencial de guarda é de 10 anos.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Maceração pré-fermentativa das uvas a frio, buscando o início de uma fermentação carbônica, lenta e controlada.",
+      "harvestDate": "Colheita manual. Pré-seleção no vinhedo, em caixas de 15 kg.",
+      "pairing": "Ideal para acompanhar costela bovina assada no fogo, ensopado de carne com cogumelos e bacon, legumes defumados e queijos como gruyère e gouda, além de lasanha à base de tomates e legumes assados."
     },
     "tinquiao-torrontes-liviano": {
-      "name": "Tinquiao Torrontes Liviano",
+      "name": "Tinquiao Torrontés Liviano",
       "description": "",
-      "conservation": "Conservar en lugar fresco, oscuro, y sin vibraciones.",
-      "vineyardHeight": "1.800 msnm.",
-      "elaboration": "Maceración de la uva con frío antes de su prensado. Fermentación a baja temperaturas para preservar frescura.",
-      "harvestDate": "Muy temprana, a principios de marzo, realizada de forma manual en cajas de 15 kg (33 lb). Preselección en viñedos.",
-      "pairing": "Es un vino fresco para aperitivo solo, o para comerlo con pastas con salsa de crema nueces y hongos, ideal para pescado a la plancha, humita o pastel de choclo; con un suave dejo en boca que envuelve el paladar haciendo una combinación perfecta."
+      "conservation": "Conservar em local fresco, escuro e livre de vibrações.",
+      "vineyardHeight": "1.800 m acima do nível do mar.",
+      "elaboration": "Maceração das uvas a frio antes da prensagem. Fermentação em baixas temperaturas para preservar o frescor.",
+      "harvestDate": "Colheita muito precoce, no início de março, realizada manualmente em caixas de 15 kg (33 lb). Pré-seleção no vinhedo.",
+      "pairing": "Um vinho fresco para ser apreciado como aperitivo ou acompanhado de massas com molho de creme, nozes e cogumelos. Ideal também para acompanhar peixe grelhado, humita ou torta de milho, deixando um delicado final em boca que envolve o paladar e proporciona uma combinação perfeita."
     },
     "drakkar": {
       "name": "Drakkar",
@@ -302,7 +326,7 @@
     "totalWeight": "Peso total",
     "internalNotes": "Observações internas"
   },
-   "aditionalNote": {
+  "aditionalNote": {
     "fobPrice": "O preço é sempre FOB.",
     "taxExemption": "Empresas estrangeiras não pagam IVA (Imposto sobre Valor Agregado).",
     "paymentCurrency": "O pagamento deve ser feito em dólares americanos.",
