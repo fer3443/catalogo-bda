@@ -4,7 +4,7 @@ import { INFO_LINES } from '@/mock';
 export const useSublineData = (
   wineData: NewWine[],
   line: Lines | undefined,
-  subline: Subline[] | undefined
+  subline: Subline[] | undefined,
 ) => {
   const getFilteredWines = (sublineIndex: number = 0): NewWine[] => {
     if (!line) return wineData;

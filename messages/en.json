@@ -9,6 +9,30 @@
     "allLines": "Complete Portfolio",
     "wine": "Wines"
   },
+  "description_variety": {
+    "espumantes": {
+      "burbujas": {
+        "title": "Burbujas de Altura",
+        "description": "The first sparkling wine created at 1,800 meters above sea level in Argentina using the Traditional Method. Two fermentations are carried out. The first takes place in stainless steel tanks, where alcohol is produced through the action of the yeast and the natural sugars of the grapes. Once this process is complete, additional yeast and sugar are added to initiate a second fermentation in the bottle. The bottles are placed on riddling racks and rotated 180° twice a day to naturally develop the bubbles. Once we consider that the time spent on the lees has created delicate, fine, and consistent bubbles, disgorgement is carried out, followed by the addition of the expedition liqueur. Finally, we seal the bottle with a cork stopper and allow the wine to rest in the cellar so it can reach balance. These are high-quality sparkling wines that offer complexity and elegance."
+      },
+      "pet": {
+        "title": "Pet Nat",
+        "description": "(Short for Pétillant Naturel, naturally sparkling). It is made using the Ancestral Method, in which the wine is bottled before the primary fermentation is complete. Inside the bottle, the yeasts continue to work until the bubbles develop. The wine is not filtered, leaving yeast sediment at the bottom of the bottle. It has a fine texture, intense aromas and colors, and a delicate, creamy mousse that allows the character of the grape to be perceived with greater intensity."
+      }
+    },
+    "v_tinquiao": {
+      "tinquiao": {
+        "title": "Tinquiao",
+        "description": "Tinquiao, in Cafayate, Salta, means 'to be cheerful, spirited, but not drunk' in the ancient Quechua language—the moment just before. These are fresh, easy-drinking wines with expressive aromas that highlight the character of the grape. The label features a photograph of Quebrada de las Conchas, while the different colors of the labels suggest the ideal time of day to enjoy each wine."
+      }
+    },
+    "vikinga": {
+      "vinland": {
+        "title": "Vinland",
+        "description": "Vinland is a high-altitude wine with a strong presence. It is not only a blend of two varieties (60% Cabernet Franc - 40% Malbec), but also a combination of first-use American and French oak, adding complexity to its aromas and flavors. This wine carries a Viking spirit, as our family has Nordic ancestry and our winery brings together two cultures: Norway and Cafayate, where the children were born. The name and label design were inspired by a famous Viking, Leifr Eiríksson, who traveled to North America, reaching Newfoundland, Canada. Seeking wood, he discovered grapevines and grapes and made wine, which he later traded as a novelty, as the Vikings traditionally drank large amounts of beer and mead."
+      }
+    }
+  },
   "footer": {
     "follow": "Follow Us",
     "contact": "Contact",

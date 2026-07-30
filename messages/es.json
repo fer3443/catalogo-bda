@@ -9,6 +9,30 @@
     "allLines": "Portfolio completo",
     "wine": "Vinos"
   },
+  "description_variety": {
+    "espumantes": {
+      "burbujas": {
+        "title": "Burbujas de Altura",
+        "description": "Primer Espumante creado 1800 mts sobre el nivel del mar en Argentina, en Método Champenoise. Se realizan 2 fermentaciones, la primera es en tanque de acero inoxidable, la cual se genera alcohol con la levadura y azúcar propia de la uva, una vez finalizado ese proceso, se le agrega la levadura y el azúcar para genera una segunda fermentación pero en botella, se colocan en pupitres y giro de botellas de 180°, 2 veces al día, para generar las burbujas de manera natural. Cuando consideramos que el tiempo con las lías ya formó unas burbujas delicadas, finas y consistentes, se realiza el degüelle, haciendo un filtrado natural, agregando luego el licor de Expedición. Finalmente colocamos el corcho de Alcornoque y dejamos en estiba para que se equilibre el vino. Son Espumantes de alta calidad proporcionando complejidad y elegancia."
+      },
+      "pet": {
+        "title": "Pet Nat",
+        "description": "(Abreviatura de Pétillant Naturel, Naturalmente Espumoso). Está elaborado en Método Ancestral, donde el vino se embotella antes de que la fermentacíon principal termine, dentro de esta botella las levaduras siguen trabajando hasta generar las burbujas. No se filtra y en el fondo quedan los residuos de las levaduras. Es de textura fina, de aromas y colores intensos con espuma delicada y cremosa por lo que se percibe la uva con mayor intensidad."
+      }
+    },
+    "v_tinquiao": {
+      "tinquiao": {
+        "title": "Tinquiao",
+        "description": "Tinquiao, en Cafayate - Salta, en la lengua antigua (Quechua) significa estar alegre, entonado, pero no borracho, el paso previo. Son vinos frescos, faciles de tomar y con mucho aroma a la uva. Su etiqueta es una foto de la Quebrada de las conchas, y sus diversos colores entre sí, son una sugerencia de que horario debería tomarse el vino."
+      }
+    },
+    "vikinga": {
+      "vinland": {
+        "title": "Vinland",
+        "description": "Vinland, es un Vino de Altura con gran presencia, no solo es un bi-varietal (Cabernet Franc 60% - Malbec 40%), sino que combinamos Roble Americano con Roble Francés, de primer uso, dejando complejidad en aromas y sabores. Este vino tiene fuerza Vikinga ya que tenemos descendencia Nórdica y nuestra bodega hace una combinación de culturas entre Noruega y Cafayate, donde nacimos los hijos. Nos inspiramos en su nombre y diseño de etiqueta en un Vikingo muy famoso (Leifr Eiríksson) quien fue a América del Norte, Canadá. a la isla de Terranova, buscando madera, encontró vides y uvas, realizando vino, que luego comercializó como novedad ya que ellos tomaban mucha cerveza e hidromiel."
+      }
+    }
+  },
   "wineCard": {
     "technicalSheet": "Ver ficha técnica →"
   },

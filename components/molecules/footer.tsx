@@ -54,13 +54,13 @@ export async function Footer(){
             <h3 className="font-semibold">{f("follow")}</h3>
             <div className='flex items-center gap-2'>
               <Link href="https://www.instagram.com/burbujasdealtura/" target='_blank' className='rounded-full bg-[#773c4d] p-2'>
-                <LuInstagram className='size-4 sm:size-5' />
+                <LuInstagram className='size-4 sm:size-5 hover:scale-110 transition-all' />
               </Link>
               <Link href="https://www.facebook.com/profile.php?id=100064148794896" target='_blank' className='rounded-full bg-[#773c4d] p-2'>
-                <FaFacebookF className='size-4 sm:size-5' />
+                <FaFacebookF className='size-4 sm:size-5 hover:scale-110 transition-all' />
               </Link>
               <Link href="https://www.burbujasdealtura.com.ar/" target='_blank' className='rounded-full bg-[#773c4d] p-2'>
-                <LuEarth className='size-4 sm:size-5' />
+                <LuEarth className='size-4 sm:size-5 hover:scale-110 transition-all' />
               </Link>
             </div>
           </div>
