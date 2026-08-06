@@ -1,6 +1,6 @@
 "use client"
 
-import Link from "next/link"
+import { Link } from "@/i18n/navigation"
 import { LanguageEnum, Lines } from "@/interfaces"
 import { WineCardCategory } from "./wine-card-category"
 import { DividerText } from "./divider-text"
@@ -26,7 +26,10 @@ export const WineCategory = () => {
       <DividerText text={t("titleDivider")} />
       {
         Object.entries(LINES_DATA).map(([key, line]) => (
-          <Link key={key} href={line.path}>
+          <Link
+            key={key}
+            href={key === "all" ? "/lines" : { pathname: "/lines/[line]", params: { line: key } }}
+          >
             <WineCardCategory text={handleLabelByLanguage(locale, line.label)} image={line.image} />
           </Link>
         ))
