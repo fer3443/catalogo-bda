@@ -1,4 +1,4 @@
-import { LineDescription, Lines, NameWine, NewWine, Subline } from "@/interfaces";
+import { LanguageEnum, LineDescription, Lines, NameWine, NewWine, Subline } from "@/interfaces";
 
 export const newWineData: NewWine[] = [
   {
@@ -315,34 +315,79 @@ export const newWineData: NewWine[] = [
   },
 ]
 
-export const INFO_LINES: Record<Lines, LineDescription[]> = {
-  Espumantes: [
-    {
-      title: NameWine.burbujas,
-      content: `Primer Espumante creado 1800 mts sobre el nivel del mar en Argentina, en Método Champenoise. Se realizan 2 fermentaciones, la primera es en tanque de acero inoxidable, la cual se genera  alcohol con la levadura y azúcar propia de la uva, una vez finalizado ese proceso, se le agrega la levadura y el azúcar para genera una segunda fermentación pero en botella, se colocan en pupitres y giro de botellas de 180°, 2 veces al día, para generar las burbujas de manera natural. Cuando consideramos que el tiempo con las lías ya formó unas burbujas delicadas, finas y consistentes, se realiza el degüelle, haciendo un filtrado natural, agregando luego el licor de Expedición. Finalmente colocamos el corcho de Alcornoque y dejamos en estiba para que se equilibre el vino.
-    Son Espumantes de alta calidad proporcionando complejidad y elegancia.
-    `
-    },
-    {
-      title: NameWine.pet,
-      content: `(Abreviatura de Pétillant Naturel, Naturalmente Espumoso). Está elaborado en Método Ancestral, donde el vino se embotella antes de que la fermentacíon principal termine, dentro de esta botella las levaduras siguen trabajando hasta generar las burbujas. No se filtra y en el fondo quedan los residuos de las levaduras. Es de textura fina, de aromas y colores intensos con espuma delicada y cremosa por lo que se percibe la uva con mayor intensidad.`
-    },
-  ],
-  Tinquiao: [
-    {
-      title: NameWine.tinquiao,
-      content: `Tinquiao, en Cafayate - Salta, en la lengua antigua (Quechua) significa estar alegre, entonado, pero no borracho, el paso previo.
-    Son vinos frescos, faciles de tomar y con mucho aroma a la uva.
-    Su etiqueta es una foto de la Quebrada de las conchas, y sus diversos colores entre sí, son una sugerencia de que horario debería tomarse el vino.
-    `
-    }],
-  Vikinga: [
-    {
-      title: NameWine.vinland,
-      content: `Vinland, es un Vino de Altura con gran presencia, no solo es un bi-varietal (Cabernet Franc 60% - Malbec 40%), sino que combinamos Roble Americano con Roble Francés, de primer uso, dejando complejidad en aromas y sabores.
-      Este vino tiene fuerza Vikinga ya que tenemos descendencia Nórdica y nuestra bodega hace una combinación de culturas entre Noruega y Cafayate, donde nacimos los hijos. Nos inspiramos en su nombre y diseño de etiqueta en un Vikingo muy famoso (Leifr Eiríksson) quien fue a América del Norte, Canadá. a la isla de Terranova, buscando madera, encontró vides y uvas, realizando vino, que luego comercializó como novedad ya que ellos tomaban mucha cerveza e hidromiel.`
-    }
-  ]
+export const INFO_LINES: Record<LanguageEnum, Record<Lines, LineDescription[]>> = {
+  [LanguageEnum.es]: {
+    [Lines.espumantes]: [
+      {
+        title: NameWine.burbujas,
+        content: `Primer Espumante creado 1800 mts sobre el nivel del mar en Argentina, en Método Champenoise. Se realizan 2 fermentaciones, la primera es en tanque de acero inoxidable, la cual se genera alcohol con la levadura y azúcar propia de la uva, una vez finalizado ese proceso, se le agrega la levadura y el azúcar para genera una segunda fermentación pero en botella, se colocan en pupitres y giro de botellas de 180°, 2 veces al día, para generar las burbujas de manera natural. Cuando consideramos que el tiempo con las lías ya formó unas burbujas delicadas, finas y consistentes, se realiza el degüelle, haciendo un filtrado natural, agregando luego el licor de Expedición. Finalmente colocamos el corcho de Alcornoque y dejamos en estiba para que se equilibre el vino. Son Espumantes de alta calidad proporcionando complejidad y elegancia.`
+      },
+      {
+        title: NameWine.pet,
+        content: `(Abreviatura de Pétillant Naturel, Naturalmente Espumoso). Está elaborado en Método Ancestral, donde el vino se embotella antes de que la fermentacíon principal termine, dentro de esta botella las levaduras siguen trabajando hasta generar las burbujas. No se filtra y en el fondo quedan los residuos de las levaduras. Es de textura fina, de aromas y colores intensos con espuma delicada y cremosa por lo que se percibe la uva con mayor intensidad.`
+      },
+    ],
+    [Lines.tinquiao]: [
+      {
+        title: NameWine.tinquiao,
+        content: `Tinquiao, en Cafayate - Salta, en la lengua antigua (Quechua) significa estar alegre, entonado, pero no borracho, el paso previo. Son vinos frescos, faciles de tomar y con mucho aroma a la uva. Su etiqueta es una foto de la Quebrada de las conchas, y sus diversos colores entre sí, son una sugerencia de que horario debería tomarse el vino.`
+      }
+    ],
+    [Lines.vikinga]: [
+      {
+        title: NameWine.vinland,
+        content: `Vinland, es un Vino de Altura con gran presencia, no solo es un bi-varietal (Cabernet Franc 60% - Malbec 40%), sino que combinamos Roble Americano con Roble Francés, de primer uso, dejando complejidad en aromas y sabores. Este vino tiene fuerza Vikinga ya que tenemos descendencia Nórdica y nuestra bodega hace una combinación de culturas entre Noruega y Cafayate, donde nacimos los hijos. Nos inspiramos en su nombre y diseño de etiqueta en un Vikingo muy famoso (Leifr Eiríksson) quien fue a América del Norte, Canadá. a la isla de Terranova, buscando madera, encontró vides y uvas, realizando vino, que luego comercializó como novedad ya que ellos tomaban mucha cerveza e hidromiel.`
+      }
+    ]
+  },
+  [LanguageEnum.en]: {
+    [Lines.espumantes]: [
+      {
+        title: NameWine.burbujas,
+        content: `The first sparkling wine created at 1,800 meters above sea level in Argentina using the Traditional Method. Two fermentations are carried out. The first takes place in stainless steel tanks, where alcohol is produced through the action of the yeast and the natural sugars of the grapes. Once this process is complete, additional yeast and sugar are added to initiate a second fermentation in the bottle. The bottles are placed on riddling racks and rotated 180° twice a day to naturally develop the bubbles. Once we consider that the time spent on the lees has created delicate, fine, and consistent bubbles, disgorgement is carried out, followed by the addition of the expedition liqueur. Finally, we seal the bottle with a cork stopper and allow the wine to rest in the cellar so it can reach balance. These are high-quality sparkling wines that offer complexity and elegance.`
+      },
+      {
+        title: NameWine.pet,
+        content: `(Short for Pétillant Naturel, naturally sparkling). It is made using the Ancestral Method, in which the wine is bottled before the primary fermentation is complete. Inside the bottle, the yeasts continue to work until the bubbles develop. The wine is not filtered, leaving yeast sediment at the bottom of the bottle. It has a fine texture, intense aromas and colors, and a delicate, creamy mousse that allows the character of the grape to be perceived with greater intensity.`
+      },
+    ],
+    [Lines.tinquiao]: [
+      {
+        title: NameWine.tinquiao,
+        content: `Tinquiao, in Cafayate, Salta, means 'to be cheerful, spirited, but not drunk' in the ancient Quechua language—the moment just before. These are fresh, easy-drinking wines with expressive aromas that highlight the character of the grape. The label features a photograph of Quebrada de las Conchas, while the different colors of the labels suggest the ideal time of day to enjoy each wine.`
+      }
+    ],
+    [Lines.vikinga]: [
+      {
+        title: NameWine.vinland,
+        content: `Vinland is a high-altitude wine with a strong presence. It is not only a blend of two varieties (60% Cabernet Franc - 40% Malbec), but also a combination of first-use American and French oak, adding complexity to its aromas and flavors. This wine carries a Viking spirit, as our family has Nordic ancestry and our winery brings together two cultures: Norway and Cafayate, where the children were born. The name and label design were inspired by a famous Viking, Leifr Eiríksson, who traveled to North America, reaching Newfoundland, Canada. Seeking wood, he discovered grapevines and grapes and made wine, which he later traded as a novelty, as the Vikings traditionally drank large amounts of beer and mead.`
+      }
+    ]
+  },
+  [LanguageEnum.pt]: {
+    [Lines.espumantes]: [
+      {
+        title: NameWine.burbujas,
+        content: `O primeiro espumante criado a 1.800 metros acima do nível do mar na Argentina, pelo Método Tradicional. São realizadas duas fermentações. A primeira ocorre em tanques de aço inoxidável, onde o álcool é produzido pela ação das leveduras e dos açúcares naturais das uvas. Após a conclusão desse processo, são adicionados leveduras e açúcar para realizar uma segunda fermentação, desta vez na garrafa. As garrafas são colocadas em pupitres e giradas 180° duas vezes ao dia, para desenvolver as borbulhas de forma natural. Quando consideramos que o tempo sobre as borras já formou borbulhas delicadas, finas e consistentes, é realizado o dégorgement, seguido da adição do licor de expedição. Finalmente, colocamos a rolha de cortiça e deixamos o vinho repousar para que alcance seu equilíbrio. São espumantes de alta qualidade, que proporcionam complexidade e elegância.`
+      },
+      {
+        title: NameWine.pet,
+        content: `(Abreviação de Pétillant Naturel, naturalmente espumante). É elaborado pelo Método Ancestral, no qual o vinho é engarrafado antes que a fermentação principal termine. Dentro da garrafa, as leveduras continuam atuando até gerar as borbulhas. Não é filtrado, e os resíduos das leveduras permanecem no fundo da garrafa. Apresenta textura fina, aromas e cores intensos, com uma espuma delicada e cremosa, permitindo perceber a expressão da uva com maior intensidade.`
+      },
+    ],
+    [Lines.tinquiao]: [
+      {
+        title: NameWine.tinquiao,
+        content: `Tinquiao, em Cafayate, Salta, significa 'estar alegre, animado, mas não bêbado', na antiga língua quéchua — o momento que antecede essa condição. São vinhos frescos, fáceis de beber e com aromas marcantes que expressam a personalidade da uva. O rótulo apresenta uma fotografia da Quebrada de las Conchas, enquanto suas diferentes cores sugerem o horário ideal do dia para apreciar cada vinho.`
+      }
+    ],
+    [Lines.vikinga]: [
+      {
+        title: NameWine.vinland,
+        content: `Vinland é um vinho de altitude de grande presença. Não é apenas um corte de duas variedades (60% Cabernet Franc - 40% Malbec), mas também uma combinação de carvalho americano e carvalho francês de primeiro uso, proporcionando complexidade aos aromas e sabores. Este vinho carrega um espírito viking, pois temos ascendência nórdica e nossa vinícola combina duas culturas: a Noruega e Cafayate, onde nasceram os filhos. O nome e o design do rótulo foram inspirados em um famoso viking, Leifr Eiríksson, que viajou para a América do Norte, chegando à Terra Nova, no Canadá. Em busca de madeira, encontrou videiras e uvas e produziu vinho, que posteriormente comercializou como uma novidade, já que os vikings consumiam grandes quantidades de cerveja e hidromel.`
+      }
+    ]
+  }
 }
 
 interface Notes {

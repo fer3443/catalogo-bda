@@ -1,4 +1,5 @@
-import { Lines, NewWine, Subline } from '@/interfaces';
+import { useLocale } from 'next-intl';
+import { LanguageEnum, Lines, NewWine, Subline } from '@/interfaces';
 import { useSublineData } from '@/hooks';
 import { WineCard } from '../wine-card';
 
@@ -19,15 +20,16 @@ const WineGrid = ({ wines, onWineClick }: { wines: NewWine[]; onWineClick: (wine
 );
 
 export const SublineSection = ({ wineData, line, subline, onWineSelect }: SublineSectionProps) => {
+  const locale = useLocale() as LanguageEnum;
   const { getFilteredWines, getSublineDescription, hasMultipleSublines } = useSublineData(wineData, line, subline);
 
   return (
     <div>
       <div className="space-y-2 text-center my-8">
         <h2 className="text-[#4e4e4e] text-base md:text-xl">
-          {getSublineDescription(0)?.title}
+          {getSublineDescription(0, locale)?.title}
         </h2>
-        <p className="text-xs md:text-sm text-[#747474]">{getSublineDescription(0)?.content}</p>
+        <p className="text-xs md:text-sm text-[#747474]">{getSublineDescription(0, locale)?.content}</p>
       </div>
       <WineGrid wines={getFilteredWines(0)} onWineClick={onWineSelect} />
 
@@ -35,9 +37,9 @@ export const SublineSection = ({ wineData, line, subline, onWineSelect }: Sublin
         <>
           <div className="space-y-2 text-center my-8">
             <h2 className="text-[#4e4e4e] text-base md:text-xl">
-              {getSublineDescription(1)?.title}
+              {getSublineDescription(1, locale)?.title}
             </h2>
-            <p className="text-xs md:text-sm text-[#747474]">{getSublineDescription(1)?.content}</p>
+            <p className="text-xs md:text-sm text-[#747474]">{getSublineDescription(1, locale)?.content}</p>
           </div>
           <WineGrid wines={getFilteredWines(1)} onWineClick={onWineSelect} />
         </>

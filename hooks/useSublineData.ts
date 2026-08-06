@@ -1,4 +1,4 @@
-import { Lines, NewWine, Subline } from '@/interfaces';
+import { LanguageEnum, Lines, NewWine, Subline } from '@/interfaces';
 import { INFO_LINES } from '@/mock';
 
 export const useSublineData = (
@@ -14,10 +14,10 @@ export const useSublineData = (
     );
   };
 
-  const getSublineDescription = (sublineIndex: number) => {
+  const getSublineDescription = (sublineIndex: number, locale: LanguageEnum) => {
     if (!line) return null;
     const lineKey = getFilteredWines(sublineIndex)[0]?.line;
-    return lineKey ? INFO_LINES[lineKey]?.[sublineIndex] : null;
+    return lineKey ? INFO_LINES[locale]?.[lineKey]?.[sublineIndex] : null;
   };
 
   const hasMultipleSublines = line && subline && subline.length > 1;
