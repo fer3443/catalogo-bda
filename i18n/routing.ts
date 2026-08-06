@@ -7,10 +7,12 @@ export const routing = defineRouting({
   // Used when no locale matches
   defaultLocale: 'es',
   pathnames: {
+    '/': '/',
     '/lines': {
       es: '/lineas',
       en: '/lines',
       pt: '/linhas'
-    }
+    },
+    '/lines/[line]': '/lines/[line]'
   }
 });
