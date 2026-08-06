@@ -68,7 +68,7 @@ export function WineModal({ wine, onClose }: WineModalProps) {
                   </div>
                   <div className="flex justify-between py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">{t("age")}</span>
-                    <span className="font-medium text-card-foreground text-sm text-end">{getAge(translatedWine.vineyardAge) + " " + (locale === "es" ? "años." : "years.")}</span>
+                    <span className="font-medium text-card-foreground text-sm text-end">{getAge(translatedWine.vineyardAge) + " " + (locale === "es" ? "años." : locale === "pt" ? "anos." : "years.")}</span>
                   </div>
                   <div className="flex justify-between py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">{t("alcohol")}</span>
