@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { Link as LocaleLink } from '@/i18n/navigation'
 import Image from 'next/image';
 import { MdOutlineLocationOn } from 'react-icons/md'
 import { LuInstagram, LuMail, LuEarth } from "react-icons/lu";
@@ -12,7 +13,7 @@ export async function Footer(){
     <footer className='bg-[#5c172a] text-primary-foreground'>
       <div className='grid grid-cols-3 mx-auto max-w-7xl py-14 sm:py-10 px-5 gap-6'>
         <div className='col-span-full md:col-span-1 space-y-2'>
-          <Link href='/' className='w-42 mx-auto sm:mx-0 lg:w-52 block'>
+          <LocaleLink href='/' className='w-42 mx-auto sm:mx-0 lg:w-52 block'>
             <Image
               src="/white-logo-bda.png"
               alt="Burbujas de Altura logo"
@@ -20,7 +21,7 @@ export async function Footer(){
               height={300}
               className='h-full'
             />
-          </Link>
+          </LocaleLink>
         </div>
           <div className='col-span-full md:col-span-1 space-y-2'>
           <h3 className="font-semibold">{f("contact")}</h3>
@@ -53,14 +54,14 @@ export async function Footer(){
           <div className='flex flex-col gap-2 space-y-2'>
             <h3 className="font-semibold">{f("follow")}</h3>
             <div className='flex items-center gap-2'>
-              <Link href="https://www.instagram.com/burbujasdealtura/" target='_blank' className='rounded-full bg-[#773c4d] p-2'>
-                <LuInstagram className='size-4 sm:size-5 hover:scale-110 transition-all' />
+              <Link href="https://www.instagram.com/burbujasdealtura/" target='_blank' rel="noopener noreferrer" aria-label="Instagram" className='rounded-full bg-[#773c4d] p-2'>
+                <LuInstagram aria-hidden="true" className='size-4 sm:size-5 hover:scale-110 transition-all' />
               </Link>
-              <Link href="https://www.facebook.com/profile.php?id=100064148794896" target='_blank' className='rounded-full bg-[#773c4d] p-2'>
-                <FaFacebookF className='size-4 sm:size-5 hover:scale-110 transition-all' />
+              <Link href="https://www.facebook.com/profile.php?id=100064148794896" target='_blank' rel="noopener noreferrer" aria-label="Facebook" className='rounded-full bg-[#773c4d] p-2'>
+                <FaFacebookF aria-hidden="true" className='size-4 sm:size-5 hover:scale-110 transition-all' />
               </Link>
-              <Link href="https://www.burbujasdealtura.com.ar/" target='_blank' className='rounded-full bg-[#773c4d] p-2'>
-                <LuEarth className='size-4 sm:size-5 hover:scale-110 transition-all' />
+              <Link href="https://www.burbujasdealtura.com.ar/" target='_blank' rel="noopener noreferrer" aria-label={f("website")} className='rounded-full bg-[#773c4d] p-2'>
+                <LuEarth aria-hidden="true" className='size-4 sm:size-5 hover:scale-110 transition-all' />
               </Link>
             </div>
           </div>

@@ -3,10 +3,12 @@ import Link from 'next/link'
 import { MdOutlineLocationOn } from "react-icons/md";
 import { LocaleSwitcher } from '../localeswitcher'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 
 export const NavMobile = ({ className }: { className?: string }) => {
+  const t = useTranslations('a11y');
   return (
-    <nav className={cn('w-full space-y-4 mb-2', className)}>
+    <nav aria-label={t('topBar')} className={cn('w-full space-y-4 mb-2', className)}>
       <div className='bg-[#3f1b26] flex flex-col gap-4 items-center py-6'>
 
         <Link
@@ -28,8 +30,7 @@ export const NavMobile = ({ className }: { className?: string }) => {
       <div className='flex justify-between px-4'>
         <Image
           src='/bandera-argentina.png'
-          alt="Bandera Argentina"
-          title="Argentina"
+          alt={t('flagArgentina')}
           width={40}
           height={40}
           className="w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-cover"

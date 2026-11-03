@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import { useLocale, useTranslations } from "next-intl"
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { useTranslations } from "next-intl"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { X } from "lucide-react"
 import { getAge } from "@/utils"
 import type { TranslatedWine } from "@/utils/translate-wine"
@@ -14,17 +14,16 @@ interface WineModalProps {
 
 export function WineModal({ wine, onClose }: WineModalProps) {
   const t = useTranslations('wineModal');
-  const locale = useLocale();
   if (!wine) return null
   const translatedWine = wine;
 
   return (
     <Dialog open={!!wine} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0 bg-card border-border">
+      <DialogContent showCloseButton={false} className="max-w-4xl max-h-[90vh] overflow-y-auto p-0 bg-card border-border">
         <button
           onClick={onClose}
           className="absolute right-4 top-4 z-10 rounded-full bg-background/80 backdrop-blur-sm p-2 hover:bg-background transition-colors"
-          aria-label="Cerrar"
+          aria-label={t("close")}
         >
           <X className="h-5 w-5" />
         </button>
@@ -45,6 +44,7 @@ export function WineModal({ wine, onClose }: WineModalProps) {
               <DialogTitle className="font-serif text-3xl md:text-4xl font-semibold mb-2 text-card-foreground text-balance">
                 {translatedWine.name}
               </DialogTitle>
+              <DialogDescription className="sr-only">{translatedWine.variety}</DialogDescription>
               <p className="text-base text-muted-foreground font-medium">{translatedWine.variety}</p>
             </DialogHeader>
 
@@ -67,7 +67,7 @@ export function WineModal({ wine, onClose }: WineModalProps) {
                   </div>
                   <div className="flex justify-between py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">{t("age")}</span>
-                    <span className="font-medium text-card-foreground text-sm text-end">{getAge(translatedWine.vineyardAge) + " " + (locale === "es" ? "años." : locale === "pt" ? "anos." : "years.")}</span>
+                    <span className="font-medium text-card-foreground text-sm text-end">{getAge(translatedWine.vineyardAge) + " " + t("ageUnit")}</span>
                   </div>
                   <div className="flex justify-between py-2 border-b border-border/50">
                     <span className="text-muted-foreground text-sm">{t("alcohol")}</span>

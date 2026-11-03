@@ -14,8 +14,18 @@ export function WineCard({ wine, onClick }: WineCardProps) {
   const t = useTranslations("wineCard");
   return (
     <Card
+      role="button"
+      tabIndex={0}
+      aria-haspopup="dialog"
       onClick={onClick}
-      className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 border-border bg-card py-0"
+      onKeyDown={(e) => {
+        if (e.target !== e.currentTarget) return
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault()
+          onClick()
+        }
+      }}
+      className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 border-border bg-card py-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5B2333]"
     >
       <div className="relative aspect-3/4 overflow-hidden bg-secondary">
         <Image

@@ -26,7 +26,7 @@ export function WineCatalog({ line, subline }: Props) {
     <div>
       <div className="container max-w-7xl mx-auto px-4 py-8 md:py-12">
         <div className="flex justify-end">
-          <Link href='/' className="flex gap-4 items-center text-center hover:shadow p-2 rounded-lg"><FaChevronLeft size={12} />Home</Link>
+          <Link href='/' className="flex gap-4 items-center text-center hover:shadow p-2 rounded-lg"><FaChevronLeft size={12} aria-hidden="true" />{l("home")}</Link>
         </div>
         <div className="relative w-full my-8 flex items-center justify-center">
           <div className="hidden md:block absolute top-1/2 w-full border-t border-tercery"></div>

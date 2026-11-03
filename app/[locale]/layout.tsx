@@ -52,12 +52,12 @@ export default async function RootLayout({
     notFound();
   }
   setRequestLocale(locale);
-  // Solo los namespaces usados por componentes cliente (wine-card, wine-modal y error.tsx)
-  const { wineCard, wineModal, statusPages } = await getMessages();
+  // Solo los namespaces usados por componentes cliente (wine-card, wine-modal, error.tsx y localeswitcher)
+  const { wineCard, wineModal, statusPages, a11y } = await getMessages();
   return (
     <html lang={locale}>
       <body className={`${lora.className} antialiased`}>
-        <NextIntlClientProvider messages={{ wineCard, wineModal, statusPages }}>
+        <NextIntlClientProvider messages={{ wineCard, wineModal, statusPages, a11y }}>
           <Header />
           {children}
           <Footer/>
