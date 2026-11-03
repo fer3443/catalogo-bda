@@ -7,7 +7,8 @@
   },
   "catalog": {
     "allLines": "Complete Portfolio",
-    "wine": "Wines"
+    "wine": "Wines",
+    "home": "Home"
   },
   "description_variety": {
     "espumantes": {
@@ -36,7 +37,8 @@
   "footer": {
     "follow": "Follow Us",
     "contact": "Contact",
-    "location": "Location"
+    "location": "Location",
+    "website": "Website"
   },
   "wineCard": {
     "technicalSheet": "View Technical Sheet →"
@@ -66,7 +68,9 @@
     "harvestDate": "Harvest Date",
     "cellarAging": "Cellar Aging",
     "winemaking": "Winemaking",
-    "pairing": "Suggested Pairing"
+    "pairing": "Suggested Pairing",
+    "close": "Close",
+    "ageUnit": "years."
   },
   "wines": {
     "torrontes-brut-nature": {
@@ -352,5 +356,10 @@
       "retry": "Try again",
       "back": "Back to home"
     }
+  },
+  "a11y": {
+    "topBar": "Contact information",
+    "language": "Language",
+    "flagArgentina": "Flag of Argentina"
   }
 }

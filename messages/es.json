@@ -7,7 +7,8 @@
   },
   "catalog": {
     "allLines": "Portfolio completo",
-    "wine": "Vinos"
+    "wine": "Vinos",
+    "home": "Inicio"
   },
   "description_variety": {
     "espumantes": {
@@ -39,7 +40,8 @@
   "footer": {
     "follow": "Síguenos",
     "contact": "Contacto",
-    "location": "Ubicación"
+    "location": "Ubicación",
+    "website": "Sitio web"
   },
   "fobTable": {
     "title": "Tabla de Precios FOB",
@@ -66,7 +68,9 @@
     "harvestDate": "Fecha de cosecha",
     "cellarAging": "Guarda en bodega",
     "winemaking": "Elaboración",
-    "pairing": "Maridaje sugerido"
+    "pairing": "Maridaje sugerido",
+    "close": "Cerrar",
+    "ageUnit": "años."
   },
   "wines": {
     "torrontes-brut-nature": {
@@ -352,5 +356,10 @@
       "retry": "Reintentar",
       "back": "Volver al inicio"
     }
+  },
+  "a11y": {
+    "topBar": "Información de contacto",
+    "language": "Idioma",
+    "flagArgentina": "Bandera de Argentina"
   }
 }

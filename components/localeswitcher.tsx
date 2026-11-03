@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
@@ -21,6 +21,7 @@ export const LocaleSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
   const pathname = usePathname();
   const params = useParams();
   const locale = useLocale();
+  const t = useTranslations("a11y");
 
   // pathname es la ruta interna (ej. "/lines/[line]"); next-intl la traduce al idioma elegido
   const handleChange = (newLocale: string) => {
@@ -36,6 +37,7 @@ export const LocaleSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
   return (
     <Select value={locale} onValueChange={handleChange}>
       <SelectTrigger
+        aria-label={t("language")}
         className={clsx(`p-2 h-8 border shadow-none font-medium cursor-pointer`, {
           "w-32": mobile,
           "min-w-auto": !mobile
