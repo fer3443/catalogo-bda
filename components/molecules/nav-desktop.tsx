@@ -2,10 +2,11 @@ import Image from "next/image"
 import Link from "next/link"
 import { MdOutlineLocationOn } from "react-icons/md";
 import { LocaleSwitcher } from "../localeswitcher"
+import { cn } from "@/lib/utils"
 
-export const NavDesktop = () => {
+export const NavDesktop = ({ className }: { className?: string }) => {
   return (
-    <nav className="bg-[#3f1b26] w-full py-2 px-4 flex justify-between items-center mb-2">
+    <nav className={cn("bg-[#3f1b26] w-full py-2 px-4 flex justify-between items-center mb-2", className)}>
       <div className="flex gap-2 items-center">
         <MdOutlineLocationOn/>
         <Link

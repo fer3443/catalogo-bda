@@ -1,13 +1,12 @@
-"use client"
-
 import Image from 'next/image'
 import Link from 'next/link'
 import { MdOutlineLocationOn } from "react-icons/md";
 import { LocaleSwitcher } from '../localeswitcher'
+import { cn } from '@/lib/utils'
 
-export const NavMobile = () => {
+export const NavMobile = ({ className }: { className?: string }) => {
   return (
-    <nav className='w-full space-y-4 mb-2'>
+    <nav className={cn('w-full space-y-4 mb-2', className)}>
       <div className='bg-[#3f1b26] flex flex-col gap-4 items-center py-6'>
 
         <Link

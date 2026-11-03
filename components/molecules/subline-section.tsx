@@ -1,49 +1,30 @@
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { LanguageEnum, Lines, NewWine, Subline } from '@/interfaces';
 import { useSublineData } from '@/hooks';
-import { WineCard } from '../wine-card';
+import { translateWine } from '@/utils/translate-wine';
+import { WineSections, type WineSection } from './wine-sections';
 
 interface SublineSectionProps {
   wineData: NewWine[],
   line: Lines | undefined,
   subline: Subline[] | undefined,
-  selectedWine?: NewWine | null,
-  onWineSelect: (wine: NewWine | null) => void
 }
 
-const WineGrid = ({ wines, onWineClick }: { wines: NewWine[]; onWineClick: (wine: NewWine | null) => void }) => (
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-    {wines.map((wine) => (
-      <WineCard key={wine.id} wine={wine} onClick={() => onWineClick(wine)} />
-    ))}
-  </div>
-);
-
-export const SublineSection = ({ wineData, line, subline, onWineSelect }: SublineSectionProps) => {
+// Server component: filtra y traduce en el servidor; al cliente solo viajan los vinos de la linea.
+export const SublineSection = ({ wineData, line, subline }: SublineSectionProps) => {
   const locale = useLocale() as LanguageEnum;
+  const tw = useTranslations('wines');
   const { getFilteredWines, getSublineDescription, hasMultipleSublines } = useSublineData(wineData, line, subline);
 
-  return (
-    <div>
-      <div className="space-y-2 text-center my-8">
-        <h2 className="text-[#4e4e4e] text-base md:text-xl">
-          {getSublineDescription(0, locale)?.title}
-        </h2>
-        <p className="text-xs md:text-sm text-[#747474]">{getSublineDescription(0, locale)?.content}</p>
-      </div>
-      <WineGrid wines={getFilteredWines(0)} onWineClick={onWineSelect} />
+  const indexes = hasMultipleSublines ? [0, 1] : [0];
+  const sections: WineSection[] = indexes.map((index) => {
+    const description = getSublineDescription(index, locale);
+    return {
+      title: description?.title,
+      content: description?.content,
+      wines: getFilteredWines(index).map((wine) => translateWine(tw, wine)),
+    };
+  });
 
-      {hasMultipleSublines && (
-        <>
-          <div className="space-y-2 text-center my-8">
-            <h2 className="text-[#4e4e4e] text-base md:text-xl">
-              {getSublineDescription(1, locale)?.title}
-            </h2>
-            <p className="text-xs md:text-sm text-[#747474]">{getSublineDescription(1, locale)?.content}</p>
-          </div>
-          <WineGrid wines={getFilteredWines(1)} onWineClick={onWineSelect} />
-        </>
-      )}
-    </div>
-  )
+  return <WineSections sections={sections} />
 }
