@@ -1,5 +1,3 @@
-"use client"
-
 import { Link } from "@/i18n/navigation"
 import { LanguageEnum, Lines } from "@/interfaces"
 import { WineCardCategory } from "./wine-card-category"

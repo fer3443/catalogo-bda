@@ -4,20 +4,19 @@ import Image from "next/image"
 import { useLocale, useTranslations } from "next-intl"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { X } from "lucide-react"
-import { NewWine } from "@/interfaces"
-import { useTranslateWine } from "@/hooks"
 import { getAge } from "@/utils"
+import type { TranslatedWine } from "@/utils/translate-wine"
 
 interface WineModalProps {
-  wine: NewWine | null
+  wine: TranslatedWine | null
   onClose: () => void
 }
 
 export function WineModal({ wine, onClose }: WineModalProps) {
-  if (!wine) return null
   const t = useTranslations('wineModal');
-  const translatedWine = useTranslateWine(wine);
   const locale = useLocale();
+  if (!wine) return null
+  const translatedWine = wine;
 
   return (
     <Dialog open={!!wine} onOpenChange={onClose}>
@@ -32,7 +31,7 @@ export function WineModal({ wine, onClose }: WineModalProps) {
 
         <div className="grid gap-0">
           <div className="relative aspect-3/4 bg-secondary">
-            <Image src={translatedWine.image || "/placeholder.svg"} alt={translatedWine.name} fill className="object-cover" />
+            <Image src={translatedWine.image || "/placeholder.svg"} alt={translatedWine.name} fill sizes="(min-width: 768px) 56rem, 100vw" className="object-cover" />
           </div>
 
           <div className="p-8 md:p-10">

@@ -1,12 +1,8 @@
-"use client"
-
-import { useState } from "react"
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { FaChevronLeft } from "react-icons/fa6";
 import { newWineData } from "@/mock";
-import { Lines, NewWine, Subline } from "@/interfaces";
-import { WineModal } from "./wine-modal"
+import { Lines, Subline } from "@/interfaces";
 import { TECHNICAL_INFO } from '../mock/new-wine-data';
 import { SublineSection } from "./molecules";
 import { TablePricesFob } from "./table-prices-fob";
@@ -21,7 +17,6 @@ const labelLine: Record<string, string> = {
   vikinga: "Vikingos"
 }
 export function WineCatalog({ line, subline }: Props) {
-  const [selectedWine, setSelectedWine] = useState<NewWine | null>(null);
   const t = useTranslations('fobTable');
   const l = useTranslations("catalog");
   const n = useTranslations('notesFob');
@@ -41,7 +36,6 @@ export function WineCatalog({ line, subline }: Props) {
           line={line}
           subline={subline}
           wineData={newWineData}
-          onWineSelect={(value) => setSelectedWine(value)}
         />
         {subline && subline.length > 0 && (
           <div className="w-full mx-auto flex flex-col gap-4">
@@ -93,7 +87,6 @@ export function WineCatalog({ line, subline }: Props) {
           )
         }
       </div>
-      <WineModal wine={selectedWine} onClose={() => setSelectedWine(null)} />
     </div>
   )
 }

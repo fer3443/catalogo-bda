@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { Analytics } from '@vercel/analytics/next'
-import { setRequestLocale } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { lora } from '@/config/fonts'
 import { Header } from '@/components/molecules/header'
@@ -47,10 +47,12 @@ export default async function RootLayout({
     notFound();
   }
   setRequestLocale(locale);
+  // Solo los namespaces usados por componentes cliente (wine-card y wine-modal)
+  const { wineCard, wineModal } = await getMessages();
   return (
     <html lang={locale}>
       <body className={`${lora.className} antialiased`}>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={{ wineCard, wineModal }}>
           <Header />
           {children}
           <Footer/>
