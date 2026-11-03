@@ -1,7 +1,9 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import { useLocale } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 
 import { IoEarthSharp } from "react-icons/io5";
 import {
@@ -17,11 +19,18 @@ import { LANGUAGES } from "@/constants";
 export const LocaleSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
   const router = useRouter();
   const pathname = usePathname();
+  const params = useParams();
   const locale = useLocale();
 
+  // pathname es la ruta interna (ej. "/lines/[line]"); next-intl la traduce al idioma elegido
   const handleChange = (newLocale: string) => {
-    const newPath = `/${newLocale}${pathname.slice(locale.length + 1)}`;
-    router.push(newPath);
+    if (!routing.locales.some((l) => l === newLocale)) return;
+    const { locale: _locale, ...routeParams } = params;
+    router.replace(
+      // @ts-expect-error: pathname y params se validan en runtime contra routing.pathnames
+      { pathname, params: routeParams },
+      { locale: newLocale as (typeof routing.locales)[number] }
+    );
   };
   //TODO: cambiar color del selectItem para que coincida con el bg del header
   return (
