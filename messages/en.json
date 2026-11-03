@@ -334,5 +334,10 @@
     "beneficiary": "The beneficiary is LA CONSTANCIA SRL, with a U.S. dollar checking account.",
     "advancePayment": "Payment must be made in advance.",
     "palletSizes": "Pallet dimensions may vary depending on the destination country."
+  },
+  "metadata": {
+    "title": "Burbujas de Altura - Catalog",
+    "description": "Full catalog of Burbujas de Altura winery: sparkling and high-altitude wines from Cafayate, Salta.",
+    "siteName": "Burbujas de Altura"
   }
 }

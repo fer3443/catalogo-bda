@@ -334,5 +334,10 @@
     "beneficiary": "El beneficiario es LA CONSTANCIA SRL, en cuenta corriente en dólares.",
     "advancePayment": "El pago debe realizarse por adelantado.",
     "palletSizes": "Los pallets tienen diferentes dimensiones según el país de destino."
+  },
+  "metadata": {
+    "title": "Burbujas de Altura - Catálogo",
+    "description": "Catálogo completo de la bodega Burbujas de Altura: espumantes y vinos de altura de Cafayate, Salta.",
+    "siteName": "Burbujas de Altura"
   }
 }

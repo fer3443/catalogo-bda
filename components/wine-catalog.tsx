@@ -30,7 +30,7 @@ export function WineCatalog({ line, subline }: Props) {
         </div>
         <div className="relative w-full my-8 flex items-center justify-center">
           <div className="hidden md:block absolute top-1/2 w-full border-t border-tercery"></div>
-          <span className="bg-primary-foreground text-xl md:px-10 font-medium uppercase z-10 md:text-3xl">{line ? `${l("wine")} ${labelLine[line]}` : l("allLines")}</span>
+          <h1 className="bg-primary-foreground text-xl md:px-10 font-medium uppercase z-10 md:text-3xl">{line ? `${l("wine")} ${labelLine[line]}` : l("allLines")}</h1>
         </div>
         <SublineSection
           line={line}
