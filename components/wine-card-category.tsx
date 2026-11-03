@@ -10,6 +10,7 @@ export const WineCardCategory = ({ text, image }: { text: string, image?: string
           src={image || "/placeholder.svg"}
           alt={text}
           fill
+          sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
           className="object-cover group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute top-0 left-0 h-full w-full bg-linear-65 from-[#2B1C1C] to-transparent flex flex-col justify-center">

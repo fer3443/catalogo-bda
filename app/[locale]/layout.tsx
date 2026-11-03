@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { Analytics } from '@vercel/analytics/next'
+import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { lora } from '@/config/fonts'
 import { Header } from '@/components/molecules/header'
@@ -30,6 +31,10 @@ export const metadata: Metadata = {
   },
 }
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export default async function RootLayout({
   children,
   params
@@ -41,6 +46,7 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+  setRequestLocale(locale);
   return (
     <html lang={locale}>
       <body className={`${lora.className} antialiased`}>
