@@ -2,33 +2,38 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { Analytics } from '@vercel/analytics/next'
-import { getMessages, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { lora } from '@/config/fonts'
+import { buildAlternates, SITE_URL } from '@/lib/site'
 import { Header } from '@/components/molecules/header'
 import { Footer } from '@/components/molecules';
 import './globals.css'
 
-export const metadata: Metadata = {
-  title: 'Burbujas de Altura - Catalogo',
-  description: 'Catalogo completo bodega Burbujas de Altura',
-  icons: {
-    icon: [
-      {
-        url: '/bda-favicon.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/bda-favicon.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/bda-favicon.png',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/bda-favicon.png',
-  },
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) return {};
+  const t = await getTranslations({ locale, namespace: 'metadata' });
+  const ogLocale = { es: 'es_AR', en: 'en_US', pt: 'pt_BR' }[locale];
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: t('title'),
+    description: t('description'),
+    alternates: buildAlternates(locale, '/'),
+    openGraph: {
+      type: 'website',
+      siteName: t('siteName'),
+      title: t('title'),
+      description: t('description'),
+      locale: ogLocale,
+      images: [{ url: '/bda-all-lines.webp' }],
+    },
+    icons: {
+      icon: '/bda-favicon.png',
+      apple: '/bda-favicon.png',
+    },
+  };
 }
 
 export function generateStaticParams() {
