@@ -339,5 +339,18 @@
     "title": "Burbujas de Altura - Catálogo",
     "description": "Catálogo completo da vinícola Burbujas de Altura: espumantes e vinhos de altitude de Cafayate, Salta.",
     "siteName": "Burbujas de Altura"
+  },
+  "statusPages": {
+    "notFound": {
+      "title": "Página não encontrada",
+      "description": "A página que você procura não existe ou foi movida.",
+      "back": "Voltar ao início"
+    },
+    "error": {
+      "title": "Algo deu errado",
+      "description": "Ocorreu um erro inesperado. Você pode tentar novamente ou voltar ao início.",
+      "retry": "Tentar novamente",
+      "back": "Voltar ao início"
+    }
   }
 }
