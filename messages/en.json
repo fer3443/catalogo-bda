@@ -339,5 +339,18 @@
     "title": "Burbujas de Altura - Catalog",
     "description": "Full catalog of Burbujas de Altura winery: sparkling and high-altitude wines from Cafayate, Salta.",
     "siteName": "Burbujas de Altura"
+  },
+  "statusPages": {
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you are looking for does not exist or has been moved.",
+      "back": "Back to home"
+    },
+    "error": {
+      "title": "Something went wrong",
+      "description": "An unexpected error occurred. You can try again or go back to the home page.",
+      "retry": "Try again",
+      "back": "Back to home"
+    }
   }
 }
